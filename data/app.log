@@ -1,0 +1,751 @@
+2026-06-17 20:31:35,047 [INFO] __main__: Starting ISP Speed Test Automation...
+2026-06-17 20:31:37,117 [INFO] __main__: System tray icon ready.
+2026-06-17 20:31:37,118 [INFO] __main__: GUI started.
+2026-06-17 23:52:36,742 [INFO] __main__: Shutting down...
+2026-06-17 23:52:50,068 [INFO] __main__: Starting ISP Speed Test Automation...
+2026-06-17 23:52:51,065 [INFO] __main__: System tray icon ready.
+2026-06-17 23:52:51,066 [INFO] __main__: GUI started.
+2026-06-17 23:53:13,756 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-17 23:53:15,090 [WARNING] googleapiclient.http: Encountered 403 Forbidden with reason "accessNotConfigured"
+2026-06-17 23:53:15,124 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-17 23:53:15,130 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-17 23:53:16,113 [WARNING] googleapiclient.http: Encountered 403 Forbidden with reason "accessNotConfigured"
+2026-06-17 23:53:34,354 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-17 23:53:35,418 [WARNING] googleapiclient.http: Encountered 403 Forbidden with reason "accessNotConfigured"
+2026-06-17 23:53:35,418 [ERROR] core.drive_uploader: Drive upload failed: <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files?q=name%3D%27SpeedTest+Results%27+and+mimeType%3D%27application%2Fvnd.google-apps.folder%27+and+trashed%3Dfalse&spaces=drive&fields=files%28id%2C+name%29&alt=json returned "Google Drive API has not been used in project 989992868736 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/drive.googleapis.com/overview?project=989992868736 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.". Details: "[{'message': 'Google Drive API has not been used in project 989992868736 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/drive.googleapis.com/overview?project=989992868736 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.', 'domain': 'usageLimits', 'reason': 'accessNotConfigured', 'extendedHelp': 'https://console.developers.google.com'}]">
+2026-06-17 23:56:46,011 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-17 23:56:47,603 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-17 23:56:47,608 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-17 23:56:50,433 [WARNING] googleapiclient.http: Encountered 403 Forbidden with reason "PERMISSION_DENIED"
+2026-06-17 23:57:04,703 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-17 23:57:07,498 [INFO] core.drive_uploader: Created Drive folder 'Config Test' (id=1Vgn1PH2mCqhSc_ttaxGczK8lNVCGVDhX)
+2026-06-17 23:57:09,703 [WARNING] googleapiclient.http: Encountered 403 Forbidden with reason "storageQuotaExceeded"
+2026-06-17 23:57:09,703 [ERROR] core.drive_uploader: Drive upload failed: <HttpError 403 when requesting https://www.googleapis.com/upload/drive/v3/files?fields=id&alt=json&uploadType=multipart returned "Service Accounts do not have storage quota. Leverage shared drives (https://developers.google.com/workspace/drive/api/guides/about-shareddrives), or use OAuth delegation (http://support.google.com/a/answer/7281227) instead.". Details: "[{'message': 'Service Accounts do not have storage quota. Leverage shared drives (https://developers.google.com/workspace/drive/api/guides/about-shareddrives), or use OAuth delegation (http://support.google.com/a/answer/7281227) instead.', 'domain': 'usageLimits', 'reason': 'storageQuotaExceeded'}]">
+2026-06-18 00:21:17,605 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 00:21:19,386 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 00:21:19,397 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 00:21:22,809 [WARNING] googleapiclient.http: Encountered 403 Forbidden with reason "PERMISSION_DENIED"
+2026-06-18 00:22:43,688 [INFO] __main__: Starting ISP Speed Test Automation...
+2026-06-18 00:22:45,131 [INFO] __main__: System tray icon ready.
+2026-06-18 00:22:45,132 [INFO] __main__: GUI started.
+2026-06-18 00:23:54,054 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 00:23:55,968 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 00:23:55,975 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 00:23:59,112 [WARNING] googleapiclient.http: Encountered 403 Forbidden with reason "PERMISSION_DENIED"
+2026-06-18 00:24:13,870 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 00:24:18,389 [WARNING] googleapiclient.http: Encountered 403 Forbidden with reason "storageQuotaExceeded"
+2026-06-18 00:24:18,390 [ERROR] core.drive_uploader: Drive upload failed: <HttpError 403 when requesting https://www.googleapis.com/upload/drive/v3/files?fields=id&alt=json&uploadType=multipart returned "Service Accounts do not have storage quota. Leverage shared drives (https://developers.google.com/workspace/drive/api/guides/about-shareddrives), or use OAuth delegation (http://support.google.com/a/answer/7281227) instead.". Details: "[{'message': 'Service Accounts do not have storage quota. Leverage shared drives (https://developers.google.com/workspace/drive/api/guides/about-shareddrives), or use OAuth delegation (http://support.google.com/a/answer/7281227) instead.', 'domain': 'usageLimits', 'reason': 'storageQuotaExceeded'}]">
+2026-06-18 00:29:56,522 [INFO] __main__: Starting ISP Speed Test Automation...
+2026-06-18 00:29:57,945 [INFO] __main__: System tray icon ready.
+2026-06-18 00:29:57,946 [INFO] __main__: GUI started.
+2026-06-18 00:30:06,394 [INFO] __main__: Shutting down...
+2026-06-18 00:30:23,061 [INFO] __main__: Starting ISP Speed Test Automation...
+2026-06-18 00:30:24,299 [INFO] __main__: System tray icon ready.
+2026-06-18 00:30:24,300 [INFO] __main__: GUI started.
+2026-06-18 00:40:29,133 [INFO] google_auth_oauthlib.flow: Please visit this URL to authorize this application: https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=826549328602-87m9b1n3qub9do0rgqbkmgo7tjl5js41.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A56174%2F&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fspreadsheets&state=ntpMQOxtjylIdR6dVyvrUBqqH2sQdP&code_challenge=jqVlIn9dR0ASDKA1yehao7aQBxYNzGobA4TLLk_sFJ0&code_challenge_method=S256&access_type=offline
+2026-06-18 00:40:38,782 [INFO] google_auth_oauthlib.flow: "GET /?state=ntpMQOxtjylIdR6dVyvrUBqqH2sQdP&iss=https://accounts.google.com&code=4/0AdkVLPwSFy5V0YPBWaCJ3uYmdnuYAa_UUYrOjMUO5Zdsa50L0o0XaW-qTW4g-XNvIcYkkA&scope=https://www.googleapis.com/auth/drive%20https://www.googleapis.com/auth/spreadsheets HTTP/1.1" 200 65
+2026-06-18 00:40:39,481 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 00:40:40,663 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 00:40:40,668 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 00:40:58,836 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 00:41:01,089 [INFO] core.drive_uploader: Created Drive folder 'Config Test' (id=1pOX1iluPumIVZ8JdWEOyEOSFJ0CVMvHK)
+2026-06-18 00:41:03,165 [INFO] core.drive_uploader: Uploaded screenshot to Drive (id=10eNNk3NXfo13Chyfgvl8aiIEXfyKrwQB)
+2026-06-18 00:42:43,572 [INFO] core.scheduler: [Admin Globe] Starting speed test cycle...
+2026-06-18 00:42:43,574 [INFO] core.scheduler: [Admin Globe] Switching WiFi to 'Globe_E20_OP_AA'...
+2026-06-18 00:42:44,755 [INFO] core.wifi_switcher: Connecting to SSID: Globe_E20_OP_AA
+2026-06-18 00:42:44,985 [INFO] core.wifi_switcher: Waiting for internet connectivity (timeout=30s)...
+2026-06-18 00:42:47,027 [INFO] core.wifi_switcher: Internet connectivity confirmed.
+2026-06-18 00:42:47,028 [INFO] core.scheduler: [Admin Globe] WiFi connected successfully.
+2026-06-18 00:42:47,032 [INFO] core.scheduler: [Admin Globe] Running speed test on fast.com...
+2026-06-18 00:42:47,994 [INFO] core.speed_tester: Navigating to https://fast.com for ISP: Admin Globe
+2026-06-18 00:42:50,900 [INFO] core.speed_tester: Waiting for speed test to complete...
+2026-06-18 00:43:00,932 [INFO] core.speed_tester: Screenshot saved: G:\dev\apps\speedtest-automation\screenshots\Admin_Globe_20260618_004247.png
+2026-06-18 00:43:01,073 [INFO] core.scheduler: [Admin Globe] Speed result: 610 Mbps
+2026-06-18 00:43:01,075 [INFO] core.scheduler: [Admin Globe] Uploading screenshot to Google Drive...
+2026-06-18 00:43:01,085 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 00:43:02,845 [INFO] core.drive_uploader: Created Drive folder 'Admin Globe' (id=1xt00KLE6kX7_baVRT66YwimiqHeb7W-u)
+2026-06-18 00:43:04,651 [INFO] core.drive_uploader: Uploaded screenshot to Drive (id=1YnuQid1848LDFykLTQoK0czrCjEtaLL9)
+2026-06-18 00:43:05,175 [INFO] core.scheduler: [Admin Globe] Screenshot uploaded successfully.
+2026-06-18 00:43:05,176 [INFO] core.scheduler: [Admin Globe] Logging to Google Sheets: 'Admin Globe'...
+2026-06-18 00:43:05,181 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 00:43:05,188 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 00:43:07,579 [INFO] core.sheets_logger: Created spreadsheet 'Admin Globe' (id=1IwqW_szMOF1owcSFNdBliC5u-fwzRqLkOSlYV8YrUe4)
+2026-06-18 00:43:09,217 [ERROR] core.sheets_logger: Sheets logging failed: <HttpError 400 when requesting https://sheets.googleapis.com/v4/spreadsheets/1IwqW_szMOF1owcSFNdBliC5u-fwzRqLkOSlYV8YrUe4:batchUpdate?alt=json returned "Invalid JSON payload received. Unknown name "foregroundColor" at 'requests[0].repeat_cell.cell.user_entered_format': Cannot find field.". Details: "[{'@type': 'type.googleapis.com/google.rpc.BadRequest', 'fieldViolations': [{'field': 'requests[0].repeat_cell.cell.user_entered_format', 'description': 'Invalid JSON payload received. Unknown name "foregroundColor" at \'requests[0].repeat_cell.cell.user_entered_format\': Cannot find field.'}]}]">
+2026-06-18 00:43:09,217 [ERROR] core.scheduler: [Admin Globe] ❌ Failed to log to Google Sheets.
+2026-06-18 00:45:31,248 [INFO] __main__: Starting ISP Speed Test Automation...
+2026-06-18 00:45:32,816 [INFO] __main__: System tray icon ready.
+2026-06-18 00:45:32,816 [INFO] __main__: GUI started.
+2026-06-18 00:45:35,650 [INFO] core.scheduler: [Admin Globe] Starting speed test cycle...
+2026-06-18 00:45:35,652 [INFO] core.scheduler: [Admin Globe] Switching WiFi to 'Globe_E20_OP_AA'...
+2026-06-18 00:45:36,887 [INFO] core.wifi_switcher: Connecting to SSID: Globe_E20_OP_AA
+2026-06-18 00:45:37,186 [INFO] core.wifi_switcher: Waiting for internet connectivity (timeout=30s)...
+2026-06-18 00:45:39,231 [INFO] core.wifi_switcher: Internet connectivity confirmed.
+2026-06-18 00:45:39,232 [INFO] core.scheduler: [Admin Globe] WiFi connected successfully.
+2026-06-18 00:45:39,232 [INFO] core.scheduler: [Admin Globe] Running speed test on fast.com...
+2026-06-18 00:45:40,761 [INFO] core.speed_tester: Navigating to https://fast.com for ISP: Admin Globe
+2026-06-18 00:45:43,552 [INFO] core.speed_tester: Waiting for speed test to complete...
+2026-06-18 00:45:53,641 [INFO] core.speed_tester: Screenshot saved: G:\dev\apps\speedtest-automation\screenshots\Admin_Globe_20260618_004539.png
+2026-06-18 00:45:53,798 [INFO] core.scheduler: [Admin Globe] Speed result: 600 Mbps
+2026-06-18 00:45:53,799 [INFO] core.scheduler: [Admin Globe] Uploading screenshot to Google Drive...
+2026-06-18 00:45:53,814 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 00:45:56,776 [INFO] core.drive_uploader: Uploaded screenshot to Drive (id=1584-PF7NXsG-fylZ9mKEv_lBKOt-IFCV)
+2026-06-18 00:45:57,283 [INFO] core.scheduler: [Admin Globe] Screenshot uploaded successfully.
+2026-06-18 00:45:57,283 [INFO] core.scheduler: [Admin Globe] Logging to Google Sheets: 'Admin Globe'...
+2026-06-18 00:45:57,291 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 00:45:57,297 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 00:46:00,603 [INFO] core.sheets_logger: Logged to 'Admin Globe' → 'Thursday': 06/18/2026 12:45 AM | 600 Mbps
+2026-06-18 00:46:00,604 [INFO] core.scheduler: [Admin Globe] ✅ Result logged successfully.
+2026-06-18 01:00:21,069 [INFO] __main__: Shutting down...
+2026-06-18 01:00:25,316 [INFO] __main__: Starting ISP Speed Test Automation...
+2026-06-18 01:00:26,699 [INFO] __main__: System tray icon ready.
+2026-06-18 01:00:26,699 [INFO] __main__: GUI started.
+2026-06-18 01:00:29,303 [INFO] core.scheduler: [Admin Globe] Starting speed test cycle...
+2026-06-18 01:00:29,305 [INFO] core.scheduler: [Admin Globe] Switching WiFi to 'Globe_E20_OP_AA'...
+2026-06-18 01:00:30,464 [INFO] core.wifi_switcher: Connecting to SSID: Globe_E20_OP_AA
+2026-06-18 01:00:30,727 [INFO] core.wifi_switcher: Waiting for internet connectivity (timeout=30s)...
+2026-06-18 01:00:32,754 [INFO] core.wifi_switcher: Internet connectivity confirmed.
+2026-06-18 01:00:32,754 [INFO] core.scheduler: [Admin Globe] WiFi connected successfully.
+2026-06-18 01:00:32,755 [INFO] core.scheduler: [Admin Globe] Running speed test on fast.com...
+2026-06-18 01:00:34,652 [INFO] core.speed_tester: Navigating to https://fast.com for ISP: Admin Globe
+2026-06-18 01:00:39,997 [INFO] core.speed_tester: Waiting for speed test to complete...
+2026-06-18 01:00:50,073 [INFO] core.speed_tester: Screenshot saved: G:\dev\apps\speedtest-automation\screenshots\Admin_Globe_20260618_010032.png
+2026-06-18 01:00:50,226 [INFO] core.scheduler: [Admin Globe] Speed result: 600 Mbps
+2026-06-18 01:00:50,228 [INFO] core.scheduler: [Admin Globe] Uploading screenshot to Google Drive...
+2026-06-18 01:00:50,241 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 01:00:53,367 [INFO] core.drive_uploader: Uploaded screenshot to Drive (id=10DXeJlWlTSuaC8LVmfPBARrroc7d6hw9)
+2026-06-18 01:00:53,938 [INFO] core.scheduler: [Admin Globe] Screenshot uploaded successfully.
+2026-06-18 01:00:53,939 [INFO] core.scheduler: [Admin Globe] Logging to Google Sheets: 'Admin Globe'...
+2026-06-18 01:00:53,941 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 01:00:53,948 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 01:00:56,741 [INFO] core.sheets_logger: Created tab 'Jun 18 2026' in spreadsheet 1IwqW_szMOF1owcSFNdBliC5u-fwzRqLkOSlYV8YrUe4
+2026-06-18 01:00:57,942 [ERROR] core.sheets_logger: Sheets logging failed: <HttpError 400 when requesting https://sheets.googleapis.com/v4/spreadsheets/1IwqW_szMOF1owcSFNdBliC5u-fwzRqLkOSlYV8YrUe4:batchUpdate?alt=json returned "Invalid requests[0].repeatCell: Invalid field: userEnteredFormat.foreground_color". Details: "Invalid requests[0].repeatCell: Invalid field: userEnteredFormat.foreground_color">
+2026-06-18 01:00:57,942 [ERROR] core.scheduler: [Admin Globe] ❌ Failed to log to Google Sheets.
+2026-06-18 01:02:50,737 [INFO] __main__: Starting ISP Speed Test Automation...
+2026-06-18 01:02:51,990 [INFO] __main__: System tray icon ready.
+2026-06-18 01:02:51,991 [INFO] __main__: GUI started.
+2026-06-18 01:02:53,816 [INFO] core.scheduler: [Admin Globe] Starting speed test cycle...
+2026-06-18 01:02:53,818 [INFO] core.scheduler: [Admin Globe] Switching WiFi to 'Globe_E20_OP_AA'...
+2026-06-18 01:02:54,968 [INFO] core.wifi_switcher: Connecting to SSID: Globe_E20_OP_AA
+2026-06-18 01:02:55,174 [INFO] core.wifi_switcher: Waiting for internet connectivity (timeout=30s)...
+2026-06-18 01:02:57,201 [INFO] core.wifi_switcher: Internet connectivity confirmed.
+2026-06-18 01:02:57,202 [INFO] core.scheduler: [Admin Globe] WiFi connected successfully.
+2026-06-18 01:02:57,204 [INFO] core.scheduler: [Admin Globe] Running speed test on fast.com...
+2026-06-18 01:02:58,260 [INFO] core.speed_tester: Navigating to https://fast.com for ISP: Admin Globe
+2026-06-18 01:03:01,445 [INFO] core.speed_tester: Waiting for speed test to complete...
+2026-06-18 01:03:13,533 [INFO] core.speed_tester: Screenshot saved: G:\dev\apps\speedtest-automation\screenshots\Admin_Globe_20260618_010257.png
+2026-06-18 01:03:13,704 [INFO] core.scheduler: [Admin Globe] Speed result: 600 Mbps
+2026-06-18 01:03:13,707 [INFO] core.scheduler: [Admin Globe] Uploading screenshot to Google Drive...
+2026-06-18 01:03:13,723 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 01:03:16,971 [INFO] core.drive_uploader: Uploaded screenshot to Drive (id=1HqRm_BPdt2Lk3tSMOEj34Q02UPF5tt8j)
+2026-06-18 01:03:17,592 [INFO] core.scheduler: [Admin Globe] Screenshot uploaded successfully.
+2026-06-18 01:03:17,593 [INFO] core.scheduler: [Admin Globe] Logging to Google Sheets: 'Admin Globe'...
+2026-06-18 01:03:17,597 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 01:03:17,603 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 01:03:20,796 [INFO] core.sheets_logger: Logged to 'Admin Globe' → 'Jun 18 2026': 06/18/2026 01:03 AM | 600 Mbps
+2026-06-18 01:03:20,796 [INFO] core.scheduler: [Admin Globe] ✅ Result logged successfully.
+2026-06-18 01:09:58,408 [INFO] __main__: Starting ISP Speed Test Automation...
+2026-06-18 01:09:59,814 [INFO] __main__: System tray icon ready.
+2026-06-18 01:09:59,815 [INFO] __main__: GUI started.
+2026-06-18 01:10:01,694 [INFO] core.scheduler: [Admin Globe] Starting speed test cycle...
+2026-06-18 01:10:01,696 [INFO] core.scheduler: [Admin Globe] Switching WiFi to 'Globe_E20_OP_AA'...
+2026-06-18 01:10:02,853 [INFO] core.wifi_switcher: Connecting to SSID: Globe_E20_OP_AA
+2026-06-18 01:10:03,046 [INFO] core.wifi_switcher: Waiting for internet connectivity (timeout=30s)...
+2026-06-18 01:10:05,076 [INFO] core.wifi_switcher: Internet connectivity confirmed.
+2026-06-18 01:10:05,077 [INFO] core.scheduler: [Admin Globe] WiFi connected successfully.
+2026-06-18 01:10:05,079 [INFO] core.scheduler: [Admin Globe] Running speed test on fast.com...
+2026-06-18 01:10:06,154 [INFO] core.speed_tester: Navigating to https://fast.com for ISP: Admin Globe
+2026-06-18 01:10:09,539 [INFO] core.speed_tester: Waiting for speed test to complete...
+2026-06-18 01:10:19,644 [INFO] core.speed_tester: Screenshot saved: G:\dev\apps\speedtest-automation\screenshots\Admin_Globe_20260618_011005.png
+2026-06-18 01:10:19,769 [INFO] core.scheduler: [Admin Globe] Speed result: 600 Mbps
+2026-06-18 01:10:19,771 [INFO] core.scheduler: [Admin Globe] Uploading screenshot to Google Drive...
+2026-06-18 01:10:19,786 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 01:10:23,102 [INFO] core.drive_uploader: Uploaded screenshot to Drive (id=1O3tia6ywu_GNAoTApod96FDBW8mfoWDB)
+2026-06-18 01:10:23,752 [INFO] core.scheduler: [Admin Globe] Screenshot uploaded successfully.
+2026-06-18 01:10:23,755 [INFO] core.scheduler: [Admin Globe] Logging to Google Sheets: 'Admin Globe'...
+2026-06-18 01:10:23,760 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 01:10:23,767 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 01:10:27,072 [INFO] core.sheets_logger: Logged to 'Admin Globe' → 'Jun 18 2026': 01:10 AM | 600 Mbps
+2026-06-18 01:10:27,073 [INFO] core.scheduler: [Admin Globe] ✅ Result logged successfully.
+2026-06-18 01:15:16,973 [INFO] __main__: Shutting down...
+2026-06-18 01:15:21,745 [INFO] __main__: Starting ISP Speed Test Automation...
+2026-06-18 01:15:22,962 [INFO] __main__: System tray icon ready.
+2026-06-18 01:15:22,962 [INFO] __main__: GUI started.
+2026-06-18 01:15:24,993 [INFO] core.scheduler: [Admin Globe] Starting speed test cycle...
+2026-06-18 01:15:24,996 [INFO] core.scheduler: [Admin Globe] Switching WiFi to 'Globe_E20_OP_AA'...
+2026-06-18 01:15:26,083 [INFO] core.wifi_switcher: Connecting to SSID: Globe_E20_OP_AA
+2026-06-18 01:15:26,610 [INFO] core.wifi_switcher: Waiting for internet connectivity (timeout=30s)...
+2026-06-18 01:15:27,649 [INFO] core.wifi_switcher: Internet connectivity confirmed.
+2026-06-18 01:15:27,650 [INFO] core.scheduler: [Admin Globe] WiFi connected successfully.
+2026-06-18 01:15:27,652 [INFO] core.scheduler: [Admin Globe] Running speed test on fast.com...
+2026-06-18 01:15:28,665 [INFO] core.speed_tester: Navigating to https://fast.com for ISP: Admin Globe
+2026-06-18 01:15:29,114 [INFO] core.speed_tester: Waiting for speed test to complete...
+2026-06-18 01:15:51,834 [INFO] core.speed_tester: Screenshot saved: G:\dev\apps\speedtest-automation\screenshots\Admin_Globe_20260618_011527.png
+2026-06-18 01:15:51,925 [INFO] core.scheduler: [Admin Globe] Speed result: 490 Mbps
+2026-06-18 01:15:51,926 [INFO] core.scheduler: [Admin Globe] Uploading screenshot to Google Drive...
+2026-06-18 01:15:51,931 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 01:15:54,983 [INFO] core.drive_uploader: Uploaded screenshot to Drive (id=1giIiY5wcNnxhCkBt2Zq2_fkUT31_sQL3)
+2026-06-18 01:15:55,750 [INFO] core.scheduler: [Admin Globe] Screenshot uploaded successfully.
+2026-06-18 01:15:55,751 [INFO] core.scheduler: [Admin Globe] Logging to Google Sheets: 'Admin Globe'...
+2026-06-18 01:15:55,757 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 01:15:55,762 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 01:15:58,658 [INFO] core.sheets_logger: Logged to 'Admin Globe' → 'Jun 18 2026': 01:15 AM | 490 Mbps
+2026-06-18 01:15:58,658 [INFO] core.scheduler: [Admin Globe] ✅ Result logged successfully.
+2026-06-18 01:21:20,942 [INFO] core.scheduler: [Common Area Globe] Starting speed test cycle...
+2026-06-18 01:21:20,944 [INFO] core.scheduler: [Common Area Globe] Switching WiFi to 'Globe_E20_OP_CA'...
+2026-06-18 01:21:21,993 [INFO] core.wifi_switcher: Connecting to SSID: Globe_E20_OP_CA
+2026-06-18 01:21:22,387 [INFO] core.wifi_switcher: Waiting for internet connectivity (timeout=30s)...
+2026-06-18 01:21:24,415 [INFO] core.wifi_switcher: Internet connectivity confirmed.
+2026-06-18 01:21:24,416 [INFO] core.scheduler: [Common Area Globe] WiFi connected successfully.
+2026-06-18 01:21:24,417 [INFO] core.scheduler: [Common Area Globe] Running speed test on fast.com...
+2026-06-18 01:21:24,873 [INFO] core.speed_tester: Navigating to https://fast.com for ISP: Common Area Globe
+2026-06-18 01:21:35,746 [INFO] core.speed_tester: Waiting for speed test to complete...
+2026-06-18 01:22:00,376 [INFO] core.speed_tester: Screenshot saved: G:\dev\apps\speedtest-automation\screenshots\Common_Area_Globe_20260618_012124.png
+2026-06-18 01:22:00,436 [INFO] core.scheduler: [Common Area Globe] Speed result: 130 Mbps
+2026-06-18 01:22:00,438 [INFO] core.scheduler: [Common Area Globe] Uploading screenshot to Google Drive...
+2026-06-18 01:22:00,441 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 01:22:02,061 [INFO] core.drive_uploader: Created Drive folder 'Common Area Globe' (id=10bAKtUXWW1LiLJLYBh9JuHJtaj7hPnt7)
+2026-06-18 01:22:04,069 [INFO] core.drive_uploader: Uploaded screenshot to Drive (id=16BijcvVeopFuhIryo9EiXBywbrSTX5Mv)
+2026-06-18 01:22:04,688 [INFO] core.scheduler: [Common Area Globe] Screenshot uploaded successfully.
+2026-06-18 01:22:04,689 [INFO] core.scheduler: [Common Area Globe] Logging to Google Sheets: 'Common Area Globe'...
+2026-06-18 01:22:04,695 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 01:22:04,699 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 01:22:06,946 [INFO] core.sheets_logger: Created spreadsheet 'Common Area Globe' (id=1FMPWWNwNPxPqHVWgHZyFcMsMrrFoRW69BM6ltnlO3Ss)
+2026-06-18 01:22:09,987 [INFO] core.sheets_logger: Logged to 'Common Area Globe' → 'Jun 18 2026': 01:22 AM | 130 Mbps
+2026-06-18 01:22:09,987 [INFO] core.scheduler: [Common Area Globe] ✅ Result logged successfully.
+2026-06-18 01:22:09,990 [INFO] core.scheduler: [Common Area DCTech] Starting speed test cycle...
+2026-06-18 01:22:09,994 [INFO] core.scheduler: [Common Area DCTech] Switching WiFi to 'DCTech_E20_OP_CA'...
+2026-06-18 01:22:11,060 [INFO] core.wifi_switcher: Connecting to SSID: DCTech_E20_OP_CA
+2026-06-18 01:22:11,746 [INFO] core.wifi_switcher: Waiting for internet connectivity (timeout=30s)...
+2026-06-18 01:22:13,787 [INFO] core.wifi_switcher: Internet connectivity confirmed.
+2026-06-18 01:22:13,787 [INFO] core.scheduler: [Common Area DCTech] WiFi connected successfully.
+2026-06-18 01:22:13,790 [INFO] core.scheduler: [Common Area DCTech] Running speed test on fast.com...
+2026-06-18 01:22:14,212 [INFO] core.speed_tester: Navigating to https://fast.com for ISP: Common Area DCTech
+2026-06-18 01:22:14,560 [INFO] core.speed_tester: Waiting for speed test to complete...
+2026-06-18 01:22:36,610 [INFO] core.speed_tester: Screenshot saved: G:\dev\apps\speedtest-automation\screenshots\Common_Area_DCTech_20260618_012213.png
+2026-06-18 01:22:36,669 [INFO] core.scheduler: [Common Area DCTech] Speed result: 160 Mbps
+2026-06-18 01:22:36,671 [INFO] core.scheduler: [Common Area DCTech] Uploading screenshot to Google Drive...
+2026-06-18 01:22:36,673 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 01:22:38,111 [INFO] core.drive_uploader: Created Drive folder 'Common Area DCTech' (id=1mxqhHJZUo8oTtVpO7Jr8middr1G5KoWr)
+2026-06-18 01:22:39,907 [INFO] core.drive_uploader: Uploaded screenshot to Drive (id=1EYHPRBYgvrf6a6Aha0QIvk6qAaeI8_N_)
+2026-06-18 01:22:40,431 [INFO] core.scheduler: [Common Area DCTech] Screenshot uploaded successfully.
+2026-06-18 01:22:40,433 [INFO] core.scheduler: [Common Area DCTech] Logging to Google Sheets: 'Common Area DCTech'...
+2026-06-18 01:22:40,440 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 01:22:40,443 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 01:22:42,442 [INFO] core.sheets_logger: Created spreadsheet 'Common Area DCTech' (id=1IDZVfT44Fx0DMI6nG5a2Xs0G5ODdNZlr7a4RhUkEg1A)
+2026-06-18 01:22:45,385 [INFO] core.sheets_logger: Logged to 'Common Area DCTech' → 'Jun 18 2026': 01:22 AM | 160 Mbps
+2026-06-18 01:22:45,385 [INFO] core.scheduler: [Common Area DCTech] ✅ Result logged successfully.
+2026-06-18 01:25:05,005 [INFO] __main__: Shutting down...
+2026-06-18 01:25:08,788 [INFO] __main__: Starting ISP Speed Test Automation...
+2026-06-18 01:25:09,581 [INFO] __main__: System tray icon ready.
+2026-06-18 01:25:09,581 [INFO] __main__: GUI started.
+2026-06-18 01:25:12,679 [INFO] core.scheduler: [Admin Globe] Starting speed test cycle...
+2026-06-18 01:25:12,680 [INFO] core.scheduler: [Admin Globe] Switching WiFi to 'Globe_E20_OP_AA'...
+2026-06-18 01:25:13,718 [INFO] core.wifi_switcher: Connecting to SSID: Globe_E20_OP_AA
+2026-06-18 01:25:13,914 [ERROR] core.wifi_switcher: Failed to issue connect command for Globe_E20_OP_AA
+2026-06-18 01:25:13,917 [WARNING] core.scheduler: [Admin Globe] No internet connection — logging NO CONNECTION.
+2026-06-18 01:25:13,931 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 01:25:13,939 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 01:25:16,689 [INFO] core.sheets_logger: Logged to 'Admin Globe' → 'Jun 18 2026': 01:25 AM | NO CONNECTION
+2026-06-18 01:26:25,094 [INFO] core.scheduler: [Common Area DCTech] Starting speed test cycle...
+2026-06-18 01:26:25,095 [INFO] core.scheduler: [Common Area DCTech] Switching WiFi to 'DCTech_E20_OP_CA'...
+2026-06-18 01:26:26,155 [INFO] core.wifi_switcher: Connecting to SSID: DCTech_E20_OP_CA
+2026-06-18 01:26:26,255 [INFO] core.wifi_switcher: Waiting for internet connectivity (timeout=30s)...
+2026-06-18 01:26:30,314 [INFO] core.wifi_switcher: Internet connectivity confirmed.
+2026-06-18 01:26:30,315 [INFO] core.scheduler: [Common Area DCTech] WiFi connected successfully.
+2026-06-18 01:26:30,316 [INFO] core.scheduler: [Common Area DCTech] Running speed test on fast.com...
+2026-06-18 01:26:30,785 [INFO] core.speed_tester: Navigating to https://fast.com for ISP: Common Area DCTech
+2026-06-18 01:26:42,335 [INFO] core.speed_tester: Waiting for speed test to complete...
+2026-06-18 01:26:52,281 [INFO] core.speed_tester: Screenshot saved: G:\dev\apps\speedtest-automation\screenshots\Common_Area_DCTech_20260618_012630.png
+2026-06-18 01:26:52,330 [INFO] core.scheduler: [Common Area DCTech] Speed result: 190 Mbps
+2026-06-18 01:26:52,332 [INFO] core.scheduler: [Common Area DCTech] Uploading screenshot to Google Drive...
+2026-06-18 01:26:52,336 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 01:26:55,342 [INFO] core.drive_uploader: Uploaded screenshot to Drive (id=1L-88s1MkvaxFy-pY7vED6o5ssyFKAerM)
+2026-06-18 01:26:55,891 [INFO] core.scheduler: [Common Area DCTech] Screenshot uploaded successfully.
+2026-06-18 01:26:55,892 [INFO] core.scheduler: [Common Area DCTech] Logging to Google Sheets: 'Common Area DCTech'...
+2026-06-18 01:26:55,895 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 01:26:55,898 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 01:26:57,774 [INFO] core.sheets_logger: Created spreadsheet 'Common Area DCTech' (id=1po7xtM7bY0DO8HfC69m3pDHy8_grKlA8dj0GXkyO__Y)
+2026-06-18 01:27:00,209 [INFO] core.sheets_logger: Logged to 'Common Area DCTech' → 'Jun 18 2026': 01:26 AM | 190 Mbps
+2026-06-18 01:27:00,210 [INFO] core.scheduler: [Common Area DCTech] ✅ Result logged successfully.
+2026-06-18 01:27:36,431 [INFO] core.scheduler: [Admin Globe] Starting speed test cycle...
+2026-06-18 01:27:36,432 [INFO] core.scheduler: [Admin Globe] Switching WiFi to 'Globe_E20_OP_AA'...
+2026-06-18 01:27:37,494 [INFO] core.wifi_switcher: Connecting to SSID: Globe_E20_OP_AA
+2026-06-18 01:27:37,590 [INFO] core.wifi_switcher: Waiting for internet connectivity (timeout=30s)...
+2026-06-18 01:27:39,618 [INFO] core.wifi_switcher: Internet connectivity confirmed.
+2026-06-18 01:27:39,618 [INFO] core.scheduler: [Admin Globe] WiFi connected successfully.
+2026-06-18 01:27:39,621 [INFO] core.scheduler: [Admin Globe] Running speed test on fast.com...
+2026-06-18 01:27:40,065 [INFO] core.speed_tester: Navigating to https://fast.com for ISP: Admin Globe
+2026-06-18 01:27:40,462 [INFO] core.speed_tester: Waiting for speed test to complete...
+2026-06-18 01:28:00,959 [INFO] core.speed_tester: Screenshot saved: G:\dev\apps\speedtest-automation\screenshots\Admin_Globe_20260618_012739.png
+2026-06-18 01:28:01,066 [INFO] core.scheduler: [Admin Globe] Speed result: 520 Mbps
+2026-06-18 01:28:01,067 [INFO] core.scheduler: [Admin Globe] Uploading screenshot to Google Drive...
+2026-06-18 01:28:01,074 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 01:28:04,118 [INFO] core.drive_uploader: Uploaded screenshot to Drive (id=1JTkMcXcfowJxwfEpF6A9nCqrXxzfluxq)
+2026-06-18 01:28:04,641 [INFO] core.scheduler: [Admin Globe] Screenshot uploaded successfully.
+2026-06-18 01:28:04,642 [INFO] core.scheduler: [Admin Globe] Logging to Google Sheets: 'Admin Globe'...
+2026-06-18 01:28:04,649 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 01:28:04,652 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 01:28:06,341 [INFO] core.sheets_logger: Created spreadsheet 'Admin Globe' (id=1mCjEjUxWLSobVL2OYJT_JMS_yuYcEqI4mkRf4vQtn_0)
+2026-06-18 01:28:08,727 [INFO] core.sheets_logger: Logged to 'Admin Globe' → 'Jun 18 2026': 01:28 AM | 520 Mbps
+2026-06-18 01:28:08,727 [INFO] core.scheduler: [Admin Globe] ✅ Result logged successfully.
+2026-06-18 01:29:34,128 [INFO] core.scheduler: [Common Area Globe] Starting speed test cycle...
+2026-06-18 01:29:34,129 [INFO] core.scheduler: [Common Area Globe] Switching WiFi to 'Globe_E20_OP_CA'...
+2026-06-18 01:29:35,192 [INFO] core.wifi_switcher: Connecting to SSID: Globe_E20_OP_CA
+2026-06-18 01:29:35,290 [INFO] core.wifi_switcher: Waiting for internet connectivity (timeout=30s)...
+2026-06-18 01:29:37,335 [INFO] core.wifi_switcher: Internet connectivity confirmed.
+2026-06-18 01:29:37,336 [INFO] core.scheduler: [Common Area Globe] WiFi connected successfully.
+2026-06-18 01:29:37,340 [INFO] core.scheduler: [Common Area Globe] Running speed test on fast.com...
+2026-06-18 01:29:37,803 [INFO] core.speed_tester: Navigating to https://fast.com for ISP: Common Area Globe
+2026-06-18 01:29:49,832 [INFO] core.speed_tester: Waiting for speed test to complete...
+2026-06-18 01:30:05,337 [INFO] core.speed_tester: Screenshot saved: G:\dev\apps\speedtest-automation\screenshots\Common_Area_Globe_20260618_012937.png
+2026-06-18 01:30:05,397 [INFO] core.scheduler: [Common Area Globe] Speed result: 240 Mbps
+2026-06-18 01:30:05,398 [INFO] core.scheduler: [Common Area Globe] Uploading screenshot to Google Drive...
+2026-06-18 01:30:05,405 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 01:30:08,421 [INFO] core.drive_uploader: Uploaded screenshot to Drive (id=1W_g_DjOxhKPo8Q-oMXYUV_2lYjRpFXDV)
+2026-06-18 01:30:08,967 [INFO] core.scheduler: [Common Area Globe] Screenshot uploaded successfully.
+2026-06-18 01:30:08,967 [INFO] core.scheduler: [Common Area Globe] Logging to Google Sheets: 'Common Area Globe'...
+2026-06-18 01:30:08,976 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 01:30:08,979 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 01:30:11,212 [INFO] core.sheets_logger: Created spreadsheet 'Common Area Globe' (id=1Gz6wjrXVuapEzEdUqT9dYKTcneY8W2QJBJCuE1rlGNs)
+2026-06-18 01:30:14,640 [INFO] core.sheets_logger: Logged to 'Common Area Globe' → 'Jun 18 2026': 01:30 AM | 240 Mbps
+2026-06-18 01:30:14,641 [INFO] core.scheduler: [Common Area Globe] ✅ Result logged successfully.
+2026-06-18 01:32:15,042 [INFO] __main__: Starting ISP Speed Test Automation...
+2026-06-18 01:32:15,847 [INFO] __main__: System tray icon ready.
+2026-06-18 01:32:15,847 [INFO] __main__: GUI started.
+2026-06-18 01:32:25,427 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-06-18 01:32:25,427 [INFO] core.scheduler: Scheduled ISP 'Admin Globe' — every 1h on Monday, Tuesday, Wednesday, Thursday, Friday
+2026-06-18 01:32:25,428 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-06-18 01:32:25,431 [INFO] core.scheduler: Scheduled ISP 'Common Area Globe' — every 1h on Monday, Tuesday, Wednesday, Thursday, Friday
+2026-06-18 01:32:25,431 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-06-18 01:32:25,431 [INFO] core.scheduler: Scheduled ISP 'Common Area DCTech' — every 1h on Monday, Tuesday, Wednesday, Thursday, Friday
+2026-06-18 01:32:25,432 [INFO] apscheduler.scheduler: Added job "Admin Globe" to job store "default"
+2026-06-18 01:32:25,432 [INFO] apscheduler.scheduler: Added job "Common Area Globe" to job store "default"
+2026-06-18 01:32:25,433 [INFO] apscheduler.scheduler: Added job "Common Area DCTech" to job store "default"
+2026-06-18 01:32:25,433 [INFO] apscheduler.scheduler: Scheduler started
+2026-06-18 01:32:25,434 [INFO] core.scheduler: Scheduler started.
+2026-06-18 01:33:25,440 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:33:25 +08)" (scheduled at 2026-06-18 01:33:25.427693+08:00)
+2026-06-18 01:33:25,441 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:34:25 +08)" executed successfully
+2026-06-18 01:33:25,441 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:33:25 +08)" (scheduled at 2026-06-18 01:33:25.428988+08:00)
+2026-06-18 01:33:25,442 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:34:25 +08)" (scheduled at 2026-06-18 01:33:25.431010+08:00)
+2026-06-18 01:33:25,444 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:34:25 +08)" executed successfully
+2026-06-18 01:33:25,445 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:34:25 +08)" executed successfully
+2026-06-18 01:34:25,442 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:35:25 +08)" (scheduled at 2026-06-18 01:34:25.427693+08:00)
+2026-06-18 01:34:25,442 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:35:25 +08)" (scheduled at 2026-06-18 01:34:25.428988+08:00)
+2026-06-18 01:34:25,442 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:35:25 +08)" (scheduled at 2026-06-18 01:34:25.431010+08:00)
+2026-06-18 01:34:25,443 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:35:25 +08)" executed successfully
+2026-06-18 01:34:25,448 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:35:25 +08)" executed successfully
+2026-06-18 01:34:25,450 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:35:25 +08)" executed successfully
+2026-06-18 01:35:25,441 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:36:25 +08)" (scheduled at 2026-06-18 01:35:25.427693+08:00)
+2026-06-18 01:35:25,441 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:36:25 +08)" (scheduled at 2026-06-18 01:35:25.428988+08:00)
+2026-06-18 01:35:25,441 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:36:25 +08)" (scheduled at 2026-06-18 01:35:25.431010+08:00)
+2026-06-18 01:35:25,442 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:36:25 +08)" executed successfully
+2026-06-18 01:35:25,448 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:36:25 +08)" executed successfully
+2026-06-18 01:35:25,450 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:36:25 +08)" executed successfully
+2026-06-18 01:36:25,442 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:37:25 +08)" (scheduled at 2026-06-18 01:36:25.427693+08:00)
+2026-06-18 01:36:25,442 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:37:25 +08)" (scheduled at 2026-06-18 01:36:25.428988+08:00)
+2026-06-18 01:36:25,442 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:37:25 +08)" (scheduled at 2026-06-18 01:36:25.431010+08:00)
+2026-06-18 01:36:25,444 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:37:25 +08)" executed successfully
+2026-06-18 01:36:25,445 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:37:25 +08)" executed successfully
+2026-06-18 01:36:25,450 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:37:25 +08)" executed successfully
+2026-06-18 01:37:25,436 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:38:25 +08)" (scheduled at 2026-06-18 01:37:25.427693+08:00)
+2026-06-18 01:37:25,436 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:38:25 +08)" (scheduled at 2026-06-18 01:37:25.428988+08:00)
+2026-06-18 01:37:25,437 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:38:25 +08)" (scheduled at 2026-06-18 01:37:25.431010+08:00)
+2026-06-18 01:37:25,437 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:38:25 +08)" executed successfully
+2026-06-18 01:37:25,439 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:38:25 +08)" executed successfully
+2026-06-18 01:37:25,446 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:38:25 +08)" executed successfully
+2026-06-18 01:38:25,438 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:39:25 +08)" (scheduled at 2026-06-18 01:38:25.427693+08:00)
+2026-06-18 01:38:25,438 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:39:25 +08)" (scheduled at 2026-06-18 01:38:25.428988+08:00)
+2026-06-18 01:38:25,438 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:39:25 +08)" (scheduled at 2026-06-18 01:38:25.431010+08:00)
+2026-06-18 01:38:25,439 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:39:25 +08)" executed successfully
+2026-06-18 01:38:25,446 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:39:25 +08)" executed successfully
+2026-06-18 01:38:25,450 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:39:25 +08)" executed successfully
+2026-06-18 01:39:25,441 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:40:25 +08)" (scheduled at 2026-06-18 01:39:25.427693+08:00)
+2026-06-18 01:39:25,441 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:40:25 +08)" (scheduled at 2026-06-18 01:39:25.428988+08:00)
+2026-06-18 01:39:25,441 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:40:25 +08)" (scheduled at 2026-06-18 01:39:25.431010+08:00)
+2026-06-18 01:39:25,442 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:40:25 +08)" executed successfully
+2026-06-18 01:39:25,444 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:40:25 +08)" executed successfully
+2026-06-18 01:39:25,449 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:40:25 +08)" executed successfully
+2026-06-18 01:40:25,433 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:41:25 +08)" (scheduled at 2026-06-18 01:40:25.427693+08:00)
+2026-06-18 01:40:25,433 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:41:25 +08)" (scheduled at 2026-06-18 01:40:25.428988+08:00)
+2026-06-18 01:40:25,433 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:41:25 +08)" (scheduled at 2026-06-18 01:40:25.431010+08:00)
+2026-06-18 01:40:25,434 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:41:25 +08)" executed successfully
+2026-06-18 01:40:25,436 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:41:25 +08)" executed successfully
+2026-06-18 01:40:25,437 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:41:25 +08)" executed successfully
+2026-06-18 01:41:25,441 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:42:25 +08)" (scheduled at 2026-06-18 01:41:25.427693+08:00)
+2026-06-18 01:41:25,441 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:42:25 +08)" (scheduled at 2026-06-18 01:41:25.428988+08:00)
+2026-06-18 01:41:25,441 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:42:25 +08)" (scheduled at 2026-06-18 01:41:25.431010+08:00)
+2026-06-18 01:41:25,443 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:42:25 +08)" executed successfully
+2026-06-18 01:41:25,449 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:42:25 +08)" executed successfully
+2026-06-18 01:41:25,455 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:42:25 +08)" executed successfully
+2026-06-18 01:42:25,436 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:43:25 +08)" (scheduled at 2026-06-18 01:42:25.427693+08:00)
+2026-06-18 01:42:25,436 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:43:25 +08)" (scheduled at 2026-06-18 01:42:25.428988+08:00)
+2026-06-18 01:42:25,436 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:43:25 +08)" (scheduled at 2026-06-18 01:42:25.431010+08:00)
+2026-06-18 01:42:25,437 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:43:25 +08)" executed successfully
+2026-06-18 01:42:25,444 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:43:25 +08)" executed successfully
+2026-06-18 01:42:25,452 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:43:25 +08)" executed successfully
+2026-06-18 01:43:25,433 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:44:25 +08)" (scheduled at 2026-06-18 01:43:25.427693+08:00)
+2026-06-18 01:43:25,433 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:44:25 +08)" (scheduled at 2026-06-18 01:43:25.428988+08:00)
+2026-06-18 01:43:25,433 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:44:25 +08)" (scheduled at 2026-06-18 01:43:25.431010+08:00)
+2026-06-18 01:43:25,434 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:44:25 +08)" executed successfully
+2026-06-18 01:43:25,442 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:44:25 +08)" executed successfully
+2026-06-18 01:43:25,444 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:44:25 +08)" executed successfully
+2026-06-18 01:44:25,435 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:45:25 +08)" (scheduled at 2026-06-18 01:44:25.427693+08:00)
+2026-06-18 01:44:25,435 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:45:25 +08)" (scheduled at 2026-06-18 01:44:25.428988+08:00)
+2026-06-18 01:44:25,435 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:45:25 +08)" (scheduled at 2026-06-18 01:44:25.431010+08:00)
+2026-06-18 01:44:25,436 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:45:25 +08)" executed successfully
+2026-06-18 01:44:25,445 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:45:25 +08)" executed successfully
+2026-06-18 01:44:25,452 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:45:25 +08)" executed successfully
+2026-06-18 01:45:25,429 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:46:25 +08)" (scheduled at 2026-06-18 01:45:25.427693+08:00)
+2026-06-18 01:45:25,429 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:46:25 +08)" (scheduled at 2026-06-18 01:45:25.428988+08:00)
+2026-06-18 01:45:25,430 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:46:25 +08)" executed successfully
+2026-06-18 01:45:25,439 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:46:25 +08)" executed successfully
+2026-06-18 01:45:25,444 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:46:25 +08)" (scheduled at 2026-06-18 01:45:25.431010+08:00)
+2026-06-18 01:45:25,448 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:46:25 +08)" executed successfully
+2026-06-18 01:46:25,443 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:47:25 +08)" (scheduled at 2026-06-18 01:46:25.427693+08:00)
+2026-06-18 01:46:25,443 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:47:25 +08)" (scheduled at 2026-06-18 01:46:25.428988+08:00)
+2026-06-18 01:46:25,443 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:47:25 +08)" (scheduled at 2026-06-18 01:46:25.431010+08:00)
+2026-06-18 01:46:25,444 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:47:25 +08)" executed successfully
+2026-06-18 01:46:25,454 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:47:25 +08)" executed successfully
+2026-06-18 01:46:25,458 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:47:25 +08)" executed successfully
+2026-06-18 01:47:25,430 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:48:25 +08)" (scheduled at 2026-06-18 01:47:25.427693+08:00)
+2026-06-18 01:47:25,430 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:48:25 +08)" (scheduled at 2026-06-18 01:47:25.428988+08:00)
+2026-06-18 01:47:25,431 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:48:25 +08)" executed successfully
+2026-06-18 01:47:25,436 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:48:25 +08)" executed successfully
+2026-06-18 01:47:25,445 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:48:25 +08)" (scheduled at 2026-06-18 01:47:25.431010+08:00)
+2026-06-18 01:47:25,446 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:48:25 +08)" executed successfully
+2026-06-18 01:48:25,438 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:49:25 +08)" (scheduled at 2026-06-18 01:48:25.427693+08:00)
+2026-06-18 01:48:25,438 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:49:25 +08)" (scheduled at 2026-06-18 01:48:25.428988+08:00)
+2026-06-18 01:48:25,438 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:49:25 +08)" (scheduled at 2026-06-18 01:48:25.431010+08:00)
+2026-06-18 01:48:25,439 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:49:25 +08)" executed successfully
+2026-06-18 01:48:25,443 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:49:25 +08)" executed successfully
+2026-06-18 01:48:25,457 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:49:25 +08)" executed successfully
+2026-06-18 01:49:25,440 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:50:25 +08)" (scheduled at 2026-06-18 01:49:25.427693+08:00)
+2026-06-18 01:49:25,440 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:50:25 +08)" (scheduled at 2026-06-18 01:49:25.428988+08:00)
+2026-06-18 01:49:25,440 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:50:25 +08)" (scheduled at 2026-06-18 01:49:25.431010+08:00)
+2026-06-18 01:49:25,442 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:50:25 +08)" executed successfully
+2026-06-18 01:49:25,455 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:50:25 +08)" executed successfully
+2026-06-18 01:49:25,468 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:50:25 +08)" executed successfully
+2026-06-18 01:50:25,431 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:51:25 +08)" (scheduled at 2026-06-18 01:50:25.427693+08:00)
+2026-06-18 01:50:25,431 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:51:25 +08)" (scheduled at 2026-06-18 01:50:25.428988+08:00)
+2026-06-18 01:50:25,431 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:51:25 +08)" (scheduled at 2026-06-18 01:50:25.431010+08:00)
+2026-06-18 01:50:25,432 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:51:25 +08)" executed successfully
+2026-06-18 01:50:25,437 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:51:25 +08)" executed successfully
+2026-06-18 01:50:25,449 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:51:25 +08)" executed successfully
+2026-06-18 01:51:25,440 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:52:25 +08)" (scheduled at 2026-06-18 01:51:25.427693+08:00)
+2026-06-18 01:51:25,440 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:52:25 +08)" (scheduled at 2026-06-18 01:51:25.428988+08:00)
+2026-06-18 01:51:25,440 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:52:25 +08)" (scheduled at 2026-06-18 01:51:25.431010+08:00)
+2026-06-18 01:51:25,441 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:52:25 +08)" executed successfully
+2026-06-18 01:51:25,455 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:52:25 +08)" executed successfully
+2026-06-18 01:51:25,459 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:52:25 +08)" executed successfully
+2026-06-18 01:52:25,437 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:53:25 +08)" (scheduled at 2026-06-18 01:52:25.427693+08:00)
+2026-06-18 01:52:25,437 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:53:25 +08)" (scheduled at 2026-06-18 01:52:25.428988+08:00)
+2026-06-18 01:52:25,437 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:53:25 +08)" (scheduled at 2026-06-18 01:52:25.431010+08:00)
+2026-06-18 01:52:25,439 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:53:25 +08)" executed successfully
+2026-06-18 01:52:25,450 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:53:25 +08)" executed successfully
+2026-06-18 01:52:25,464 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:53:25 +08)" executed successfully
+2026-06-18 01:53:25,429 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:54:25 +08)" (scheduled at 2026-06-18 01:53:25.427693+08:00)
+2026-06-18 01:53:25,430 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:54:25 +08)" (scheduled at 2026-06-18 01:53:25.428988+08:00)
+2026-06-18 01:53:25,430 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:54:25 +08)" executed successfully
+2026-06-18 01:53:25,435 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:54:25 +08)" executed successfully
+2026-06-18 01:53:25,444 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:54:25 +08)" (scheduled at 2026-06-18 01:53:25.431010+08:00)
+2026-06-18 01:53:25,449 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:54:25 +08)" executed successfully
+2026-06-18 01:54:25,433 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:55:25 +08)" (scheduled at 2026-06-18 01:54:25.427693+08:00)
+2026-06-18 01:54:25,433 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:55:25 +08)" (scheduled at 2026-06-18 01:54:25.428988+08:00)
+2026-06-18 01:54:25,433 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:55:25 +08)" (scheduled at 2026-06-18 01:54:25.431010+08:00)
+2026-06-18 01:54:25,434 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:55:25 +08)" executed successfully
+2026-06-18 01:54:25,439 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:55:25 +08)" executed successfully
+2026-06-18 01:54:25,443 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:55:25 +08)" executed successfully
+2026-06-18 01:55:25,435 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:56:25 +08)" (scheduled at 2026-06-18 01:55:25.427693+08:00)
+2026-06-18 01:55:25,435 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:56:25 +08)" (scheduled at 2026-06-18 01:55:25.428988+08:00)
+2026-06-18 01:55:25,435 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:56:25 +08)" (scheduled at 2026-06-18 01:55:25.431010+08:00)
+2026-06-18 01:55:25,436 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:56:25 +08)" executed successfully
+2026-06-18 01:55:25,440 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:56:25 +08)" executed successfully
+2026-06-18 01:55:25,452 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:56:25 +08)" executed successfully
+2026-06-18 01:56:25,438 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:57:25 +08)" (scheduled at 2026-06-18 01:56:25.427693+08:00)
+2026-06-18 01:56:25,438 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:57:25 +08)" (scheduled at 2026-06-18 01:56:25.428988+08:00)
+2026-06-18 01:56:25,438 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:57:25 +08)" (scheduled at 2026-06-18 01:56:25.431010+08:00)
+2026-06-18 01:56:25,439 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:57:25 +08)" executed successfully
+2026-06-18 01:56:25,444 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:57:25 +08)" executed successfully
+2026-06-18 01:56:25,447 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:57:25 +08)" executed successfully
+2026-06-18 01:57:25,442 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:58:25 +08)" (scheduled at 2026-06-18 01:57:25.427693+08:00)
+2026-06-18 01:57:25,442 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:58:25 +08)" (scheduled at 2026-06-18 01:57:25.428988+08:00)
+2026-06-18 01:57:25,442 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:58:25 +08)" (scheduled at 2026-06-18 01:57:25.431010+08:00)
+2026-06-18 01:57:25,443 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:58:25 +08)" executed successfully
+2026-06-18 01:57:25,454 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:58:25 +08)" executed successfully
+2026-06-18 01:57:25,460 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:58:25 +08)" executed successfully
+2026-06-18 01:58:25,431 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:59:25 +08)" (scheduled at 2026-06-18 01:58:25.427693+08:00)
+2026-06-18 01:58:25,431 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:59:25 +08)" (scheduled at 2026-06-18 01:58:25.428988+08:00)
+2026-06-18 01:58:25,431 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:59:25 +08)" (scheduled at 2026-06-18 01:58:25.431010+08:00)
+2026-06-18 01:58:25,432 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:59:25 +08)" executed successfully
+2026-06-18 01:58:25,445 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 01:59:25 +08)" executed successfully
+2026-06-18 01:58:25,451 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 01:59:25 +08)" executed successfully
+2026-06-18 01:59:25,437 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:00:25 +08)" (scheduled at 2026-06-18 01:59:25.427693+08:00)
+2026-06-18 01:59:25,437 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:00:25 +08)" (scheduled at 2026-06-18 01:59:25.428988+08:00)
+2026-06-18 01:59:25,438 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:00:25 +08)" (scheduled at 2026-06-18 01:59:25.431010+08:00)
+2026-06-18 01:59:25,439 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:00:25 +08)" executed successfully
+2026-06-18 01:59:25,446 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:00:25 +08)" executed successfully
+2026-06-18 01:59:25,457 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:00:25 +08)" executed successfully
+2026-06-18 02:00:25,438 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:01:25 +08)" (scheduled at 2026-06-18 02:00:25.427693+08:00)
+2026-06-18 02:00:25,438 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:01:25 +08)" (scheduled at 2026-06-18 02:00:25.428988+08:00)
+2026-06-18 02:00:25,438 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:01:25 +08)" (scheduled at 2026-06-18 02:00:25.431010+08:00)
+2026-06-18 02:00:25,442 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:01:25 +08)" executed successfully
+2026-06-18 02:00:25,448 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:01:25 +08)" executed successfully
+2026-06-18 02:00:25,460 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:01:25 +08)" executed successfully
+2026-06-18 02:01:25,436 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:02:25 +08)" (scheduled at 2026-06-18 02:01:25.427693+08:00)
+2026-06-18 02:01:25,436 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:02:25 +08)" (scheduled at 2026-06-18 02:01:25.428988+08:00)
+2026-06-18 02:01:25,437 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:02:25 +08)" (scheduled at 2026-06-18 02:01:25.431010+08:00)
+2026-06-18 02:01:25,438 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:02:25 +08)" executed successfully
+2026-06-18 02:01:25,444 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:02:25 +08)" executed successfully
+2026-06-18 02:01:25,448 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:02:25 +08)" executed successfully
+2026-06-18 02:02:25,436 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:03:25 +08)" (scheduled at 2026-06-18 02:02:25.427693+08:00)
+2026-06-18 02:02:25,437 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:03:25 +08)" (scheduled at 2026-06-18 02:02:25.428988+08:00)
+2026-06-18 02:02:25,437 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:03:25 +08)" (scheduled at 2026-06-18 02:02:25.431010+08:00)
+2026-06-18 02:02:25,439 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:03:25 +08)" executed successfully
+2026-06-18 02:02:25,455 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:03:25 +08)" executed successfully
+2026-06-18 02:02:25,461 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:03:25 +08)" executed successfully
+2026-06-18 02:03:25,435 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:04:25 +08)" (scheduled at 2026-06-18 02:03:25.427693+08:00)
+2026-06-18 02:03:25,436 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:04:25 +08)" (scheduled at 2026-06-18 02:03:25.428988+08:00)
+2026-06-18 02:03:25,436 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:04:25 +08)" (scheduled at 2026-06-18 02:03:25.431010+08:00)
+2026-06-18 02:03:25,437 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:04:25 +08)" executed successfully
+2026-06-18 02:03:25,442 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:04:25 +08)" executed successfully
+2026-06-18 02:03:25,448 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:04:25 +08)" executed successfully
+2026-06-18 02:04:25,442 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:05:25 +08)" (scheduled at 2026-06-18 02:04:25.427693+08:00)
+2026-06-18 02:04:25,442 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:05:25 +08)" (scheduled at 2026-06-18 02:04:25.428988+08:00)
+2026-06-18 02:04:25,442 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:05:25 +08)" (scheduled at 2026-06-18 02:04:25.431010+08:00)
+2026-06-18 02:04:25,443 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:05:25 +08)" executed successfully
+2026-06-18 02:04:25,454 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:05:25 +08)" executed successfully
+2026-06-18 02:04:25,465 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:05:25 +08)" executed successfully
+2026-06-18 02:05:25,429 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:06:25 +08)" (scheduled at 2026-06-18 02:05:25.427693+08:00)
+2026-06-18 02:05:25,429 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:06:25 +08)" (scheduled at 2026-06-18 02:05:25.428988+08:00)
+2026-06-18 02:05:25,430 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:06:25 +08)" executed successfully
+2026-06-18 02:05:25,442 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:06:25 +08)" executed successfully
+2026-06-18 02:05:25,445 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:06:25 +08)" (scheduled at 2026-06-18 02:05:25.431010+08:00)
+2026-06-18 02:05:25,447 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:06:25 +08)" executed successfully
+2026-06-18 02:06:25,428 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:07:25 +08)" (scheduled at 2026-06-18 02:06:25.427693+08:00)
+2026-06-18 02:06:25,429 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:07:25 +08)" executed successfully
+2026-06-18 02:06:25,444 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:07:25 +08)" (scheduled at 2026-06-18 02:06:25.428988+08:00)
+2026-06-18 02:06:25,444 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:07:25 +08)" (scheduled at 2026-06-18 02:06:25.431010+08:00)
+2026-06-18 02:06:25,445 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:07:25 +08)" executed successfully
+2026-06-18 02:06:25,449 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:07:25 +08)" executed successfully
+2026-06-18 02:07:25,435 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:08:25 +08)" (scheduled at 2026-06-18 02:07:25.427693+08:00)
+2026-06-18 02:07:25,435 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:08:25 +08)" (scheduled at 2026-06-18 02:07:25.428988+08:00)
+2026-06-18 02:07:25,435 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:08:25 +08)" (scheduled at 2026-06-18 02:07:25.431010+08:00)
+2026-06-18 02:07:25,437 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:08:25 +08)" executed successfully
+2026-06-18 02:07:25,448 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:08:25 +08)" executed successfully
+2026-06-18 02:07:25,458 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:08:25 +08)" executed successfully
+2026-06-18 02:08:25,436 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:09:25 +08)" (scheduled at 2026-06-18 02:08:25.427693+08:00)
+2026-06-18 02:08:25,437 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:09:25 +08)" (scheduled at 2026-06-18 02:08:25.428988+08:00)
+2026-06-18 02:08:25,437 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:09:25 +08)" (scheduled at 2026-06-18 02:08:25.431010+08:00)
+2026-06-18 02:08:25,438 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:09:25 +08)" executed successfully
+2026-06-18 02:08:25,449 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:09:25 +08)" executed successfully
+2026-06-18 02:08:25,453 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:09:25 +08)" executed successfully
+2026-06-18 02:09:25,438 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:10:25 +08)" (scheduled at 2026-06-18 02:09:25.427693+08:00)
+2026-06-18 02:09:25,438 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:10:25 +08)" (scheduled at 2026-06-18 02:09:25.428988+08:00)
+2026-06-18 02:09:25,438 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:10:25 +08)" (scheduled at 2026-06-18 02:09:25.431010+08:00)
+2026-06-18 02:09:25,439 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:10:25 +08)" executed successfully
+2026-06-18 02:09:25,450 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:10:25 +08)" executed successfully
+2026-06-18 02:09:25,457 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:10:25 +08)" executed successfully
+2026-06-18 02:10:25,429 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:11:25 +08)" (scheduled at 2026-06-18 02:10:25.427693+08:00)
+2026-06-18 02:10:25,429 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:11:25 +08)" (scheduled at 2026-06-18 02:10:25.428988+08:00)
+2026-06-18 02:10:25,431 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:11:25 +08)" executed successfully
+2026-06-18 02:10:25,442 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:11:25 +08)" executed successfully
+2026-06-18 02:10:25,445 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:11:25 +08)" (scheduled at 2026-06-18 02:10:25.431010+08:00)
+2026-06-18 02:10:25,447 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:11:25 +08)" executed successfully
+2026-06-18 02:11:25,432 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:12:25 +08)" (scheduled at 2026-06-18 02:11:25.427693+08:00)
+2026-06-18 02:11:25,432 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:12:25 +08)" (scheduled at 2026-06-18 02:11:25.428988+08:00)
+2026-06-18 02:11:25,433 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:12:25 +08)" (scheduled at 2026-06-18 02:11:25.431010+08:00)
+2026-06-18 02:11:25,433 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:12:25 +08)" executed successfully
+2026-06-18 02:11:25,445 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:12:25 +08)" executed successfully
+2026-06-18 02:11:25,449 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:12:25 +08)" executed successfully
+2026-06-18 02:12:25,443 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:13:25 +08)" (scheduled at 2026-06-18 02:12:25.427693+08:00)
+2026-06-18 02:12:25,443 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:13:25 +08)" (scheduled at 2026-06-18 02:12:25.428988+08:00)
+2026-06-18 02:12:25,443 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:13:25 +08)" (scheduled at 2026-06-18 02:12:25.431010+08:00)
+2026-06-18 02:12:25,444 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:13:25 +08)" executed successfully
+2026-06-18 02:12:25,448 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:13:25 +08)" executed successfully
+2026-06-18 02:12:25,459 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:13:25 +08)" executed successfully
+2026-06-18 02:13:25,430 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:14:25 +08)" (scheduled at 2026-06-18 02:13:25.427693+08:00)
+2026-06-18 02:13:25,430 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:14:25 +08)" (scheduled at 2026-06-18 02:13:25.428988+08:00)
+2026-06-18 02:13:25,431 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:14:25 +08)" executed successfully
+2026-06-18 02:13:25,435 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:14:25 +08)" executed successfully
+2026-06-18 02:13:25,445 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:14:25 +08)" (scheduled at 2026-06-18 02:13:25.431010+08:00)
+2026-06-18 02:13:25,447 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:14:25 +08)" executed successfully
+2026-06-18 02:14:25,438 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:15:25 +08)" (scheduled at 2026-06-18 02:14:25.427693+08:00)
+2026-06-18 02:14:25,438 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:15:25 +08)" (scheduled at 2026-06-18 02:14:25.428988+08:00)
+2026-06-18 02:14:25,439 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:15:25 +08)" (scheduled at 2026-06-18 02:14:25.431010+08:00)
+2026-06-18 02:14:25,439 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:15:25 +08)" executed successfully
+2026-06-18 02:14:25,451 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:15:25 +08)" executed successfully
+2026-06-18 02:14:25,456 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:15:25 +08)" executed successfully
+2026-06-18 02:15:25,435 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:16:25 +08)" (scheduled at 2026-06-18 02:15:25.427693+08:00)
+2026-06-18 02:15:25,435 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:16:25 +08)" (scheduled at 2026-06-18 02:15:25.428988+08:00)
+2026-06-18 02:15:25,435 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:16:25 +08)" (scheduled at 2026-06-18 02:15:25.431010+08:00)
+2026-06-18 02:15:25,436 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:16:25 +08)" executed successfully
+2026-06-18 02:15:25,448 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:16:25 +08)" executed successfully
+2026-06-18 02:15:25,459 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:16:25 +08)" executed successfully
+2026-06-18 02:16:25,433 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:17:25 +08)" (scheduled at 2026-06-18 02:16:25.427693+08:00)
+2026-06-18 02:16:25,433 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:17:25 +08)" (scheduled at 2026-06-18 02:16:25.428988+08:00)
+2026-06-18 02:16:25,433 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:17:25 +08)" (scheduled at 2026-06-18 02:16:25.431010+08:00)
+2026-06-18 02:16:25,435 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:17:25 +08)" executed successfully
+2026-06-18 02:16:25,446 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:17:25 +08)" executed successfully
+2026-06-18 02:16:25,451 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:17:25 +08)" executed successfully
+2026-06-18 02:17:25,438 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:18:25 +08)" (scheduled at 2026-06-18 02:17:25.427693+08:00)
+2026-06-18 02:17:25,438 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:18:25 +08)" (scheduled at 2026-06-18 02:17:25.428988+08:00)
+2026-06-18 02:17:25,438 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:18:25 +08)" (scheduled at 2026-06-18 02:17:25.431010+08:00)
+2026-06-18 02:17:25,440 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:18:25 +08)" executed successfully
+2026-06-18 02:17:25,445 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:18:25 +08)" executed successfully
+2026-06-18 02:17:25,448 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:18:25 +08)" executed successfully
+2026-06-18 02:18:25,429 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:19:25 +08)" (scheduled at 2026-06-18 02:18:25.427693+08:00)
+2026-06-18 02:18:25,429 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:19:25 +08)" (scheduled at 2026-06-18 02:18:25.428988+08:00)
+2026-06-18 02:18:25,431 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:19:25 +08)" executed successfully
+2026-06-18 02:18:25,442 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:19:25 +08)" executed successfully
+2026-06-18 02:18:25,445 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:19:25 +08)" (scheduled at 2026-06-18 02:18:25.431010+08:00)
+2026-06-18 02:18:25,446 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:19:25 +08)" executed successfully
+2026-06-18 02:19:25,438 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:20:25 +08)" (scheduled at 2026-06-18 02:19:25.427693+08:00)
+2026-06-18 02:19:25,438 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:20:25 +08)" (scheduled at 2026-06-18 02:19:25.428988+08:00)
+2026-06-18 02:19:25,438 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:20:25 +08)" (scheduled at 2026-06-18 02:19:25.431010+08:00)
+2026-06-18 02:19:25,439 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:20:25 +08)" executed successfully
+2026-06-18 02:19:25,450 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:20:25 +08)" executed successfully
+2026-06-18 02:19:25,455 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:20:25 +08)" executed successfully
+2026-06-18 02:20:25,442 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:21:25 +08)" (scheduled at 2026-06-18 02:20:25.427693+08:00)
+2026-06-18 02:20:25,442 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:21:25 +08)" (scheduled at 2026-06-18 02:20:25.428988+08:00)
+2026-06-18 02:20:25,442 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:21:25 +08)" (scheduled at 2026-06-18 02:20:25.431010+08:00)
+2026-06-18 02:20:25,443 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:21:25 +08)" executed successfully
+2026-06-18 02:20:25,454 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:21:25 +08)" executed successfully
+2026-06-18 02:20:25,464 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:21:25 +08)" executed successfully
+2026-06-18 02:21:25,432 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:22:25 +08)" (scheduled at 2026-06-18 02:21:25.427693+08:00)
+2026-06-18 02:21:25,432 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:22:25 +08)" (scheduled at 2026-06-18 02:21:25.428988+08:00)
+2026-06-18 02:21:25,432 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:22:25 +08)" (scheduled at 2026-06-18 02:21:25.431010+08:00)
+2026-06-18 02:21:25,433 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:22:25 +08)" executed successfully
+2026-06-18 02:21:25,444 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:22:25 +08)" executed successfully
+2026-06-18 02:21:25,448 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:22:25 +08)" executed successfully
+2026-06-18 02:22:25,436 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:23:25 +08)" (scheduled at 2026-06-18 02:22:25.427693+08:00)
+2026-06-18 02:22:25,436 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:23:25 +08)" (scheduled at 2026-06-18 02:22:25.428988+08:00)
+2026-06-18 02:22:25,436 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:23:25 +08)" (scheduled at 2026-06-18 02:22:25.431010+08:00)
+2026-06-18 02:22:25,437 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:23:25 +08)" executed successfully
+2026-06-18 02:22:25,442 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:23:25 +08)" executed successfully
+2026-06-18 02:22:25,455 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:23:25 +08)" executed successfully
+2026-06-18 02:23:25,437 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:24:25 +08)" (scheduled at 2026-06-18 02:23:25.427693+08:00)
+2026-06-18 02:23:25,437 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:24:25 +08)" (scheduled at 2026-06-18 02:23:25.428988+08:00)
+2026-06-18 02:23:25,437 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:24:25 +08)" (scheduled at 2026-06-18 02:23:25.431010+08:00)
+2026-06-18 02:23:25,439 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:24:25 +08)" executed successfully
+2026-06-18 02:23:25,449 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:24:25 +08)" executed successfully
+2026-06-18 02:23:25,454 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:24:25 +08)" executed successfully
+2026-06-18 02:24:25,433 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:25:25 +08)" (scheduled at 2026-06-18 02:24:25.427693+08:00)
+2026-06-18 02:24:25,433 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:25:25 +08)" (scheduled at 2026-06-18 02:24:25.428988+08:00)
+2026-06-18 02:24:25,433 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:25:25 +08)" (scheduled at 2026-06-18 02:24:25.431010+08:00)
+2026-06-18 02:24:25,435 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:25:25 +08)" executed successfully
+2026-06-18 02:24:25,439 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:25:25 +08)" executed successfully
+2026-06-18 02:24:25,451 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:25:25 +08)" executed successfully
+2026-06-18 02:25:25,436 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:26:25 +08)" (scheduled at 2026-06-18 02:25:25.427693+08:00)
+2026-06-18 02:25:25,436 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:26:25 +08)" (scheduled at 2026-06-18 02:25:25.428988+08:00)
+2026-06-18 02:25:25,436 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:26:25 +08)" (scheduled at 2026-06-18 02:25:25.431010+08:00)
+2026-06-18 02:25:25,437 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:26:25 +08)" executed successfully
+2026-06-18 02:25:25,442 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:26:25 +08)" executed successfully
+2026-06-18 02:25:25,455 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:26:25 +08)" executed successfully
+2026-06-18 02:26:25,443 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:27:25 +08)" (scheduled at 2026-06-18 02:26:25.427693+08:00)
+2026-06-18 02:26:25,443 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:27:25 +08)" (scheduled at 2026-06-18 02:26:25.428988+08:00)
+2026-06-18 02:26:25,443 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:27:25 +08)" (scheduled at 2026-06-18 02:26:25.431010+08:00)
+2026-06-18 02:26:25,444 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:27:25 +08)" executed successfully
+2026-06-18 02:26:25,448 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:27:25 +08)" executed successfully
+2026-06-18 02:26:25,461 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:27:25 +08)" executed successfully
+2026-06-18 02:27:25,441 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:28:25 +08)" (scheduled at 2026-06-18 02:27:25.427693+08:00)
+2026-06-18 02:27:25,441 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:28:25 +08)" (scheduled at 2026-06-18 02:27:25.428988+08:00)
+2026-06-18 02:27:25,441 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:28:25 +08)" (scheduled at 2026-06-18 02:27:25.431010+08:00)
+2026-06-18 02:27:25,442 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:28:25 +08)" executed successfully
+2026-06-18 02:27:25,456 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:28:25 +08)" executed successfully
+2026-06-18 02:27:25,457 [INFO] core.scheduler: [Common Area DCTech] Starting speed test cycle...
+2026-06-18 02:27:25,460 [INFO] core.scheduler: [Common Area DCTech] Switching WiFi to 'DCTech_E20_OP_CA'...
+2026-06-18 02:27:26,552 [INFO] core.wifi_switcher: Connecting to SSID: DCTech_E20_OP_CA
+2026-06-18 02:27:26,656 [INFO] core.wifi_switcher: Waiting for internet connectivity (timeout=30s)...
+2026-06-18 02:27:28,699 [INFO] core.wifi_switcher: Internet connectivity confirmed.
+2026-06-18 02:27:28,700 [INFO] core.scheduler: [Common Area DCTech] WiFi connected successfully.
+2026-06-18 02:27:28,701 [INFO] core.scheduler: [Common Area DCTech] Running speed test on fast.com...
+2026-06-18 02:27:29,326 [INFO] core.speed_tester: Navigating to https://fast.com for ISP: Common Area DCTech
+2026-06-18 02:27:41,568 [INFO] core.speed_tester: Waiting for speed test to complete...
+2026-06-18 02:27:51,535 [INFO] core.speed_tester: Screenshot saved: G:\dev\apps\speedtest-automation\screenshots\Common_Area_DCTech_20260618_022728.png
+2026-06-18 02:27:51,593 [INFO] core.scheduler: [Common Area DCTech] Speed result: 130 Mbps
+2026-06-18 02:27:51,594 [INFO] core.scheduler: [Common Area DCTech] Uploading screenshot to Google Drive...
+2026-06-18 02:27:52,034 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 02:27:54,900 [INFO] core.drive_uploader: Uploaded screenshot to Drive (id=1jLTLvSuUlZlRXvLAsCRTwPjqhvdxOQKq)
+2026-06-18 02:27:55,449 [INFO] core.scheduler: [Common Area DCTech] Screenshot uploaded successfully.
+2026-06-18 02:27:55,450 [INFO] core.scheduler: [Common Area DCTech] Logging to Google Sheets: 'Common Area DCTech'...
+2026-06-18 02:27:55,459 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 02:27:55,462 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 02:27:58,694 [INFO] core.sheets_logger: Logged to 'Common Area DCTech' → 'Jun 18 2026': 02:27 AM | 130 Mbps
+2026-06-18 02:27:58,695 [INFO] core.scheduler: [Common Area DCTech] ✅ Result logged successfully.
+2026-06-18 02:27:58,697 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:28:25 +08)" executed successfully
+2026-06-18 02:28:25,439 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:29:25 +08)" (scheduled at 2026-06-18 02:28:25.427693+08:00)
+2026-06-18 02:28:25,439 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:29:25 +08)" (scheduled at 2026-06-18 02:28:25.428988+08:00)
+2026-06-18 02:28:25,439 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:29:25 +08)" (scheduled at 2026-06-18 02:28:25.431010+08:00)
+2026-06-18 02:28:25,440 [INFO] core.scheduler: [Admin Globe] Starting speed test cycle...
+2026-06-18 02:28:25,443 [INFO] core.scheduler: [Admin Globe] Switching WiFi to 'Globe_E20_OP_AA'...
+2026-06-18 02:28:26,506 [INFO] core.wifi_switcher: Connecting to SSID: Globe_E20_OP_AA
+2026-06-18 02:28:26,604 [INFO] core.wifi_switcher: Waiting for internet connectivity (timeout=30s)...
+2026-06-18 02:28:28,630 [INFO] core.wifi_switcher: Internet connectivity confirmed.
+2026-06-18 02:28:28,631 [INFO] core.scheduler: [Admin Globe] WiFi connected successfully.
+2026-06-18 02:28:28,633 [INFO] core.scheduler: [Admin Globe] Running speed test on fast.com...
+2026-06-18 02:28:29,064 [INFO] core.speed_tester: Navigating to https://fast.com for ISP: Admin Globe
+2026-06-18 02:28:29,288 [INFO] core.speed_tester: Waiting for speed test to complete...
+2026-06-18 02:28:47,793 [INFO] core.speed_tester: Screenshot saved: G:\dev\apps\speedtest-automation\screenshots\Admin_Globe_20260618_022828.png
+2026-06-18 02:28:47,854 [INFO] core.scheduler: [Admin Globe] Speed result: 330 Mbps
+2026-06-18 02:28:47,854 [INFO] core.scheduler: [Admin Globe] Uploading screenshot to Google Drive...
+2026-06-18 02:28:47,867 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 02:28:50,828 [INFO] core.drive_uploader: Uploaded screenshot to Drive (id=1CzniZ8n5zIYacznDqq1XpZQwMGAHkLwo)
+2026-06-18 02:28:51,409 [INFO] core.scheduler: [Admin Globe] Screenshot uploaded successfully.
+2026-06-18 02:28:51,410 [INFO] core.scheduler: [Admin Globe] Logging to Google Sheets: 'Admin Globe'...
+2026-06-18 02:28:51,416 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 02:28:51,419 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 02:28:54,349 [INFO] core.sheets_logger: Logged to 'Admin Globe' → 'Jun 18 2026': 02:28 AM | 330 Mbps
+2026-06-18 02:28:54,349 [INFO] core.scheduler: [Admin Globe] ✅ Result logged successfully.
+2026-06-18 02:28:54,351 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:29:25 +08)" executed successfully
+2026-06-18 02:28:54,362 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:29:25 +08)" executed successfully
+2026-06-18 02:28:54,365 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:29:25 +08)" executed successfully
+2026-06-18 02:29:25,434 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:30:25 +08)" (scheduled at 2026-06-18 02:29:25.427693+08:00)
+2026-06-18 02:29:25,434 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:30:25 +08)" (scheduled at 2026-06-18 02:29:25.428988+08:00)
+2026-06-18 02:29:25,434 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:30:25 +08)" (scheduled at 2026-06-18 02:29:25.431010+08:00)
+2026-06-18 02:29:25,434 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:30:25 +08)" executed successfully
+2026-06-18 02:29:25,440 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:30:25 +08)" executed successfully
+2026-06-18 02:29:25,443 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:30:25 +08)" executed successfully
+2026-06-18 02:30:25,442 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:31:25 +08)" (scheduled at 2026-06-18 02:30:25.427693+08:00)
+2026-06-18 02:30:25,442 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:31:25 +08)" (scheduled at 2026-06-18 02:30:25.428988+08:00)
+2026-06-18 02:30:25,442 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:31:25 +08)" (scheduled at 2026-06-18 02:30:25.431010+08:00)
+2026-06-18 02:30:25,444 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:31:25 +08)" executed successfully
+2026-06-18 02:30:25,444 [INFO] core.scheduler: [Common Area Globe] Starting speed test cycle...
+2026-06-18 02:30:25,447 [INFO] core.scheduler: [Common Area Globe] Switching WiFi to 'Globe_E20_OP_CA'...
+2026-06-18 02:30:26,504 [INFO] core.wifi_switcher: Connecting to SSID: Globe_E20_OP_CA
+2026-06-18 02:30:26,602 [INFO] core.wifi_switcher: Waiting for internet connectivity (timeout=30s)...
+2026-06-18 02:30:28,640 [INFO] core.wifi_switcher: Internet connectivity confirmed.
+2026-06-18 02:30:28,641 [INFO] core.scheduler: [Common Area Globe] WiFi connected successfully.
+2026-06-18 02:30:28,642 [INFO] core.scheduler: [Common Area Globe] Running speed test on fast.com...
+2026-06-18 02:30:29,053 [INFO] core.speed_tester: Navigating to https://fast.com for ISP: Common Area Globe
+2026-06-18 02:30:41,100 [INFO] core.speed_tester: Waiting for speed test to complete...
+2026-06-18 02:31:02,181 [INFO] core.speed_tester: Screenshot saved: G:\dev\apps\speedtest-automation\screenshots\Common_Area_Globe_20260618_023028.png
+2026-06-18 02:31:02,248 [INFO] core.scheduler: [Common Area Globe] Speed result: 210 Mbps
+2026-06-18 02:31:02,249 [INFO] core.scheduler: [Common Area Globe] Uploading screenshot to Google Drive...
+2026-06-18 02:31:02,260 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 02:31:05,180 [INFO] core.drive_uploader: Uploaded screenshot to Drive (id=1dzV3qNDNqDVMPbmV5jvCZKuNAhYX6stK)
+2026-06-18 02:31:05,727 [INFO] core.scheduler: [Common Area Globe] Screenshot uploaded successfully.
+2026-06-18 02:31:05,728 [INFO] core.scheduler: [Common Area Globe] Logging to Google Sheets: 'Common Area Globe'...
+2026-06-18 02:31:05,740 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 02:31:05,744 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-06-18 02:31:08,956 [INFO] core.sheets_logger: Logged to 'Common Area Globe' → 'Jun 18 2026': 02:31 AM | 210 Mbps
+2026-06-18 02:31:08,957 [INFO] core.scheduler: [Common Area Globe] ✅ Result logged successfully.
+2026-06-18 02:31:08,958 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:31:25 +08)" executed successfully
+2026-06-18 02:31:08,968 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:31:25 +08)" executed successfully
+2026-06-18 02:31:25,439 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:32:25 +08)" (scheduled at 2026-06-18 02:31:25.427693+08:00)
+2026-06-18 02:31:25,439 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:32:25 +08)" (scheduled at 2026-06-18 02:31:25.428988+08:00)
+2026-06-18 02:31:25,439 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:32:25 +08)" (scheduled at 2026-06-18 02:31:25.431010+08:00)
+2026-06-18 02:31:25,440 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:32:25 +08)" executed successfully
+2026-06-18 02:31:25,445 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:32:25 +08)" executed successfully
+2026-06-18 02:31:25,456 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:32:25 +08)" executed successfully
+2026-06-18 02:32:25,431 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:33:25 +08)" (scheduled at 2026-06-18 02:32:25.427693+08:00)
+2026-06-18 02:32:25,431 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:33:25 +08)" (scheduled at 2026-06-18 02:32:25.428988+08:00)
+2026-06-18 02:32:25,432 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:33:25 +08)" (scheduled at 2026-06-18 02:32:25.431010+08:00)
+2026-06-18 02:32:25,433 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:33:25 +08)" executed successfully
+2026-06-18 02:32:25,445 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:33:25 +08)" executed successfully
+2026-06-18 02:32:25,456 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:33:25 +08)" executed successfully
+2026-06-18 02:33:25,436 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:34:25 +08)" (scheduled at 2026-06-18 02:33:25.427693+08:00)
+2026-06-18 02:33:25,436 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:34:25 +08)" (scheduled at 2026-06-18 02:33:25.428988+08:00)
+2026-06-18 02:33:25,437 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:34:25 +08)" (scheduled at 2026-06-18 02:33:25.431010+08:00)
+2026-06-18 02:33:25,441 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:34:25 +08)" executed successfully
+2026-06-18 02:33:25,448 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-06-18 02:34:25 +08)" executed successfully
+2026-06-18 02:33:25,455 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-06-18 02:34:25 +08)" executed successfully
