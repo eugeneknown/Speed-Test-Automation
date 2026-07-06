@@ -75,6 +75,30 @@ def main():
 
     app = SpeedTestApp()
 
+    from core import config_manager
+    if config_manager.load_config().get("auto_start_scheduler", False):
+        app.get_dashboard_frame()._toggle_scheduler()
+
+    # Silently check for updates in the background
+    def check_updates_bg():
+        from core import updater
+        from tkinter import messagebox
+        update_info = updater.check_for_updates()
+        if update_info:
+            ver = update_info["version"]
+            msg = f"A new version (v{ver}) is available!\n\nDo you want to update now?"
+            
+            def ask_update():
+                if messagebox.askyesno("Update Available", msg, parent=app):
+                    # For a clean UI experience without a progress bar here, we just execute
+                    success = updater.download_and_install_update(update_info["download_url"])
+                    if not success:
+                        messagebox.showerror("Update Failed", "Ensure you are running the built .exe and try again.", parent=app)
+            
+            app.after(3000, ask_update)
+
+    threading.Thread(target=check_updates_bg, daemon=True).start()
+
     # Wire scheduler log callback → in-app log viewer
     logs_frame = app.get_logs_frame()
     scheduler.set_log_callback(

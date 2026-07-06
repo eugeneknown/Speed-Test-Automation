@@ -12,8 +12,9 @@ print("Running PyInstaller...")
 PyInstaller.__main__.run([
     'main.py',
     '--name=SpeedTestAutomation',
-    '--onedir',          # Use a directory instead of a single massive .exe to keep it fast
+    '--onefile',         # Build a standalone executable
     '--windowed',        # Hide the black console window
+    '--icon=icon.ico',   # Application icon
     '--noconfirm',       # Overwrite existing build
     '--hidden-import=googleapiclient',
     '--hidden-import=google_auth_oauthlib',

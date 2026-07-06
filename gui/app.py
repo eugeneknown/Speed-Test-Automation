@@ -103,10 +103,11 @@ class SpeedTestApp(ctk.CTk):
             btn.pack(fill="x", padx=12, pady=2)
             self._nav_buttons[key] = btn
 
+        from core.version import __version__
         # Sidebar footer
         ctk.CTkLabel(
             self.sidebar,
-            text="v1.0.0",
+            text=f"v{__version__}",
             font=ctk.CTkFont(size=10),
             text_color=TEXT_MUTED
         ).pack(side="bottom", pady=12)
@@ -147,3 +148,6 @@ class SpeedTestApp(ctk.CTk):
 
     def get_logs_frame(self) -> "LogsFrame":
         return self._frames["logs"]
+
+    def get_dashboard_frame(self) -> "DashboardFrame":
+        return self._frames["dashboard"]

@@ -16,6 +16,8 @@ STATE_FILE = DATA_DIR / "state.json"
 DEFAULT_CONFIG = {
     "service_account_path": "",
     "drive_folder_name": "SpeedTest Results",
+    "run_on_startup": False,
+    "auto_start_scheduler": False,
     "isps": []
 }
 

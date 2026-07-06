@@ -5,6 +5,8 @@ Drive folder name, and a built-in Service Account setup guide.
 """
 
 import threading
+import os
+import sys
 import customtkinter as ctk
 from tkinter import filedialog, messagebox
 from core import config_manager, tester
@@ -236,23 +238,44 @@ class SettingsFrame(ctk.CTkFrame):
             command=self._run_full_test
         ).grid(row=2, column=0, sticky="e", padx=16, pady=(0, 14))
 
-        # ── Drive Folder Name ──────────────────────────────────────────────────
-        self._section_label(scroll, "📁  Google Drive Folder", row=2)
+        # ── Startup Preferences ──────────────────────────────────────────────────
+        self._section_label(scroll, "⚙️  Startup Preferences", row=4)
 
-        drive_frame = ctk.CTkFrame(scroll, fg_color=BG_CARD, corner_radius=10,
-                                    border_width=1, border_color=BORDER)
-        drive_frame.grid(row=3, column=0, sticky="ew", padx=8, pady=(4, 16))
+        startup_frame = ctk.CTkFrame(scroll, fg_color=BG_CARD, corner_radius=10,
+                                      border_width=1, border_color=BORDER)
+        startup_frame.grid(row=5, column=0, sticky="ew", padx=8, pady=(4, 16))
 
-        ctk.CTkLabel(drive_frame, text="Root folder name in Google Drive",
-                     font=ctk.CTkFont(size=11), text_color=TEXT_MUTED
-                     ).pack(anchor="w", padx=16, pady=(14, 2))
+        cfg = config_manager.load_config()
+        self.v_run_startup = ctk.BooleanVar(value=cfg.get("run_on_startup", False))
+        self.v_auto_start = ctk.BooleanVar(value=cfg.get("auto_start_scheduler", False))
 
-        self.v_drive_folder = ctk.StringVar(value=config_manager.get_drive_folder_name())
-        ctk.CTkEntry(
-            drive_frame, textvariable=self.v_drive_folder,
-            fg_color=BG_CARD2, border_color=BORDER, text_color=TEXT_PRIMARY,
-            height=36
-        ).pack(fill="x", padx=16, pady=(0, 14))
+        ctk.CTkSwitch(
+            startup_frame, text="Run app automatically when Windows starts",
+            variable=self.v_run_startup, onvalue=True, offvalue=False,
+            progress_color=ACCENT, text_color=TEXT_PRIMARY, font=ctk.CTkFont(size=12)
+        ).pack(anchor="w", padx=16, pady=(16, 8))
+
+        ctk.CTkSwitch(
+            startup_frame, text="Start scheduler immediately when app launches",
+            variable=self.v_auto_start, onvalue=True, offvalue=False,
+            progress_color=ACCENT, text_color=TEXT_PRIMARY, font=ctk.CTkFont(size=12)
+        ).pack(anchor="w", padx=16, pady=(8, 16))
+
+        # ── Auto Updates ───────────────────────────────────────────────────────
+        self._section_label(scroll, "🔄  Software Updates", row=6)
+        
+        update_frame = ctk.CTkFrame(scroll, fg_color=BG_CARD, corner_radius=10, border_width=1, border_color=BORDER)
+        update_frame.grid(row=7, column=0, sticky="ew", padx=8, pady=(4, 16))
+        
+        from core.version import __version__
+        self.lbl_version = ctk.CTkLabel(update_frame, text=f"Current Version: v{__version__}", font=ctk.CTkFont(size=12), text_color=TEXT_PRIMARY)
+        self.lbl_version.pack(anchor="w", padx=16, pady=(16, 8))
+        
+        self.btn_check_update = ctk.CTkButton(
+            update_frame, text="Check for Updates", fg_color=BG_CARD2, hover_color="#2a3250", border_width=1, border_color=BORDER, text_color=TEXT_PRIMARY, height=32, corner_radius=6,
+            command=self._manual_check_update
+        )
+        self.btn_check_update.pack(anchor="w", padx=16, pady=(0, 16))
 
         # ── Save button ────────────────────────────────────────────────────────
         ctk.CTkButton(
@@ -261,14 +284,14 @@ class SettingsFrame(ctk.CTkFrame):
             height=42, corner_radius=8,
             font=ctk.CTkFont(size=14, weight="bold"),
             command=self._save
-        ).grid(row=4, column=0, sticky="ew", padx=8, pady=(4, 24))
+        ).grid(row=8, column=0, sticky="ew", padx=8, pady=(4, 24))
 
         # ── Service Account Setup Guide ────────────────────────────────────────
-        self._section_label(scroll, "📖  Google Service Account Setup Guide", row=5)
+        self._section_label(scroll, "📖  Google Service Account Setup Guide", row=9)
 
         guide_frame = ctk.CTkFrame(scroll, fg_color=BG_CARD, corner_radius=10,
                                     border_width=1, border_color=BORDER)
-        guide_frame.grid(row=6, column=0, sticky="ew", padx=8, pady=(4, 24))
+        guide_frame.grid(row=10, column=0, sticky="ew", padx=8, pady=(4, 24))
 
         ctk.CTkTextbox(
             guide_frame,
@@ -325,14 +348,82 @@ class SettingsFrame(ctk.CTkFrame):
                 text_color=DANGER
             )
 
+    def _manual_check_update(self):
+        self.btn_check_update.configure(state="disabled", text="Checking...")
+        
+        def run_check():
+            from core import updater
+            update_info = updater.check_for_updates()
+            self.after(0, self._on_update_checked, update_info)
+            
+        threading.Thread(target=run_check, daemon=True).start()
+        
+    def _on_update_checked(self, update_info):
+        self.btn_check_update.configure(state="normal", text="Check for Updates")
+        if not update_info:
+            messagebox.showinfo("Updates", "You are running the latest version!", parent=self)
+            return
+            
+        ver = update_info["version"]
+        msg = f"A new version (v{ver}) is available!\n\nDo you want to download and install it now?"
+        if messagebox.askyesno("Update Available", msg, parent=self):
+            self._download_update(update_info["download_url"])
+            
+    def _download_update(self, url):
+        self.btn_check_update.configure(state="disabled", text="Downloading... 0%")
+        
+        def update_progress(pct):
+            self.after(0, lambda: self.btn_check_update.configure(text=f"Downloading... {pct}%"))
+            
+        def run_download():
+            from core import updater
+            success = updater.download_and_install_update(url, update_progress)
+            if not success:
+                self.after(0, lambda: messagebox.showerror("Update Failed", "Failed to download or install the update.\nEnsure you are running the built .exe and try again.", parent=self))
+                self.after(0, lambda: self.btn_check_update.configure(state="normal", text="Check for Updates"))
+                
+        threading.Thread(target=run_download, daemon=True).start()
+
+    def _apply_startup_registry(self, enable: bool):
+        """Create or remove a shortcut in the Windows Startup folder."""
+        try:
+            import win32com.client
+            startup_dir = os.path.join(os.environ["APPDATA"], "Microsoft", "Windows", "Start Menu", "Programs", "Startup")
+            shortcut_path = os.path.join(startup_dir, "SpeedTestAutomation.lnk")
+            
+            if enable:
+                if getattr(sys, 'frozen', False):
+                    target = sys.executable
+                else:
+                    target = os.path.abspath(sys.argv[0])
+                    
+                shell = win32com.client.Dispatch("WScript.Shell")
+                shortcut = shell.CreateShortCut(shortcut_path)
+                shortcut.Targetpath = target
+                shortcut.WorkingDirectory = os.path.dirname(target)
+                shortcut.IconLocation = target
+                shortcut.save()
+            else:
+                if os.path.exists(shortcut_path):
+                    os.remove(shortcut_path)
+        except Exception as e:
+            print(f"Failed to set startup shortcut: {e}")
+
     def _save(self):
         path = self.v_cred_path.get().strip()
         folder = self.v_drive_folder.get().strip() or "SpeedTest Results"
+        run_startup = self.v_run_startup.get()
+        auto_start = self.v_auto_start.get()
 
         config_manager.set_service_account_path(path)
         cfg = config_manager.load_config()
         cfg["drive_folder_name"] = folder
+        cfg["run_on_startup"] = run_startup
+        cfg["auto_start_scheduler"] = auto_start
         config_manager.save_config(cfg)
+        
+        # Apply windows startup
+        self._apply_startup_registry(run_startup)
 
         messagebox.showinfo("Settings Saved", "Settings have been saved successfully.", parent=self)
 
@@ -347,5 +438,8 @@ class SettingsFrame(ctk.CTkFrame):
         ConfigTestDialog(self, path, folder)
 
     def on_show(self):
-        self.v_cred_path.set(config_manager.get_service_account_path())
-        self.v_drive_folder.set(config_manager.get_drive_folder_name())
+        cfg = config_manager.load_config()
+        self.v_cred_path.set(cfg.get("service_account_path", ""))
+        self.v_drive_folder.set(cfg.get("drive_folder_name", "SpeedTest Results"))
+        self.v_run_startup.set(cfg.get("run_on_startup", False))
+        self.v_auto_start.set(cfg.get("auto_start_scheduler", False))
