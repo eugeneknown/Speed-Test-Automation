@@ -90,9 +90,14 @@ def download_and_install_update(download_url: str, progress_callback: Callable[[
         
         # Create the batch script
         bat_script = f"""@echo off
+cd /d "{current_exe.parent}"
 echo Updating SpeedTest Automation... Please wait.
-timeout /t 3 /nobreak > NUL
-del "{current_exe.name}"
+:loop
+del /f /q "{current_exe.name}"
+if exist "{current_exe.name}" (
+    timeout /t 1 /nobreak > NUL
+    goto loop
+)
 ren "{new_exe.name}" "{current_exe.name}"
 start "" "{current_exe.name}"
 del "%~f0"
