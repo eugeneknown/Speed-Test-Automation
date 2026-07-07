@@ -230,13 +230,26 @@ class SettingsFrame(ctk.CTkFrame):
                                          text_color=TEXT_MUTED)
         self.cred_status.grid(row=3, column=0, sticky="w", padx=16, pady=(0, 10))
 
+        # Drive Folder Name
+        ctk.CTkLabel(cred_frame, text="Google Drive Folder Name",
+                     font=ctk.CTkFont(size=11), text_color=TEXT_MUTED
+                     ).grid(row=4, column=0, sticky="w", padx=16, pady=(4, 2))
+        
+        self.v_drive_folder = ctk.StringVar(value=config_manager.get_drive_folder_name())
+        ctk.CTkEntry(
+            cred_frame, textvariable=self.v_drive_folder,
+            placeholder_text="e.g. SpeedTest Results",
+            fg_color=BG_CARD2, border_color=BORDER, text_color=TEXT_PRIMARY,
+            height=36
+        ).grid(row=5, column=0, sticky="ew", padx=16, pady=(0, 16))
+
         # Full Test Button
         ctk.CTkButton(
             cred_frame, text="🚀  Run Full Configuration Test",
             fg_color="#3d5a8a", hover_color="#2c4266",
             text_color="white", height=32, corner_radius=6, font=ctk.CTkFont(size=11, weight="bold"),
             command=self._run_full_test
-        ).grid(row=2, column=0, sticky="e", padx=16, pady=(0, 14))
+        ).grid(row=6, column=0, sticky="e", padx=16, pady=(0, 16))
 
         # ── Startup Preferences ──────────────────────────────────────────────────
         self._section_label(scroll, "⚙️  Startup Preferences", row=4)

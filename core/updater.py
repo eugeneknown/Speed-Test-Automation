@@ -93,7 +93,7 @@ def download_and_install_update(download_url: str, progress_callback: Callable[[
 cd /d "{current_exe.parent}"
 echo Updating SpeedTest Automation... Please wait.
 :loop
-del /f /q "{current_exe.name}"
+del /f /q "{current_exe.name}" > NUL 2>&1
 if exist "{current_exe.name}" (
     timeout /t 1 /nobreak > NUL
     goto loop
@@ -107,8 +107,12 @@ del "%~f0"
             
         logger.info("Executing swap script and exiting...")
         
-        # Run the batch script detached from the current process
-        subprocess.Popen([str(bat_path)], creationflags=subprocess.CREATE_NEW_CONSOLE)
+        # Run the batch script detached from the current process without inheriting handles
+        subprocess.Popen(
+            [str(bat_path)], 
+            creationflags=subprocess.CREATE_NEW_CONSOLE,
+            close_fds=True
+        )
         
         # Kill the current application immediately
         os._exit(0)

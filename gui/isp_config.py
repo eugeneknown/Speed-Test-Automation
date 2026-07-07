@@ -250,20 +250,39 @@ class ISPConfigFrame(ctk.CTkFrame):
         header.grid(row=0, column=0, sticky="ew", padx=24, pady=(20, 0))
         header.grid_columnconfigure(0, weight=1)
 
-        ctk.CTkLabel(header, text="ISP Configuration",
+        title_frame = ctk.CTkFrame(header, fg_color="transparent")
+        title_frame.grid(row=0, column=0, sticky="w")
+        ctk.CTkLabel(title_frame, text="ISP Configuration",
                      font=ctk.CTkFont(size=24, weight="bold"),
-                     text_color=TEXT_PRIMARY).grid(row=0, column=0, sticky="w")
-        ctk.CTkLabel(header, text="Add and manage your internet service providers",
+                     text_color=TEXT_PRIMARY).pack(anchor="w")
+        ctk.CTkLabel(title_frame, text="Add and manage your internet service providers",
                      font=ctk.CTkFont(size=12), text_color=TEXT_MUTED
-                     ).grid(row=1, column=0, sticky="w")
+                     ).pack(anchor="w")
+
+        btn_frame = ctk.CTkFrame(header, fg_color="transparent")
+        btn_frame.grid(row=0, column=1, sticky="e")
 
         ctk.CTkButton(
-            header, text="＋  Add ISP",
+            btn_frame, text="⬆ Export",
+            fg_color=BG_CARD, hover_color=BG_CARD2, text_color=TEXT_PRIMARY,
+            width=80, height=36, corner_radius=8, font=ctk.CTkFont(size=12),
+            command=self._export_isps
+        ).pack(side="left", padx=(0, 8))
+
+        ctk.CTkButton(
+            btn_frame, text="⬇ Import",
+            fg_color=BG_CARD, hover_color=BG_CARD2, text_color=TEXT_PRIMARY,
+            width=80, height=36, corner_radius=8, font=ctk.CTkFont(size=12),
+            command=self._import_isps
+        ).pack(side="left", padx=(0, 16))
+
+        ctk.CTkButton(
+            btn_frame, text="＋  Add ISP",
             fg_color=ACCENT, hover_color="#3a72d4",
-            width=140, height=38, corner_radius=8,
+            width=130, height=36, corner_radius=8,
             font=ctk.CTkFont(size=13, weight="bold"),
             command=self._add_isp
-        ).grid(row=0, column=1, rowspan=2, sticky="e")
+        ).pack(side="left")
 
         ctk.CTkFrame(self, height=1, fg_color=BORDER).grid(
             row=0, column=0, sticky="ew", padx=24, pady=(62, 0)
@@ -315,6 +334,68 @@ class ISPConfigFrame(ctk.CTkFrame):
             if scheduler.is_running():
                 scheduler.restart()
             self._render_list()
+
+    def _export_isps(self):
+        from tkinter import filedialog
+        import json
+        isps = config_manager.get_isps()
+        if not isps:
+            messagebox.showinfo("Export", "No ISPs to export.")
+            return
+        
+        filepath = filedialog.asksaveasfilename(
+            defaultextension=".json",
+            filetypes=[("JSON Files", "*.json")],
+            initialfile="isps_backup.json",
+            title="Export ISPs"
+        )
+        if not filepath:
+            return
+            
+        try:
+            with open(filepath, "w", encoding="utf-8") as f:
+                json.dump(isps, f, indent=2)
+            messagebox.showinfo("Export", f"Successfully exported {len(isps)} ISP(s).")
+        except Exception as e:
+            messagebox.showerror("Export Error", str(e))
+            
+    def _import_isps(self):
+        from tkinter import filedialog
+        import json
+        import uuid
+        
+        filepath = filedialog.askopenfilename(
+            filetypes=[("JSON Files", "*.json")],
+            title="Import ISPs"
+        )
+        if not filepath:
+            return
+            
+        try:
+            with open(filepath, "r", encoding="utf-8") as f:
+                imported = json.load(f)
+                
+            if not isinstance(imported, list):
+                raise ValueError("Invalid file format. Expected a list of ISPs.")
+                
+            count = 0
+            for isp in imported:
+                if "name" in isp and "ssid" in isp:
+                    # Give them a new ID to avoid collisions
+                    isp["id"] = str(uuid.uuid4())
+                    config_manager.save_isp(isp)
+                    count += 1
+                    
+            if count > 0:
+                messagebox.showinfo("Import", f"Successfully imported {count} ISP(s).")
+                self._render_list()
+                if scheduler.is_running():
+                    scheduler.restart()
+            else:
+                messagebox.showwarning("Import", "No valid ISPs found in file.")
+                
+        except Exception as e:
+            messagebox.showerror("Import Error", str(e))
 
     def on_show(self):
         self._render_list()
