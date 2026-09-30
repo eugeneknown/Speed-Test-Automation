@@ -17,13 +17,18 @@ CONNECTIVITY_CHECK_HOST = "8.8.8.8"
 CONNECTIVITY_CHECK_PORT = 53
 
 
+# Suppress CMD window pop-ups when running as a --windowed exe
+_NO_WINDOW = subprocess.CREATE_NO_WINDOW if hasattr(subprocess, "CREATE_NO_WINDOW") else 0
+
+
 def _run(cmd: list) -> Tuple[int, str, str]:
     """Run a subprocess command and return (returncode, stdout, stderr)."""
     result = subprocess.run(
         cmd,
         capture_output=True,
         text=True,
-        timeout=15
+        timeout=15,
+        creationflags=_NO_WINDOW,
     )
     return result.returncode, result.stdout, result.stderr
 

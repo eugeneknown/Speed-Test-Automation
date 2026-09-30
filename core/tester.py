@@ -131,7 +131,8 @@ def test_screenshot(save_dir: Path = None) -> Tuple[bool, str]:
     from datetime import datetime
 
     if save_dir is None:
-        save_dir = Path(__file__).parent.parent / "screenshots"
+        from core.config_manager import get_base_dir
+        save_dir = get_base_dir() / "screenshots"
     save_dir.mkdir(parents=True, exist_ok=True)
 
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -157,23 +158,49 @@ def test_screenshot(save_dir: Path = None) -> Tuple[bool, str]:
             # Wait for speed value element
             page.wait_for_selector("#speed-value", timeout=15000)
 
-            # Wait up to 60s for result to stabilise
+            # Phase 1 — wait for download (.succeeded fires after download)
             try:
-                page.wait_for_selector(".succeeded", timeout=60000)
+                page.wait_for_selector(".succeeded", timeout=90000)
             except PWTimeout:
                 pass  # Capture whatever is shown
 
             import time
+            # Phase 2 — poll upload-value until non-zero (upload phase complete)
+            for _ in range(60):
+                try:
+                    uv = page.locator("#upload-value").inner_text(timeout=2000).strip()
+                    if uv and uv not in ("0", ""):
+                        break
+                except Exception:
+                    pass
+                time.sleep(1)
+
             time.sleep(1)
+
 
             speed_val = page.locator("#speed-value").inner_text(timeout=5000).strip()
             speed_unit = page.locator("#speed-units").inner_text(timeout=5000).strip()
             speed_label = f"{speed_val} {speed_unit}".strip()
 
+            # Attempt to reveal and capture latency (best-effort, won't fail the step)
+            latency_note = ""
+            try:
+                show_more = page.locator("#show-more-details-link")
+                if show_more.is_visible(timeout=5000):
+                    show_more.click()
+                    page.wait_for_selector("#latency-value", timeout=15000)
+                    time.sleep(1)
+                    lat_unloaded = page.locator("#latency-value").inner_text(timeout=5000).strip()
+                    lat_loaded = page.locator("#bufferbloat-value").inner_text(timeout=5000).strip()
+                    if lat_unloaded or lat_loaded:
+                        latency_note = f" | Latency: {lat_unloaded} ms (unloaded) / {lat_loaded} ms (loaded)"
+            except Exception:
+                pass  # Latency is supplementary; don't fail the step
+
             page.screenshot(path=str(out_path))
             browser.close()
 
-        return True, f"Screenshot saved — Speed: {speed_label} → {out_path.name}"
+        return True, f"Screenshot saved — Speed: {speed_label}{latency_note} → {out_path.name}"
     except PWTimeout:
         return False, "Timed out navigating to fast.com — check internet connection."
     except Exception as e:
@@ -257,8 +284,8 @@ def run_all_tests(
         if pngs:
             screenshot_path = pngs[-1]
     elif ok:
-        from pathlib import Path as _P
-        default_dir = _P(__file__).parent.parent / "screenshots"
+        from core.config_manager import get_base_dir
+        default_dir = get_base_dir() / "screenshots"
         pngs = sorted(default_dir.glob("config_test_*.png"))
         if pngs:
             screenshot_path = pngs[-1]

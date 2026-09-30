@@ -6,6 +6,7 @@ The full pipeline per ISP: WiFi switch → speed test → Drive upload → Sheet
 """
 
 import logging
+import time
 import threading
 from datetime import datetime, timedelta
 from typing import Callable, Optional
@@ -13,7 +14,7 @@ from typing import Callable, Optional
 from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.triggers.interval import IntervalTrigger
 
-from core import config_manager, wifi_switcher, speed_tester, drive_uploader, sheets_logger
+from core import config_manager, wifi_switcher, speed_tester, drive_uploader, sheets_logger, network_scanner
 
 logger = logging.getLogger(__name__)
 
@@ -86,10 +87,15 @@ def run_isp_cycle(isp: dict):
 
         _emit(isp_name, "WiFi connected successfully.")
 
+        # Give the new network 10 s to fully stabilise (DHCP, routing, DNS)
+        # before launching the headless browser — prevents ERR_NETWORK_CHANGED.
+        _emit(isp_name, "Waiting for network to stabilise...")
+        time.sleep(10)
+
         # ── Step 2: Speed Test ─────────────────────────────────────────────
         _emit(isp_name, "Running speed test on fast.com...")
         url = isp.get("speed_test_url", "https://fast.com")
-        success, speed_label, screenshot_path = speed_tester.run_speed_test(url, isp_name)
+        success, speed_label, screenshot_path, latency_unloaded, latency_loaded = speed_tester.run_speed_test(url, isp_name)
 
         if not success:
             _emit(isp_name, f"Speed test failed ({speed_label}) — logging failure.", "warning")
@@ -98,6 +104,23 @@ def run_isp_cycle(isp: dict):
             return
 
         _emit(isp_name, f"Speed result: {speed_label}")
+        if latency_unloaded or latency_loaded:
+            _emit(isp_name, f"Latency — Unloaded: {latency_unloaded}, Loaded: {latency_loaded}")
+
+        # ── Step 2b: Network Scan ──────────────────────────────────────────
+        _emit(isp_name, "Scanning connected devices on network...")
+        device_scan = None
+        try:
+            device_scan = network_scanner.scan_network(do_ping_sweep=True)
+            _emit(
+                isp_name,
+                f"Devices found: {device_scan.total} total — "
+                f"{device_scan.phones} Phone(s), "
+                f"{device_scan.laptops} Laptop/PC(s), "
+                f"{device_scan.other} Other"
+            )
+        except Exception as scan_err:
+            _emit(isp_name, f"Network scan failed (non-fatal): {scan_err}", "warning")
 
         # ── Step 3: Upload Screenshot ──────────────────────────────────────
         credentials_path = config_manager.get_service_account_path()
@@ -123,7 +146,10 @@ def run_isp_cycle(isp: dict):
                 credentials_path,
                 isp["spreadsheet_name"],
                 speed_label,
-                image_url
+                image_url,
+                latency_unloaded=latency_unloaded,
+                latency_loaded=latency_loaded,
+                device_scan=device_scan,
             )
             if logged:
                 _emit(isp_name, "✅ Result logged successfully.")

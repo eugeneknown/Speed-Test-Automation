@@ -9,6 +9,7 @@ from pathlib import Path
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
+from core.config_manager import get_base_dir
 
 # Include both Drive and Sheets scopes
 SCOPES = [
@@ -16,7 +17,7 @@ SCOPES = [
     "https://www.googleapis.com/auth/spreadsheets",
 ]
 
-TOKEN_FILE = Path(__file__).parent.parent / "data" / "token.json"
+TOKEN_FILE = get_base_dir() / "data" / "token.json"
 
 def get_credentials(client_secret_path: str) -> Credentials:
     """

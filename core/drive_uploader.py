@@ -6,6 +6,7 @@ Makes files publicly readable so =IMAGE() in Sheets works without auth.
 """
 
 import logging
+import time
 from pathlib import Path
 from typing import Optional, Tuple
 
@@ -77,35 +78,53 @@ def upload_screenshot(
         (success: bool, image_url: str)
         image_url is the direct embed URL usable in =IMAGE() formula.
     """
-    try:
-        service = _get_drive_service(credentials_path)
+    MAX_RETRIES = 3
+    BACKOFF_SECONDS = [5, 15, 45]
 
-        # Ensure folder structure exists
-        root_id = _get_or_create_folder(service, root_folder_name)
-        isp_folder_id = _get_or_create_folder(service, isp_name, parent_id=root_id)
+    for attempt in range(1, MAX_RETRIES + 1):
+        try:
+            service = _get_drive_service(credentials_path)
 
-        # Upload the file
-        file_metadata = {
-            "name": screenshot_path.name,
-            "parents": [isp_folder_id]
-        }
-        media = MediaFileUpload(str(screenshot_path), mimetype="image/png")
-        uploaded = service.files().create(
-            body=file_metadata,
-            media_body=media,
-            fields="id"
-        ).execute()
+            # Ensure folder structure exists
+            root_id = _get_or_create_folder(service, root_folder_name)
+            isp_folder_id = _get_or_create_folder(service, isp_name, parent_id=root_id)
 
-        file_id = uploaded["id"]
-        logger.info(f"Uploaded screenshot to Drive (id={file_id})")
+            # Upload the file
+            file_metadata = {
+                "name": screenshot_path.name,
+                "parents": [isp_folder_id]
+            }
+            media = MediaFileUpload(str(screenshot_path), mimetype="image/png")
+            uploaded = service.files().create(
+                body=file_metadata,
+                media_body=media,
+                fields="id"
+            ).execute()
 
-        # Make publicly accessible for =IMAGE()
-        _make_public(service, file_id)
+            file_id = uploaded["id"]
+            logger.info(
+                f"Uploaded screenshot to Drive (id={file_id})"
+                + (f" (attempt {attempt})" if attempt > 1 else "")
+            )
 
-        # Build the direct image URL
-        image_url = f"https://drive.google.com/uc?export=view&id={file_id}"
-        return True, image_url
+            # Make publicly accessible for =IMAGE()
+            _make_public(service, file_id)
 
-    except Exception as e:
-        logger.error(f"Drive upload failed: {e}")
-        return False, ""
+            # Build the direct image URL
+            image_url = f"https://drive.google.com/uc?export=view&id={file_id}"
+            return True, image_url
+
+        except Exception as e:
+            if attempt < MAX_RETRIES:
+                wait = BACKOFF_SECONDS[attempt - 1]
+                logger.warning(
+                    f"Drive upload failed (attempt {attempt}/{MAX_RETRIES}): {e} "
+                    f"— retrying in {wait}s..."
+                )
+                time.sleep(wait)
+            else:
+                logger.error(
+                    f"Drive upload failed after {MAX_RETRIES} attempts: {e}"
+                )
+
+    return False, ""

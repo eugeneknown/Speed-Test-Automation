@@ -12,7 +12,12 @@ import tkinter as tk
 from pathlib import Path
 
 # ── Logging setup ──────────────────────────────────────────────────────────────
-LOG_FILE = Path(__file__).parent / "data" / "app.log"
+def _get_log_dir() -> Path:
+    if getattr(sys, 'frozen', False):
+        return Path.home() / "Documents" / "SpeedTestAutomation" / "data"
+    return Path(__file__).parent / "data"
+
+LOG_FILE = _get_log_dir() / "app.log"
 LOG_FILE.parent.mkdir(parents=True, exist_ok=True)
 
 logging.basicConfig(
@@ -73,11 +78,17 @@ def _setup_tray(app: SpeedTestApp):
 def main():
     logger.info("Starting ISP Speed Test Automation...")
 
+    # Extract bundled client_secret (if any) before GUI opens
+    from core import config_manager
+    extracted = config_manager.extract_bundled_credentials()
+    if extracted:
+        logger.info(f"Bundled credentials extracted/confirmed: {extracted}")
+
     app = SpeedTestApp()
 
-    from core import config_manager
     if config_manager.load_config().get("auto_start_scheduler", False):
         app.get_dashboard_frame()._toggle_scheduler()
+
 
     # Silently check for updates in the background
     def check_updates_bg():

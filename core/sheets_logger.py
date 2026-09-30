@@ -8,6 +8,7 @@ Handles all Google Sheets operations:
 """
 
 import logging
+import time
 from datetime import datetime
 from typing import Optional
 
@@ -16,7 +17,17 @@ from core import auth
 
 logger = logging.getLogger(__name__)
 
-HEADER_ROW = ["Timestamp", "Speed Result", "Screenshot"]
+HEADER_ROW = [
+    "Timestamp",
+    "Speed Result",
+    "Latency (Unloaded)",
+    "Latency (Loaded)",
+    "Devices",
+    "Phones",
+    "Laptops/PCs",
+    "Other",
+    "Screenshot",
+]
 DAYS_OF_WEEK = [
     "Monday", "Tuesday", "Wednesday",
     "Thursday", "Friday", "Saturday", "Sunday"
@@ -24,7 +35,7 @@ DAYS_OF_WEEK = [
 
 # Row height for screenshot rows (in pixels)
 SCREENSHOT_ROW_HEIGHT = 300
-SCREENSHOT_COL_WIDTH = 480  # Column C width
+SCREENSHOT_COL_WIDTH = 480  # Column I width (index 8)
 
 
 def _get_services(credentials_path: str):
@@ -166,7 +177,10 @@ def log_result(
     credentials_path: str,
     spreadsheet_name: str,
     speed_label: str,
-    image_url: Optional[str] = None
+    image_url: Optional[str] = None,
+    latency_unloaded: Optional[str] = None,
+    latency_loaded: Optional[str] = None,
+    device_scan=None,  # core.network_scanner.DeviceScan | None
 ) -> bool:
     """
     Append a new row to today's sheet tab in the given spreadsheet.
@@ -176,112 +190,146 @@ def log_result(
         spreadsheet_name: Name of the Google Spreadsheet to log into.
         speed_label: Speed string (e.g. "95 Mbps") or "NO CONNECTION".
         image_url: Public Google Drive URL of the screenshot, or None.
+        latency_unloaded: Unloaded latency string (e.g. "2 ms"), or None.
+        latency_loaded: Loaded latency string (e.g. "13 ms"), or None.
+        device_scan: DeviceScan result from network_scanner, or None.
 
     Returns:
         True on success, False on failure.
     """
-    try:
-        sheets_service, drive_service = _get_services(credentials_path)
+    MAX_RETRIES = 3
+    BACKOFF_SECONDS = [5, 15, 45]  # wait before each retry attempt
 
-        # Resolve spreadsheet
-        spreadsheet_id = _get_or_create_spreadsheet(
-            sheets_service, drive_service, spreadsheet_name
-        )
+    last_error: Exception = Exception("unknown error")
 
-        # Determine current day tab
-        today = datetime.now().strftime("%b %d %Y")  # e.g. "Jun 18 2026"
-        sheet_id = _ensure_tab_exists(sheets_service, spreadsheet_id, today)
+    for attempt in range(1, MAX_RETRIES + 1):
+        try:
+            sheets_service, drive_service = _get_services(credentials_path)
 
-        # Add header row if the sheet is empty
-        row_count = _get_row_count(sheets_service, spreadsheet_id, today)
-        if row_count == 0:
+            # Resolve spreadsheet
+            spreadsheet_id = _get_or_create_spreadsheet(
+                sheets_service, drive_service, spreadsheet_name
+            )
+
+            # Determine current day tab
+            today = datetime.now().strftime("%b %d %Y")  # e.g. "Jun 18 2026"
+            sheet_id = _ensure_tab_exists(sheets_service, spreadsheet_id, today)
+
+            # Add header row if the sheet is empty
+            row_count = _get_row_count(sheets_service, spreadsheet_id, today)
+            if row_count == 0:
+                sheets_service.spreadsheets().values().append(
+                    spreadsheetId=spreadsheet_id,
+                    range=f"'{today}'!A1",
+                    valueInputOption="USER_ENTERED",
+                    body={"values": [HEADER_ROW]}
+                ).execute()
+                row_count = 1
+                # Apply global centering and format header row
+                sheets_service.spreadsheets().batchUpdate(
+                    spreadsheetId=spreadsheet_id,
+                    body={"requests": [
+                        {
+                            "repeatCell": {
+                                "range": {"sheetId": sheet_id},
+                                "cell": {
+                                    "userEnteredFormat": {
+                                        "horizontalAlignment": "CENTER",
+                                        "verticalAlignment": "MIDDLE",
+                                        "wrapStrategy": "WRAP"
+                                    }
+                                },
+                                "fields": "userEnteredFormat(horizontalAlignment,verticalAlignment,wrapStrategy)"
+                            }
+                        },
+                        {
+                            "repeatCell": {
+                                "range": {
+                                    "sheetId": sheet_id,
+                                    "startRowIndex": 0,
+                                    "endRowIndex": 1
+                                },
+                                "cell": {
+                                    "userEnteredFormat": {
+                                        "textFormat": {
+                                            "bold": True,
+                                            "foregroundColor": {
+                                                "red": 0.0, "green": 0.0, "blue": 0.0
+                                            }
+                                        },
+                                        "backgroundColor": {
+                                            "red": 0.9, "green": 0.9, "blue": 0.9  # light gray
+                                        }
+                                    }
+                                },
+                                "fields": "userEnteredFormat(textFormat(bold,foregroundColor),backgroundColor)"
+                            }
+                        }
+                    ]}
+                ).execute()
+
+            # Ensure column I is wide enough for the screenshot (index 8)
+            _set_column_width(sheets_service, spreadsheet_id, sheet_id, 8, SCREENSHOT_COL_WIDTH)
+
+            # Build timestamp (Time only, since date is in the tab name)
+            timestamp = datetime.now().strftime("%I:%M %p")
+
+            # Extract device counts (blank if scan wasn't run)
+            dev_total  = str(device_scan.total)   if device_scan is not None else ""
+            dev_phones = str(device_scan.phones)  if device_scan is not None else ""
+            dev_laps   = str(device_scan.laptops) if device_scan is not None else ""
+            dev_other  = str(device_scan.other)   if device_scan is not None else ""
+
+            # Build the row values
+            image_formula = f'=IMAGE("{image_url}")' if image_url else ""
+            row_values = [
+                timestamp,
+                speed_label,
+                latency_unloaded or "",
+                latency_loaded or "",
+                dev_total,
+                dev_phones,
+                dev_laps,
+                dev_other,
+                image_formula,
+            ]
+
+            # Append the row
             sheets_service.spreadsheets().values().append(
                 spreadsheetId=spreadsheet_id,
                 range=f"'{today}'!A1",
                 valueInputOption="USER_ENTERED",
-                body={"values": [HEADER_ROW]}
+                insertDataOption="INSERT_ROWS",
+                body={"values": [row_values]}
             ).execute()
-            row_count = 1
-            # Apply global centering and format header row
-            sheets_service.spreadsheets().batchUpdate(
-                spreadsheetId=spreadsheet_id,
-                body={"requests": [
-                    {
-                        "repeatCell": {
-                            "range": {"sheetId": sheet_id},
-                            "cell": {
-                                "userEnteredFormat": {
-                                    "horizontalAlignment": "CENTER",
-                                    "verticalAlignment": "MIDDLE",
-                                    "wrapStrategy": "WRAP"
-                                }
-                            },
-                            "fields": "userEnteredFormat(horizontalAlignment,verticalAlignment,wrapStrategy)"
-                        }
-                    },
-                    {
-                        "repeatCell": {
-                            "range": {
-                                "sheetId": sheet_id,
-                                "startRowIndex": 0,
-                                "endRowIndex": 1
-                            },
-                            "cell": {
-                                "userEnteredFormat": {
-                                    "textFormat": {
-                                        "bold": True,
-                                        "foregroundColor": {
-                                            "red": 0.0, "green": 0.0, "blue": 0.0
-                                        }
-                                    },
-                                    "backgroundColor": {
-                                        "red": 0.9, "green": 0.9, "blue": 0.9  # light gray
-                                    }
-                                }
-                            },
-                            "fields": "userEnteredFormat(textFormat(bold,foregroundColor),backgroundColor)"
-                        }
-                    }
-                ]}
-            ).execute()
-            
-        # Ensure column C is wide enough (doing this outside the if-block 
-        # so it updates existing sheets that had the old smaller width)
-        _set_column_width(sheets_service, spreadsheet_id, sheet_id, 2, SCREENSHOT_COL_WIDTH)
 
-        # Build timestamp (Time only, since date is in the tab name)
-        timestamp = datetime.now().strftime("%I:%M %p")
+            # Set row height for the new data row so screenshot is visible
+            if image_url:
+                new_row_index = row_count  # 0-indexed
+                _set_row_height(
+                    sheets_service, spreadsheet_id, sheet_id,
+                    new_row_index, SCREENSHOT_ROW_HEIGHT
+                )
 
-        # Build the row values
-        if image_url:
-            image_formula = f'=IMAGE("{image_url}")'
-            row_values = [timestamp, speed_label, image_formula]
-        else:
-            row_values = [timestamp, speed_label, ""]
-
-        # Append the row
-        append_result = sheets_service.spreadsheets().values().append(
-            spreadsheetId=spreadsheet_id,
-            range=f"'{today}'!A1",
-            valueInputOption="USER_ENTERED",
-            insertDataOption="INSERT_ROWS",
-            body={"values": [row_values]}
-        ).execute()
-
-        # Set row height for the new data row so screenshot is visible
-        if image_url:
-            new_row_index = row_count  # 0-indexed
-            _set_row_height(
-                sheets_service, spreadsheet_id, sheet_id,
-                new_row_index, SCREENSHOT_ROW_HEIGHT
+            logger.info(
+                f"Logged to '{spreadsheet_name}' → '{today}': "
+                f"{timestamp} | {speed_label}"
+                + (f" (attempt {attempt})" if attempt > 1 else "")
             )
+            return True
 
-        logger.info(
-            f"Logged to '{spreadsheet_name}' → '{today}': "
-            f"{timestamp} | {speed_label}"
-        )
-        return True
+        except Exception as e:
+            last_error = e
+            if attempt < MAX_RETRIES:
+                wait = BACKOFF_SECONDS[attempt - 1]
+                logger.warning(
+                    f"Sheets logging failed (attempt {attempt}/{MAX_RETRIES}): {e} "
+                    f"— retrying in {wait}s..."
+                )
+                time.sleep(wait)
+            else:
+                logger.error(
+                    f"Sheets logging failed after {MAX_RETRIES} attempts: {e}"
+                )
 
-    except Exception as e:
-        logger.error(f"Sheets logging failed: {e}")
-        return False
+    return False

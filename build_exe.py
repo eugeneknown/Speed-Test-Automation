@@ -1,5 +1,6 @@
 import PyInstaller.__main__
 import os
+import glob
 
 print("Starting build process...")
 
@@ -9,7 +10,8 @@ print("Ensuring Playwright Chromium is installed locally...")
 os.system("python -m playwright install chromium")
 
 print("Running PyInstaller...")
-PyInstaller.__main__.run([
+
+args = [
     'main.py',
     '--name=SpeedTestAutomation',
     '--onefile',         # Build a standalone executable
@@ -24,6 +26,18 @@ PyInstaller.__main__.run([
     '--hidden-import=apscheduler',
     '--collect-all=playwright',
     '--collect-all=customtkinter',
-])
+]
+
+# Bundle any client_secret*.json files found in the project root
+_secrets = glob.glob('client_secret*.json')
+if _secrets:
+    for _f in _secrets:
+        args.append(f'--add-data={_f};.')
+        print(f"  Bundling credentials file: {_f}")
+else:
+    print("  ⚠️  No client_secret*.json found in project root — skipping bundle.")
+
+PyInstaller.__main__.run(args)
+
 
 print("\n✅ Build complete! You can find the executable in the 'dist/SpeedTestAutomation' folder.")

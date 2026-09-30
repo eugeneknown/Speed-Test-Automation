@@ -757,3 +757,597 @@
 2026-07-08 03:25:29,033 [INFO] __main__: System tray icon ready.
 2026-07-08 03:25:29,034 [INFO] __main__: GUI started.
 2026-07-08 03:28:52,828 [INFO] __main__: Shutting down...
+2026-09-26 02:24:08,164 [INFO] __main__: Starting ISP Speed Test Automation...
+2026-09-26 02:24:10,127 [INFO] __main__: System tray icon ready.
+2026-09-26 02:24:10,127 [INFO] __main__: GUI started.
+2026-09-26 02:25:01,744 [INFO] core.scheduler: [Admin Globe] Starting speed test cycle...
+2026-09-26 02:25:01,745 [INFO] core.scheduler: [Admin Globe] Switching WiFi to 'Globe_E20_OP_AA'...
+2026-09-26 02:25:02,895 [INFO] core.wifi_switcher: Connecting to SSID: Globe_E20_OP_AA
+2026-09-26 02:25:03,295 [INFO] core.wifi_switcher: Waiting for internet connectivity (timeout=30s)...
+2026-09-26 02:25:05,341 [INFO] core.wifi_switcher: Internet connectivity confirmed.
+2026-09-26 02:25:05,343 [INFO] core.scheduler: [Admin Globe] WiFi connected successfully.
+2026-09-26 02:25:05,343 [INFO] core.scheduler: [Admin Globe] Running speed test on fast.com...
+2026-09-26 02:25:09,344 [INFO] core.speed_tester: Navigating to https://fast.com for ISP: Admin Globe
+2026-09-26 02:25:13,002 [INFO] core.speed_tester: Waiting for speed test to complete...
+2026-09-26 02:25:32,561 [INFO] core.speed_tester: Clicked 'Show more info' — waiting for latency values...
+2026-09-26 02:25:33,596 [INFO] core.speed_tester: Latency — Unloaded: 8 ms, Loaded: 12 ms
+2026-09-26 02:25:33,723 [INFO] core.speed_tester: Screenshot saved: G:\dev\apps\speedtest-automation\screenshots\Admin_Globe_20260926_022505.png
+2026-09-26 02:25:33,958 [INFO] core.scheduler: [Admin Globe] Speed result: 820 Mbps
+2026-09-26 02:25:33,959 [INFO] core.scheduler: [Admin Globe] Latency — Unloaded: 8 ms, Loaded: 12 ms
+2026-09-26 02:25:33,965 [INFO] core.scheduler: [Admin Globe] Uploading screenshot to Google Drive...
+2026-09-26 02:25:34,563 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-09-26 02:25:38,107 [INFO] core.drive_uploader: Uploaded screenshot to Drive (id=1QE2XLBeC2q8Iq0BkO-2oMeIxwa1Lexkx)
+2026-09-26 02:25:38,685 [INFO] core.scheduler: [Admin Globe] Screenshot uploaded successfully.
+2026-09-26 02:25:38,686 [INFO] core.scheduler: [Admin Globe] Logging to Google Sheets: 'Admin Globe'...
+2026-09-26 02:25:38,700 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-09-26 02:25:38,720 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-09-26 02:25:41,400 [INFO] core.sheets_logger: Created tab 'Sep 26 2026' in spreadsheet 1mCjEjUxWLSobVL2OYJT_JMS_yuYcEqI4mkRf4vQtn_0
+2026-09-26 02:25:43,490 [INFO] core.sheets_logger: Logged to 'Admin Globe' → 'Sep 26 2026': 02:25 AM | 820 Mbps
+2026-09-26 02:25:43,490 [INFO] core.scheduler: [Admin Globe] ✅ Result logged successfully.
+2026-09-26 02:52:03,996 [INFO] __main__: Shutting down...
+2026-09-26 02:52:10,184 [INFO] __main__: Starting ISP Speed Test Automation...
+2026-09-26 02:52:12,383 [INFO] __main__: System tray icon ready.
+2026-09-26 02:52:12,384 [INFO] __main__: GUI started.
+2026-09-26 02:52:58,446 [INFO] core.scheduler: [Admin Globe] Starting speed test cycle...
+2026-09-26 02:52:58,448 [INFO] core.scheduler: [Admin Globe] Switching WiFi to 'Globe_E20_OP_AA'...
+2026-09-26 02:52:59,684 [INFO] core.wifi_switcher: Connecting to SSID: Globe_E20_OP_AA
+2026-09-26 02:53:00,072 [INFO] core.wifi_switcher: Waiting for internet connectivity (timeout=30s)...
+2026-09-26 02:53:02,102 [INFO] core.wifi_switcher: Internet connectivity confirmed.
+2026-09-26 02:53:02,104 [INFO] core.scheduler: [Admin Globe] WiFi connected successfully.
+2026-09-26 02:53:02,106 [INFO] core.scheduler: [Admin Globe] Running speed test on fast.com...
+2026-09-26 02:53:03,554 [INFO] core.speed_tester: Navigating to https://fast.com for ISP: Admin Globe
+2026-09-26 02:53:06,220 [INFO] core.speed_tester: Waiting for download phase to complete...
+2026-09-26 02:53:22,850 [INFO] core.speed_tester: Waiting for upload phase to complete...
+2026-09-26 02:53:28,921 [INFO] core.speed_tester: Upload phase complete: 120
+2026-09-26 02:53:30,127 [INFO] core.speed_tester: Clicked 'Show more info' — waiting for latency values...
+2026-09-26 02:53:31,157 [INFO] core.speed_tester: Latency — Unloaded: 8 ms, Loaded: 17 ms
+2026-09-26 02:53:31,365 [INFO] core.speed_tester: Screenshot saved: G:\dev\apps\speedtest-automation\screenshots\Admin_Globe_20260926_025302.png
+2026-09-26 02:53:31,598 [INFO] core.scheduler: [Admin Globe] Speed result: 460 Mbps
+2026-09-26 02:53:31,598 [INFO] core.scheduler: [Admin Globe] Latency — Unloaded: 8 ms, Loaded: 17 ms
+2026-09-26 02:53:31,600 [INFO] core.scheduler: [Admin Globe] Uploading screenshot to Google Drive...
+2026-09-26 02:53:31,608 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-09-26 02:53:35,099 [INFO] core.drive_uploader: Uploaded screenshot to Drive (id=1I0lasrPJ9nD35hYW_QZJo-aE0VPdK_2c)
+2026-09-26 02:53:35,793 [INFO] core.scheduler: [Admin Globe] Screenshot uploaded successfully.
+2026-09-26 02:53:35,794 [INFO] core.scheduler: [Admin Globe] Logging to Google Sheets: 'Admin Globe'...
+2026-09-26 02:53:35,799 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-09-26 02:53:35,804 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-09-26 02:53:38,836 [INFO] core.sheets_logger: Logged to 'Admin Globe' → 'Sep 26 2026': 02:53 AM | 460 Mbps
+2026-09-26 02:53:38,836 [INFO] core.scheduler: [Admin Globe] ✅ Result logged successfully.
+2026-09-26 03:08:10,666 [INFO] __main__: Shutting down...
+2026-09-28 20:50:07,637 [INFO] __main__: Starting ISP Speed Test Automation...
+2026-09-28 20:50:09,273 [INFO] __main__: System tray icon ready.
+2026-09-28 20:50:09,273 [INFO] __main__: GUI started.
+2026-09-28 20:50:32,372 [INFO] core.scheduler: [Admin Globe] Starting speed test cycle...
+2026-09-28 20:50:32,373 [INFO] core.scheduler: [Admin Globe] Switching WiFi to 'Globe_E20_OP_AA'...
+2026-09-28 20:50:33,494 [INFO] core.wifi_switcher: Connecting to SSID: Globe_E20_OP_AA
+2026-09-28 20:50:33,695 [INFO] core.wifi_switcher: Waiting for internet connectivity (timeout=30s)...
+2026-09-28 20:50:35,742 [INFO] core.wifi_switcher: Internet connectivity confirmed.
+2026-09-28 20:50:35,743 [INFO] core.scheduler: [Admin Globe] WiFi connected successfully.
+2026-09-28 20:50:35,744 [INFO] core.scheduler: [Admin Globe] Running speed test on fast.com...
+2026-09-28 20:50:40,353 [INFO] core.speed_tester: Navigating to https://fast.com for ISP: Admin Globe
+2026-09-28 20:50:43,247 [INFO] core.speed_tester: Waiting for download phase to complete...
+2026-09-28 20:50:59,245 [INFO] core.speed_tester: Waiting for upload phase to complete...
+2026-09-28 20:51:04,296 [INFO] core.speed_tester: Upload phase complete: 160
+2026-09-28 20:51:05,687 [INFO] core.speed_tester: Clicked 'Show more info' — waiting for latency values...
+2026-09-28 20:51:06,730 [INFO] core.speed_tester: Latency — Unloaded: 8 ms, Loaded: 11 ms
+2026-09-28 20:51:06,834 [INFO] core.speed_tester: Screenshot saved: G:\dev\apps\speedtest-automation\screenshots\Admin_Globe_20260928_205035.png
+2026-09-28 20:51:07,096 [INFO] core.scheduler: [Admin Globe] Speed result: 530 Mbps
+2026-09-28 20:51:07,096 [INFO] core.scheduler: [Admin Globe] Latency — Unloaded: 8 ms, Loaded: 11 ms
+2026-09-28 20:51:07,100 [INFO] core.scheduler: [Admin Globe] Scanning connected devices on network...
+2026-09-28 20:51:07,105 [INFO] core.network_scanner: Scanning subnet 192.168.254.0/24...
+2026-09-28 20:51:07,105 [INFO] core.network_scanner: Ping sweep in progress...
+2026-09-28 20:51:08,425 [INFO] core.network_scanner: ARP table: 2 device(s) found.
+2026-09-28 20:51:08,873 [INFO] core.network_scanner: Scan complete: 2 device(s) — 1 Phone(s), 0 Laptop/PC(s), 1 Other
+2026-09-28 20:51:08,874 [INFO] core.scheduler: [Admin Globe] Devices found: 2 total — 1 Phone(s), 0 Laptop/PC(s), 1 Other
+2026-09-28 20:51:08,875 [INFO] core.scheduler: [Admin Globe] Uploading screenshot to Google Drive...
+2026-09-28 20:51:09,398 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-09-28 20:51:12,988 [INFO] core.drive_uploader: Uploaded screenshot to Drive (id=1T8US7hMtyqKSBoyRSw8tkqM-rwYtfgkB)
+2026-09-28 20:51:13,609 [INFO] core.scheduler: [Admin Globe] Screenshot uploaded successfully.
+2026-09-28 20:51:13,610 [INFO] core.scheduler: [Admin Globe] Logging to Google Sheets: 'Admin Globe'...
+2026-09-28 20:51:13,625 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-09-28 20:51:13,647 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-09-28 20:51:17,014 [ERROR] core.sheets_logger: Sheets logging failed: The read operation timed out
+2026-09-28 20:51:17,014 [ERROR] core.scheduler: [Admin Globe] ❌ Failed to log to Google Sheets.
+2026-09-28 20:51:45,762 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-09-28 20:51:46,544 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-09-28 20:51:46,550 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-09-28 20:52:04,954 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-09-28 20:52:08,840 [INFO] core.drive_uploader: Uploaded screenshot to Drive (id=15e31vElzPhLewux59PNS1gS0MTwC7aon)
+2026-09-28 20:52:56,471 [INFO] core.scheduler: [Admin Globe] Starting speed test cycle...
+2026-09-28 20:52:56,471 [INFO] core.scheduler: [Admin Globe] Switching WiFi to 'Globe_E20_OP_AA'...
+2026-09-28 20:52:57,568 [INFO] core.wifi_switcher: Connecting to SSID: Globe_E20_OP_AA
+2026-09-28 20:52:57,780 [INFO] core.wifi_switcher: Waiting for internet connectivity (timeout=30s)...
+2026-09-28 20:52:59,809 [INFO] core.wifi_switcher: Internet connectivity confirmed.
+2026-09-28 20:52:59,810 [INFO] core.scheduler: [Admin Globe] WiFi connected successfully.
+2026-09-28 20:52:59,810 [INFO] core.scheduler: [Admin Globe] Running speed test on fast.com...
+2026-09-28 20:53:00,825 [INFO] core.speed_tester: Navigating to https://fast.com for ISP: Admin Globe
+2026-09-28 20:53:04,026 [INFO] core.speed_tester: Waiting for download phase to complete...
+2026-09-28 20:53:12,013 [INFO] core.speed_tester: Waiting for upload phase to complete...
+2026-09-28 20:53:18,136 [INFO] core.speed_tester: Upload phase complete: 44
+2026-09-28 20:53:19,258 [INFO] core.speed_tester: Clicked 'Show more info' — waiting for latency values...
+2026-09-28 20:53:20,289 [INFO] core.speed_tester: Latency — Unloaded: 10 ms, Loaded: 14 ms
+2026-09-28 20:53:20,343 [INFO] core.speed_tester: Screenshot saved: G:\dev\apps\speedtest-automation\screenshots\Admin_Globe_20260928_205259.png
+2026-09-28 20:53:20,478 [INFO] core.scheduler: [Admin Globe] Speed result: 550 Mbps
+2026-09-28 20:53:20,479 [INFO] core.scheduler: [Admin Globe] Latency — Unloaded: 10 ms, Loaded: 14 ms
+2026-09-28 20:53:20,481 [INFO] core.scheduler: [Admin Globe] Scanning connected devices on network...
+2026-09-28 20:53:20,487 [INFO] core.network_scanner: Scanning subnet 192.168.254.0/24...
+2026-09-28 20:53:20,488 [INFO] core.network_scanner: Ping sweep in progress...
+2026-09-28 20:53:21,879 [INFO] core.network_scanner: ARP table: 2 device(s) found.
+2026-09-28 20:53:22,282 [INFO] core.network_scanner: Scan complete: 2 device(s) — 1 Phone(s), 0 Laptop/PC(s), 1 Other
+2026-09-28 20:53:22,282 [INFO] core.scheduler: [Admin Globe] Devices found: 2 total — 1 Phone(s), 0 Laptop/PC(s), 1 Other
+2026-09-28 20:53:22,284 [INFO] core.scheduler: [Admin Globe] Uploading screenshot to Google Drive...
+2026-09-28 20:53:22,291 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-09-28 20:53:26,003 [INFO] core.drive_uploader: Uploaded screenshot to Drive (id=1-kAbrhynjv0CUl9wbozE3ifN7wPNgNiH)
+2026-09-28 20:53:27,266 [INFO] core.scheduler: [Admin Globe] Screenshot uploaded successfully.
+2026-09-28 20:53:27,267 [INFO] core.scheduler: [Admin Globe] Logging to Google Sheets: 'Admin Globe'...
+2026-09-28 20:53:27,275 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-09-28 20:53:27,281 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-09-28 20:53:30,816 [INFO] core.sheets_logger: Logged to 'Admin Globe' → 'Sep 28 2026': 08:53 PM | 550 Mbps
+2026-09-28 20:53:30,817 [INFO] core.scheduler: [Admin Globe] ✅ Result logged successfully.
+2026-09-28 20:54:06,777 [INFO] core.scheduler: [Admin Globe] Starting speed test cycle...
+2026-09-28 20:54:06,777 [INFO] core.scheduler: [Admin Globe] Switching WiFi to 'Globe_E20_OP_AA'...
+2026-09-28 20:54:07,857 [INFO] core.wifi_switcher: Connecting to SSID: Globe_E20_OP_AA
+2026-09-28 20:54:08,038 [INFO] core.wifi_switcher: Waiting for internet connectivity (timeout=30s)...
+2026-09-28 20:54:10,067 [INFO] core.wifi_switcher: Internet connectivity confirmed.
+2026-09-28 20:54:10,068 [INFO] core.scheduler: [Admin Globe] WiFi connected successfully.
+2026-09-28 20:54:10,069 [INFO] core.scheduler: [Admin Globe] Running speed test on fast.com...
+2026-09-28 20:54:10,803 [INFO] core.speed_tester: Navigating to https://fast.com for ISP: Admin Globe
+2026-09-28 20:54:11,321 [INFO] core.speed_tester: Waiting for download phase to complete...
+2026-09-28 20:54:22,782 [INFO] core.speed_tester: Waiting for upload phase to complete...
+2026-09-28 20:54:27,829 [INFO] core.speed_tester: Upload phase complete: 150
+2026-09-28 20:54:29,308 [INFO] core.speed_tester: Clicked 'Show more info' — waiting for latency values...
+2026-09-28 20:54:30,425 [INFO] core.speed_tester: Latency — Unloaded: 8 ms, Loaded: 13 ms
+2026-09-28 20:54:30,483 [INFO] core.speed_tester: Screenshot saved: G:\dev\apps\speedtest-automation\screenshots\Admin_Globe_20260928_205410.png
+2026-09-28 20:54:30,685 [INFO] core.scheduler: [Admin Globe] Speed result: 570 Mbps
+2026-09-28 20:54:30,685 [INFO] core.scheduler: [Admin Globe] Latency — Unloaded: 8 ms, Loaded: 13 ms
+2026-09-28 20:54:30,689 [INFO] core.scheduler: [Admin Globe] Scanning connected devices on network...
+2026-09-28 20:54:30,693 [INFO] core.network_scanner: Scanning subnet 192.168.254.0/24...
+2026-09-28 20:54:30,694 [INFO] core.network_scanner: Ping sweep in progress...
+2026-09-28 20:54:32,361 [INFO] core.network_scanner: ARP table: 2 device(s) found.
+2026-09-28 20:54:32,752 [INFO] core.network_scanner: Scan complete: 2 device(s) — 1 Phone(s), 0 Laptop/PC(s), 1 Other
+2026-09-28 20:54:32,753 [INFO] core.scheduler: [Admin Globe] Devices found: 2 total — 1 Phone(s), 0 Laptop/PC(s), 1 Other
+2026-09-28 20:54:32,754 [INFO] core.scheduler: [Admin Globe] Uploading screenshot to Google Drive...
+2026-09-28 20:54:32,757 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-09-28 20:54:36,520 [INFO] core.drive_uploader: Uploaded screenshot to Drive (id=1l0VKyS9o79Dj5wl8PoKQuRKPhKOo4FqO)
+2026-09-28 20:54:37,724 [INFO] core.scheduler: [Admin Globe] Screenshot uploaded successfully.
+2026-09-28 20:54:37,726 [INFO] core.scheduler: [Admin Globe] Logging to Google Sheets: 'Admin Globe'...
+2026-09-28 20:54:37,738 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-09-28 20:54:37,750 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-09-28 20:54:40,886 [INFO] core.sheets_logger: Created tab 'Sep 28 2026' in spreadsheet 1mCjEjUxWLSobVL2OYJT_JMS_yuYcEqI4mkRf4vQtn_0
+2026-09-28 20:54:43,194 [INFO] core.sheets_logger: Logged to 'Admin Globe' → 'Sep 28 2026': 08:54 PM | 570 Mbps
+2026-09-28 20:54:43,195 [INFO] core.scheduler: [Admin Globe] ✅ Result logged successfully.
+2026-09-28 20:56:48,709 [INFO] __main__: Shutting down...
+2026-09-28 20:57:14,036 [INFO] __main__: Starting ISP Speed Test Automation...
+2026-09-28 20:57:15,582 [INFO] __main__: System tray icon ready.
+2026-09-28 20:57:15,582 [INFO] __main__: GUI started.
+2026-09-28 20:57:17,688 [INFO] core.scheduler: [Admin Globe] Starting speed test cycle...
+2026-09-28 20:57:17,689 [INFO] core.scheduler: [Admin Globe] Switching WiFi to 'Globe_E20_OP_AA'...
+2026-09-28 20:57:18,789 [INFO] core.wifi_switcher: Connecting to SSID: Globe_E20_OP_AA
+2026-09-28 20:57:18,958 [INFO] core.wifi_switcher: Waiting for internet connectivity (timeout=30s)...
+2026-09-28 20:57:20,990 [INFO] core.wifi_switcher: Internet connectivity confirmed.
+2026-09-28 20:57:20,992 [INFO] core.scheduler: [Admin Globe] WiFi connected successfully.
+2026-09-28 20:57:20,992 [INFO] core.scheduler: [Admin Globe] Running speed test on fast.com...
+2026-09-28 20:57:21,780 [INFO] core.speed_tester: Navigating to https://fast.com for ISP: Admin Globe
+2026-09-28 20:57:22,472 [ERROR] core.speed_tester: Speed test error for Admin Globe: Page.goto: net::ERR_NETWORK_CHANGED at https://fast.com/
+Call log:
+  - navigating to "https://fast.com/", waiting until "load"
+
+2026-09-28 20:57:22,473 [WARNING] core.scheduler: [Admin Globe] Speed test failed (ERROR) — logging failure.
+2026-09-28 20:57:22,479 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-09-28 20:57:22,486 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-09-28 20:57:25,541 [INFO] core.sheets_logger: Logged to 'Admin Globe' → 'Sep 28 2026': 08:57 PM | ERROR
+2026-09-28 21:06:51,152 [INFO] __main__: Starting ISP Speed Test Automation...
+2026-09-28 21:06:52,605 [INFO] __main__: System tray icon ready.
+2026-09-28 21:06:52,605 [INFO] __main__: GUI started.
+2026-09-28 21:07:00,552 [INFO] core.scheduler: [Admin Globe] Starting speed test cycle...
+2026-09-28 21:07:00,553 [INFO] core.scheduler: [Admin Globe] Switching WiFi to 'Globe_E20_OP_AA'...
+2026-09-28 21:07:01,636 [INFO] core.wifi_switcher: Connecting to SSID: Globe_E20_OP_AA
+2026-09-28 21:07:01,849 [INFO] core.wifi_switcher: Waiting for internet connectivity (timeout=30s)...
+2026-09-28 21:07:03,875 [INFO] core.wifi_switcher: Internet connectivity confirmed.
+2026-09-28 21:07:03,876 [INFO] core.scheduler: [Admin Globe] WiFi connected successfully.
+2026-09-28 21:07:03,877 [INFO] core.scheduler: [Admin Globe] Waiting for network to stabilise...
+2026-09-28 21:07:13,879 [INFO] core.scheduler: [Admin Globe] Running speed test on fast.com...
+2026-09-28 21:07:14,617 [INFO] core.speed_tester: Navigating to https://fast.com for ISP: Admin Globe
+2026-09-28 21:07:17,249 [INFO] core.speed_tester: Waiting for download phase to complete...
+2026-09-28 21:07:25,642 [INFO] core.speed_tester: Waiting for upload phase to complete...
+2026-09-28 21:07:31,856 [INFO] core.speed_tester: Upload phase complete: 97
+2026-09-28 21:07:32,912 [INFO] core.speed_tester: Clicked 'Show more info' — waiting for latency values...
+2026-09-28 21:07:33,947 [INFO] core.speed_tester: Latency — Unloaded: 8 ms, Loaded: 12 ms
+2026-09-28 21:07:34,036 [INFO] core.speed_tester: Screenshot saved: G:\dev\apps\speedtest-automation\screenshots\Admin_Globe_20260928_210713.png
+2026-09-28 21:07:34,224 [INFO] core.scheduler: [Admin Globe] Speed result: 620 Mbps
+2026-09-28 21:07:34,225 [INFO] core.scheduler: [Admin Globe] Latency — Unloaded: 8 ms, Loaded: 12 ms
+2026-09-28 21:07:34,228 [INFO] core.scheduler: [Admin Globe] Scanning connected devices on network...
+2026-09-28 21:07:34,234 [INFO] core.network_scanner: Scanning subnet 192.168.254.0/24...
+2026-09-28 21:07:34,234 [INFO] core.network_scanner: Ping sweep in progress...
+2026-09-28 21:07:35,902 [INFO] core.network_scanner: ARP table: 2 device(s) found.
+2026-09-28 21:07:36,323 [INFO] core.network_scanner: Scan complete: 2 device(s) — 1 Phone(s), 0 Laptop/PC(s), 1 Other
+2026-09-28 21:07:36,324 [INFO] core.scheduler: [Admin Globe] Devices found: 2 total — 1 Phone(s), 0 Laptop/PC(s), 1 Other
+2026-09-28 21:07:36,325 [INFO] core.scheduler: [Admin Globe] Uploading screenshot to Google Drive...
+2026-09-28 21:07:36,332 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-09-28 21:07:40,117 [INFO] core.drive_uploader: Uploaded screenshot to Drive (id=14r2KYh7OnmSuuGfuJv5gbWAbs1fyydyK)
+2026-09-28 21:07:40,841 [INFO] core.scheduler: [Admin Globe] Screenshot uploaded successfully.
+2026-09-28 21:07:40,842 [INFO] core.scheduler: [Admin Globe] Logging to Google Sheets: 'Admin Globe'...
+2026-09-28 21:07:40,848 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-09-28 21:07:40,854 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-09-28 21:07:44,688 [INFO] core.sheets_logger: Logged to 'Admin Globe' → 'Sep 28 2026': 09:07 PM | 620 Mbps
+2026-09-28 21:07:44,689 [INFO] core.scheduler: [Admin Globe] ✅ Result logged successfully.
+2026-09-28 21:19:50,640 [INFO] core.scheduler: [Admin Globe] Starting speed test cycle...
+2026-09-28 21:19:50,641 [INFO] core.scheduler: [Admin Globe] Switching WiFi to 'Globe_E20_OP_AA'...
+2026-09-28 21:19:51,747 [INFO] core.wifi_switcher: Connecting to SSID: Globe_E20_OP_AA
+2026-09-28 21:19:51,964 [INFO] core.wifi_switcher: Waiting for internet connectivity (timeout=30s)...
+2026-09-28 21:19:53,994 [INFO] core.wifi_switcher: Internet connectivity confirmed.
+2026-09-28 21:19:53,995 [INFO] core.scheduler: [Admin Globe] WiFi connected successfully.
+2026-09-28 21:19:53,996 [INFO] core.scheduler: [Admin Globe] Waiting for network to stabilise...
+2026-09-28 21:20:03,999 [INFO] core.scheduler: [Admin Globe] Running speed test on fast.com...
+2026-09-28 21:20:04,558 [INFO] core.speed_tester: Navigating to https://fast.com for ISP: Admin Globe
+2026-09-28 21:20:07,120 [INFO] core.speed_tester: Waiting for download phase to complete...
+2026-09-28 21:20:15,007 [INFO] core.speed_tester: Waiting for upload phase to complete...
+2026-09-28 21:20:21,287 [INFO] core.speed_tester: Upload phase complete: 98
+2026-09-28 21:20:22,366 [INFO] core.speed_tester: Clicked 'Show more info' — waiting for latency values...
+2026-09-28 21:20:23,411 [INFO] core.speed_tester: Latency — Unloaded: 8 ms, Loaded: 10 ms
+2026-09-28 21:20:23,569 [INFO] core.speed_tester: Screenshot saved: G:\dev\apps\speedtest-automation\screenshots\Admin_Globe_20260928_212004.png
+2026-09-28 21:20:23,729 [INFO] core.scheduler: [Admin Globe] Speed result: 590 Mbps
+2026-09-28 21:20:23,730 [INFO] core.scheduler: [Admin Globe] Latency — Unloaded: 8 ms, Loaded: 10 ms
+2026-09-28 21:20:23,732 [INFO] core.scheduler: [Admin Globe] Scanning connected devices on network...
+2026-09-28 21:20:23,735 [INFO] core.network_scanner: Scanning subnet 192.168.254.0/24...
+2026-09-28 21:20:23,735 [INFO] core.network_scanner: Ping sweep in progress...
+2026-09-28 21:20:25,366 [INFO] core.network_scanner: ARP table: 1 device(s) found.
+2026-09-28 21:20:25,556 [INFO] core.network_scanner: Scan complete: 1 device(s) — 1 Phone(s), 0 Laptop/PC(s), 0 Other
+2026-09-28 21:20:25,557 [INFO] core.scheduler: [Admin Globe] Devices found: 1 total — 1 Phone(s), 0 Laptop/PC(s), 0 Other
+2026-09-28 21:20:25,558 [INFO] core.scheduler: [Admin Globe] Uploading screenshot to Google Drive...
+2026-09-28 21:20:25,567 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-09-28 21:20:29,183 [INFO] core.drive_uploader: Uploaded screenshot to Drive (id=1OuU0aYy6-IWbojh-DIbDZzSYuu6govEw)
+2026-09-28 21:20:29,699 [INFO] core.scheduler: [Admin Globe] Screenshot uploaded successfully.
+2026-09-28 21:20:29,700 [INFO] core.scheduler: [Admin Globe] Logging to Google Sheets: 'Admin Globe'...
+2026-09-28 21:20:29,703 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-09-28 21:20:29,709 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-09-28 21:20:33,266 [INFO] core.sheets_logger: Logged to 'Admin Globe' → 'Sep 28 2026': 09:20 PM | 590 Mbps
+2026-09-28 21:20:33,267 [INFO] core.scheduler: [Admin Globe] ✅ Result logged successfully.
+2026-09-28 21:22:17,311 [INFO] __main__: Shutting down...
+2026-09-28 23:39:29,175 [INFO] __main__: Starting ISP Speed Test Automation...
+2026-09-28 23:39:30,418 [INFO] __main__: System tray icon ready.
+2026-09-28 23:39:30,419 [INFO] __main__: GUI started.
+2026-09-28 23:39:37,750 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-09-28 23:39:37,751 [INFO] core.scheduler: Scheduled ISP 'Admin Globe' — every 1h on Monday, Tuesday, Wednesday, Thursday, Friday, Saturday
+2026-09-28 23:39:37,751 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-09-28 23:39:37,751 [INFO] core.scheduler: Scheduled ISP 'Common Area Globe' — every 1h on Monday, Tuesday, Wednesday, Thursday, Friday
+2026-09-28 23:39:37,751 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-09-28 23:39:37,752 [INFO] core.scheduler: Scheduled ISP 'Common Area DCTech' — every 1h on Monday, Tuesday, Wednesday, Thursday, Friday
+2026-09-28 23:39:37,752 [INFO] apscheduler.scheduler: Added job "Admin Globe" to job store "default"
+2026-09-28 23:39:37,752 [INFO] apscheduler.scheduler: Added job "Common Area Globe" to job store "default"
+2026-09-28 23:39:37,752 [INFO] apscheduler.scheduler: Added job "Common Area DCTech" to job store "default"
+2026-09-28 23:39:37,752 [INFO] apscheduler.scheduler: Scheduler started
+2026-09-28 23:39:37,753 [INFO] core.scheduler: Scheduler started.
+2026-09-28 23:40:37,760 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:40:37 +08)" (scheduled at 2026-09-28 23:40:37.750925+08:00)
+2026-09-28 23:40:37,760 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-09-28 23:40:37 +08)" (scheduled at 2026-09-28 23:40:37.751923+08:00)
+2026-09-28 23:40:37,761 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:40:37 +08)" (scheduled at 2026-09-28 23:40:37.751923+08:00)
+2026-09-28 23:40:37,762 [INFO] core.scheduler: [Admin Globe] Starting speed test cycle...
+2026-09-28 23:40:37,762 [INFO] core.scheduler: [Admin Globe] Switching WiFi to 'Globe_E20_OP_AA'...
+2026-09-28 23:40:38,897 [INFO] core.wifi_switcher: Connecting to SSID: Globe_E20_OP_AA
+2026-09-28 23:40:39,105 [INFO] core.wifi_switcher: Waiting for internet connectivity (timeout=30s)...
+2026-09-28 23:40:41,133 [INFO] core.wifi_switcher: Internet connectivity confirmed.
+2026-09-28 23:40:41,134 [INFO] core.scheduler: [Admin Globe] WiFi connected successfully.
+2026-09-28 23:40:41,134 [INFO] core.scheduler: [Admin Globe] Waiting for network to stabilise...
+2026-09-28 23:40:51,138 [INFO] core.scheduler: [Admin Globe] Running speed test on fast.com...
+2026-09-28 23:40:52,471 [INFO] core.speed_tester: Navigating to https://fast.com for ISP: Admin Globe
+2026-09-28 23:40:55,191 [INFO] core.speed_tester: Waiting for download phase to complete...
+2026-09-28 23:41:11,639 [INFO] core.speed_tester: Waiting for upload phase to complete...
+2026-09-28 23:41:16,674 [INFO] core.speed_tester: Upload phase complete: 14
+2026-09-28 23:41:17,840 [INFO] core.speed_tester: Clicked 'Show more info' — waiting for latency values...
+2026-09-28 23:41:18,925 [INFO] core.speed_tester: Latency — Unloaded: 8 ms, Loaded: 12 ms
+2026-09-28 23:41:19,025 [INFO] core.speed_tester: Screenshot saved: G:\dev\apps\speedtest-automation\screenshots\Admin_Globe_20260928_234051.png
+2026-09-28 23:41:19,300 [INFO] core.scheduler: [Admin Globe] Speed result: 740 Mbps
+2026-09-28 23:41:19,300 [INFO] core.scheduler: [Admin Globe] Latency — Unloaded: 8 ms, Loaded: 12 ms
+2026-09-28 23:41:19,301 [INFO] core.scheduler: [Admin Globe] Scanning connected devices on network...
+2026-09-28 23:41:19,303 [INFO] core.network_scanner: Scanning subnet 192.168.254.0/24...
+2026-09-28 23:41:19,303 [INFO] core.network_scanner: Ping sweep in progress...
+2026-09-28 23:41:21,902 [INFO] core.network_scanner: ARP table: 2 device(s) found.
+2026-09-28 23:41:22,332 [INFO] core.network_scanner: Scan complete: 2 device(s) — 1 Phone(s), 0 Laptop/PC(s), 1 Other
+2026-09-28 23:41:22,333 [INFO] core.scheduler: [Admin Globe] Devices found: 2 total — 1 Phone(s), 0 Laptop/PC(s), 1 Other
+2026-09-28 23:41:22,334 [INFO] core.scheduler: [Admin Globe] Uploading screenshot to Google Drive...
+2026-09-28 23:41:22,814 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-09-28 23:41:26,338 [INFO] core.drive_uploader: Uploaded screenshot to Drive (id=133DHj1A0NNmS6-rTIVH2O1euo9tyv2XT)
+2026-09-28 23:41:26,896 [INFO] core.scheduler: [Admin Globe] Screenshot uploaded successfully.
+2026-09-28 23:41:26,897 [INFO] core.scheduler: [Admin Globe] Logging to Google Sheets: 'Admin Globe'...
+2026-09-28 23:41:26,913 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-09-28 23:41:26,921 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-09-28 23:41:30,564 [INFO] core.sheets_logger: Logged to 'Admin Globe' → 'Sep 28 2026': 11:41 PM | 740 Mbps
+2026-09-28 23:41:30,565 [INFO] core.scheduler: [Admin Globe] ✅ Result logged successfully.
+2026-09-28 23:41:30,567 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:41:37 +08)" executed successfully
+2026-09-28 23:41:30,574 [INFO] core.scheduler: [Common Area DCTech] Starting speed test cycle...
+2026-09-28 23:41:30,576 [INFO] core.scheduler: [Common Area DCTech] Switching WiFi to 'DCTech_E20_OP_CA'...
+2026-09-28 23:41:31,700 [INFO] core.wifi_switcher: Connecting to SSID: DCTech_E20_OP_CA
+2026-09-28 23:41:31,993 [INFO] core.wifi_switcher: Waiting for internet connectivity (timeout=30s)...
+2026-09-28 23:41:34,016 [INFO] core.wifi_switcher: Internet connectivity confirmed.
+2026-09-28 23:41:34,017 [INFO] core.scheduler: [Common Area DCTech] WiFi connected successfully.
+2026-09-28 23:41:34,018 [INFO] core.scheduler: [Common Area DCTech] Waiting for network to stabilise...
+2026-09-28 23:41:37,759 [WARNING] apscheduler.scheduler: Execution of job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-09-28 23:41:37 +08)" skipped: maximum number of running instances reached (1)
+2026-09-28 23:41:37,759 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:42:37 +08)" (scheduled at 2026-09-28 23:41:37.750925+08:00)
+2026-09-28 23:41:37,760 [WARNING] apscheduler.scheduler: Execution of job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:41:37 +08)" skipped: maximum number of running instances reached (1)
+2026-09-28 23:41:44,025 [INFO] core.scheduler: [Common Area DCTech] Running speed test on fast.com...
+2026-09-28 23:41:44,634 [INFO] core.speed_tester: Navigating to https://fast.com for ISP: Common Area DCTech
+2026-09-28 23:41:44,995 [INFO] core.speed_tester: Waiting for download phase to complete...
+2026-09-28 23:41:54,406 [INFO] core.speed_tester: Waiting for upload phase to complete...
+2026-09-28 23:42:00,453 [INFO] core.speed_tester: Upload phase complete: 12
+2026-09-28 23:42:01,508 [INFO] core.speed_tester: Clicked 'Show more info' — waiting for latency values...
+2026-09-28 23:42:02,550 [INFO] core.speed_tester: Latency — Unloaded: 2 ms, Loaded: 307 ms
+2026-09-28 23:42:02,596 [INFO] core.speed_tester: Screenshot saved: G:\dev\apps\speedtest-automation\screenshots\Common_Area_DCTech_20260928_234144.png
+2026-09-28 23:42:02,692 [INFO] core.scheduler: [Common Area DCTech] Speed result: 120 Mbps
+2026-09-28 23:42:02,693 [INFO] core.scheduler: [Common Area DCTech] Latency — Unloaded: 2 ms, Loaded: 307 ms
+2026-09-28 23:42:02,699 [INFO] core.scheduler: [Common Area DCTech] Scanning connected devices on network...
+2026-09-28 23:42:02,704 [INFO] core.network_scanner: Scanning subnet 10.0.254.0/24...
+2026-09-28 23:42:02,705 [INFO] core.network_scanner: Ping sweep in progress...
+2026-09-28 23:42:05,409 [INFO] core.network_scanner: ARP table: 9 device(s) found.
+2026-09-28 23:42:07,148 [INFO] core.network_scanner: Scan complete: 9 device(s) — 0 Phone(s), 3 Laptop/PC(s), 6 Other
+2026-09-28 23:42:07,149 [INFO] core.scheduler: [Common Area DCTech] Devices found: 9 total — 0 Phone(s), 3 Laptop/PC(s), 6 Other
+2026-09-28 23:42:07,150 [INFO] core.scheduler: [Common Area DCTech] Uploading screenshot to Google Drive...
+2026-09-28 23:42:07,153 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-09-28 23:42:11,423 [ERROR] core.drive_uploader: Drive upload failed: The read operation timed out
+2026-09-28 23:42:11,423 [WARNING] core.scheduler: [Common Area DCTech] Screenshot upload failed — will log without image.
+2026-09-28 23:42:11,424 [INFO] core.scheduler: [Common Area DCTech] Logging to Google Sheets: 'Common Area DCTech'...
+2026-09-28 23:42:11,428 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-09-28 23:42:11,434 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-09-28 23:42:14,903 [INFO] core.sheets_logger: Created tab 'Sep 28 2026' in spreadsheet 1po7xtM7bY0DO8HfC69m3pDHy8_grKlA8dj0GXkyO__Y
+2026-09-28 23:42:17,256 [INFO] core.sheets_logger: Logged to 'Common Area DCTech' → 'Sep 28 2026': 11:42 PM | 120 Mbps
+2026-09-28 23:42:17,256 [INFO] core.scheduler: [Common Area DCTech] ✅ Result logged successfully.
+2026-09-28 23:42:17,257 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-09-28 23:42:37 +08)" executed successfully
+2026-09-28 23:42:17,265 [INFO] core.scheduler: [Common Area Globe] Starting speed test cycle...
+2026-09-28 23:42:17,267 [INFO] core.scheduler: [Common Area Globe] Switching WiFi to 'Globe_E20_OP_CA'...
+2026-09-28 23:42:18,380 [INFO] core.wifi_switcher: Connecting to SSID: Globe_E20_OP_CA
+2026-09-28 23:42:18,617 [INFO] core.wifi_switcher: Waiting for internet connectivity (timeout=30s)...
+2026-09-28 23:42:20,646 [INFO] core.wifi_switcher: Internet connectivity confirmed.
+2026-09-28 23:42:20,647 [INFO] core.scheduler: [Common Area Globe] WiFi connected successfully.
+2026-09-28 23:42:20,648 [INFO] core.scheduler: [Common Area Globe] Waiting for network to stabilise...
+2026-09-28 23:42:30,650 [INFO] core.scheduler: [Common Area Globe] Running speed test on fast.com...
+2026-09-28 23:42:31,212 [INFO] core.speed_tester: Navigating to https://fast.com for ISP: Common Area Globe
+2026-09-28 23:42:31,498 [INFO] core.speed_tester: Waiting for download phase to complete...
+2026-09-28 23:42:37,764 [WARNING] apscheduler.scheduler: Execution of job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:42:37 +08)" skipped: maximum number of running instances reached (1)
+2026-09-28 23:42:37,765 [WARNING] apscheduler.scheduler: Execution of job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:42:37 +08)" skipped: maximum number of running instances reached (1)
+2026-09-28 23:42:37,765 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-09-28 23:43:37 +08)" (scheduled at 2026-09-28 23:42:37.751923+08:00)
+2026-09-28 23:42:47,559 [INFO] core.speed_tester: Waiting for upload phase to complete...
+2026-09-28 23:42:52,595 [INFO] core.speed_tester: Upload phase complete: 8.4
+2026-09-28 23:42:53,650 [INFO] core.speed_tester: Clicked 'Show more info' — waiting for latency values...
+2026-09-28 23:42:54,681 [INFO] core.speed_tester: Latency — Unloaded: 8 ms, Loaded: 413 ms
+2026-09-28 23:42:54,727 [INFO] core.speed_tester: Screenshot saved: G:\dev\apps\speedtest-automation\screenshots\Common_Area_Globe_20260928_234230.png
+2026-09-28 23:42:54,857 [INFO] core.scheduler: [Common Area Globe] Speed result: 130 Mbps
+2026-09-28 23:42:54,857 [INFO] core.scheduler: [Common Area Globe] Latency — Unloaded: 8 ms, Loaded: 413 ms
+2026-09-28 23:42:54,859 [INFO] core.scheduler: [Common Area Globe] Scanning connected devices on network...
+2026-09-28 23:42:54,861 [INFO] core.network_scanner: Scanning subnet 192.168.254.0/24...
+2026-09-28 23:42:54,862 [INFO] core.network_scanner: Ping sweep in progress...
+2026-09-28 23:42:57,417 [INFO] core.network_scanner: ARP table: 5 device(s) found.
+2026-09-28 23:42:58,372 [INFO] core.network_scanner: Scan complete: 5 device(s) — 0 Phone(s), 0 Laptop/PC(s), 5 Other
+2026-09-28 23:42:58,373 [INFO] core.scheduler: [Common Area Globe] Devices found: 5 total — 0 Phone(s), 0 Laptop/PC(s), 5 Other
+2026-09-28 23:42:58,374 [INFO] core.scheduler: [Common Area Globe] Uploading screenshot to Google Drive...
+2026-09-28 23:42:58,379 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-09-28 23:43:02,057 [INFO] core.drive_uploader: Uploaded screenshot to Drive (id=1JfAB4C1aW7M1OjbfE0v_7KumEgCgsmO2)
+2026-09-28 23:43:02,769 [INFO] core.scheduler: [Common Area Globe] Screenshot uploaded successfully.
+2026-09-28 23:43:02,769 [INFO] core.scheduler: [Common Area Globe] Logging to Google Sheets: 'Common Area Globe'...
+2026-09-28 23:43:02,773 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-09-28 23:43:02,778 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-09-28 23:43:05,978 [INFO] core.sheets_logger: Created tab 'Sep 28 2026' in spreadsheet 1Gz6wjrXVuapEzEdUqT9dYKTcneY8W2QJBJCuE1rlGNs
+2026-09-28 23:43:08,208 [INFO] core.sheets_logger: Logged to 'Common Area Globe' → 'Sep 28 2026': 11:43 PM | 130 Mbps
+2026-09-28 23:43:08,208 [INFO] core.scheduler: [Common Area Globe] ✅ Result logged successfully.
+2026-09-28 23:43:08,210 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:43:37 +08)" executed successfully
+2026-09-28 23:43:08,221 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:43:37 +08)" executed successfully
+2026-09-28 23:43:08,225 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-09-28 23:43:37 +08)" executed successfully
+2026-09-28 23:43:37,756 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:44:37 +08)" (scheduled at 2026-09-28 23:43:37.750925+08:00)
+2026-09-28 23:43:37,756 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-09-28 23:44:37 +08)" (scheduled at 2026-09-28 23:43:37.751923+08:00)
+2026-09-28 23:43:37,756 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:44:37 +08)" (scheduled at 2026-09-28 23:43:37.751923+08:00)
+2026-09-28 23:43:37,757 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:44:37 +08)" executed successfully
+2026-09-28 23:43:37,761 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-09-28 23:44:37 +08)" executed successfully
+2026-09-28 23:43:37,765 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:44:37 +08)" executed successfully
+2026-09-28 23:44:37,766 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:45:37 +08)" (scheduled at 2026-09-28 23:44:37.750925+08:00)
+2026-09-28 23:44:37,766 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-09-28 23:45:37 +08)" (scheduled at 2026-09-28 23:44:37.751923+08:00)
+2026-09-28 23:44:37,766 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:45:37 +08)" (scheduled at 2026-09-28 23:44:37.751923+08:00)
+2026-09-28 23:44:37,767 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:45:37 +08)" executed successfully
+2026-09-28 23:44:37,771 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-09-28 23:45:37 +08)" executed successfully
+2026-09-28 23:44:37,782 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:45:37 +08)" executed successfully
+2026-09-28 23:44:44,985 [INFO] __main__: Shutting down...
+2026-09-28 23:44:44,986 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2026-09-28 23:44:44,987 [INFO] core.scheduler: Scheduler stopped.
+2026-09-28 23:44:48,371 [INFO] __main__: Starting ISP Speed Test Automation...
+2026-09-28 23:44:49,840 [INFO] __main__: System tray icon ready.
+2026-09-28 23:44:49,841 [INFO] __main__: GUI started.
+2026-09-28 23:45:05,446 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-09-28 23:45:05,447 [INFO] core.scheduler: Scheduled ISP 'Admin Globe' — every 1h on Monday, Tuesday, Wednesday, Thursday, Friday, Saturday
+2026-09-28 23:45:05,447 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-09-28 23:45:05,447 [INFO] core.scheduler: Scheduled ISP 'Common Area Globe' — every 1h on Monday, Tuesday, Wednesday, Thursday, Friday
+2026-09-28 23:45:05,447 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-09-28 23:45:05,447 [INFO] core.scheduler: Scheduled ISP 'Common Area DCTech' — every 1h on Monday, Tuesday, Wednesday, Thursday, Friday
+2026-09-28 23:45:05,448 [INFO] apscheduler.scheduler: Added job "Admin Globe" to job store "default"
+2026-09-28 23:45:05,448 [INFO] apscheduler.scheduler: Added job "Common Area Globe" to job store "default"
+2026-09-28 23:45:05,449 [INFO] apscheduler.scheduler: Added job "Common Area DCTech" to job store "default"
+2026-09-28 23:45:05,449 [INFO] apscheduler.scheduler: Scheduler started
+2026-09-28 23:45:05,449 [INFO] core.scheduler: Scheduler started.
+2026-09-28 23:45:40,170 [INFO] core.scheduler: [Admin Globe] Starting speed test cycle...
+2026-09-28 23:45:40,171 [INFO] core.scheduler: [Admin Globe] Switching WiFi to 'Globe_E20_OP_AA'...
+2026-09-28 23:45:41,280 [INFO] core.wifi_switcher: Connecting to SSID: Globe_E20_OP_AA
+2026-09-28 23:45:41,513 [INFO] core.wifi_switcher: Waiting for internet connectivity (timeout=30s)...
+2026-09-28 23:45:43,566 [INFO] core.wifi_switcher: Internet connectivity confirmed.
+2026-09-28 23:45:43,567 [INFO] core.scheduler: [Admin Globe] WiFi connected successfully.
+2026-09-28 23:45:43,568 [INFO] core.scheduler: [Admin Globe] Waiting for network to stabilise...
+2026-09-28 23:45:53,571 [INFO] core.scheduler: [Admin Globe] Running speed test on fast.com...
+2026-09-28 23:45:54,240 [INFO] core.speed_tester: Navigating to https://fast.com for ISP: Admin Globe
+2026-09-28 23:45:54,507 [INFO] core.speed_tester: Waiting for download phase to complete...
+2026-09-28 23:46:05,452 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:46:05 +08)" (scheduled at 2026-09-28 23:46:05.446458+08:00)
+2026-09-28 23:46:05,453 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-09-28 23:46:05 +08)" (scheduled at 2026-09-28 23:46:05.447456+08:00)
+2026-09-28 23:46:05,454 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:46:05 +08)" (scheduled at 2026-09-28 23:46:05.447456+08:00)
+2026-09-28 23:46:06,929 [INFO] core.speed_tester: Waiting for upload phase to complete...
+2026-09-28 23:46:13,055 [INFO] core.speed_tester: Upload phase complete: 160
+2026-09-28 23:46:14,113 [INFO] core.speed_tester: Clicked 'Show more info' — waiting for latency values...
+2026-09-28 23:46:15,249 [INFO] core.speed_tester: Latency — Unloaded: 8 ms, Loaded: 12 ms
+2026-09-28 23:46:15,339 [INFO] core.speed_tester: Screenshot saved: G:\dev\apps\speedtest-automation\screenshots\Admin_Globe_20260928_234553.png
+2026-09-28 23:46:15,551 [INFO] core.scheduler: [Admin Globe] Speed result: 520 Mbps
+2026-09-28 23:46:15,553 [INFO] core.scheduler: [Admin Globe] Latency — Unloaded: 8 ms, Loaded: 12 ms
+2026-09-28 23:46:15,554 [INFO] core.scheduler: [Admin Globe] Scanning connected devices on network...
+2026-09-28 23:46:15,560 [INFO] core.network_scanner: Scanning subnet 192.168.254.0/24...
+2026-09-28 23:46:15,560 [INFO] core.network_scanner: Ping sweep in progress...
+2026-09-28 23:46:17,929 [INFO] core.network_scanner: ARP table: 2 device(s) found.
+2026-09-28 23:46:18,321 [INFO] core.network_scanner: Scan complete: 2 device(s) — 1 Phone(s), 0 Laptop/PC(s), 1 Other
+2026-09-28 23:46:18,322 [INFO] core.scheduler: [Admin Globe] Devices found: 2 total — 1 Phone(s), 0 Laptop/PC(s), 1 Other
+2026-09-28 23:46:18,324 [INFO] core.scheduler: [Admin Globe] Uploading screenshot to Google Drive...
+2026-09-28 23:46:18,334 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-09-28 23:46:21,611 [INFO] core.drive_uploader: Uploaded screenshot to Drive (id=1DIuXhKvjnE8_kdi3gd4LNK5RML_u4eV6)
+2026-09-28 23:46:22,270 [INFO] core.scheduler: [Admin Globe] Screenshot uploaded successfully.
+2026-09-28 23:46:22,270 [INFO] core.scheduler: [Admin Globe] Logging to Google Sheets: 'Admin Globe'...
+2026-09-28 23:46:22,277 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-09-28 23:46:22,282 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-09-28 23:46:25,442 [INFO] core.sheets_logger: Logged to 'Admin Globe' → 'Sep 28 2026': 11:46 PM | 520 Mbps
+2026-09-28 23:46:25,443 [INFO] core.scheduler: [Admin Globe] ✅ Result logged successfully.
+2026-09-28 23:46:25,453 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:47:05 +08)" executed successfully
+2026-09-28 23:46:25,456 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-09-28 23:47:05 +08)" executed successfully
+2026-09-28 23:46:25,462 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:47:05 +08)" executed successfully
+2026-09-28 23:47:02,360 [INFO] core.scheduler: [Common Area Globe] Starting speed test cycle...
+2026-09-28 23:47:02,361 [INFO] core.scheduler: [Common Area Globe] Switching WiFi to 'Globe_E20_OP_CA'...
+2026-09-28 23:47:03,483 [INFO] core.wifi_switcher: Connecting to SSID: Globe_E20_OP_CA
+2026-09-28 23:47:03,704 [INFO] core.wifi_switcher: Waiting for internet connectivity (timeout=30s)...
+2026-09-28 23:47:05,453 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:48:05 +08)" (scheduled at 2026-09-28 23:47:05.446458+08:00)
+2026-09-28 23:47:05,453 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-09-28 23:48:05 +08)" (scheduled at 2026-09-28 23:47:05.447456+08:00)
+2026-09-28 23:47:05,453 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:48:05 +08)" (scheduled at 2026-09-28 23:47:05.447456+08:00)
+2026-09-28 23:47:05,733 [INFO] core.wifi_switcher: Internet connectivity confirmed.
+2026-09-28 23:47:05,734 [INFO] core.scheduler: [Common Area Globe] WiFi connected successfully.
+2026-09-28 23:47:05,734 [INFO] core.scheduler: [Common Area Globe] Waiting for network to stabilise...
+2026-09-28 23:47:15,740 [INFO] core.scheduler: [Common Area Globe] Running speed test on fast.com...
+2026-09-28 23:47:16,315 [INFO] core.speed_tester: Navigating to https://fast.com for ISP: Common Area Globe
+2026-09-28 23:47:16,607 [INFO] core.speed_tester: Waiting for download phase to complete...
+2026-09-28 23:47:25,052 [INFO] core.speed_tester: Waiting for upload phase to complete...
+2026-09-28 23:47:31,160 [INFO] core.speed_tester: Upload phase complete: 17
+2026-09-28 23:47:32,205 [INFO] core.speed_tester: Clicked 'Show more info' — waiting for latency values...
+2026-09-28 23:47:33,237 [INFO] core.speed_tester: Latency — Unloaded: 8 ms, Loaded: 378 ms
+2026-09-28 23:47:33,279 [INFO] core.speed_tester: Screenshot saved: G:\dev\apps\speedtest-automation\screenshots\Common_Area_Globe_20260928_234715.png
+2026-09-28 23:47:33,371 [INFO] core.scheduler: [Common Area Globe] Speed result: 110 Mbps
+2026-09-28 23:47:33,372 [INFO] core.scheduler: [Common Area Globe] Latency — Unloaded: 8 ms, Loaded: 378 ms
+2026-09-28 23:47:33,375 [INFO] core.scheduler: [Common Area Globe] Scanning connected devices on network...
+2026-09-28 23:47:33,383 [INFO] core.network_scanner: Scanning subnet 192.168.254.0/24...
+2026-09-28 23:47:33,383 [INFO] core.network_scanner: Ping sweep in progress...
+2026-09-28 23:47:35,916 [INFO] core.network_scanner: ARP table: 5 device(s) found.
+2026-09-28 23:47:36,847 [INFO] core.network_scanner: Scan complete: 5 device(s) — 0 Phone(s), 0 Laptop/PC(s), 5 Other
+2026-09-28 23:47:36,847 [INFO] core.scheduler: [Common Area Globe] Devices found: 5 total — 0 Phone(s), 0 Laptop/PC(s), 5 Other
+2026-09-28 23:47:36,850 [INFO] core.scheduler: [Common Area Globe] Uploading screenshot to Google Drive...
+2026-09-28 23:47:36,853 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-09-28 23:47:40,997 [INFO] core.drive_uploader: Uploaded screenshot to Drive (id=1HIXCIwTKpUuo5PU0mEl8SOQRQP5ws2Ws)
+2026-09-28 23:47:41,726 [INFO] core.scheduler: [Common Area Globe] Screenshot uploaded successfully.
+2026-09-28 23:47:41,726 [INFO] core.scheduler: [Common Area Globe] Logging to Google Sheets: 'Common Area Globe'...
+2026-09-28 23:47:41,735 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-09-28 23:47:41,740 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-09-28 23:47:45,282 [INFO] core.sheets_logger: Logged to 'Common Area Globe' → 'Sep 28 2026': 11:47 PM | 110 Mbps
+2026-09-28 23:47:45,282 [INFO] core.scheduler: [Common Area Globe] ✅ Result logged successfully.
+2026-09-28 23:47:45,291 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:48:05 +08)" executed successfully
+2026-09-28 23:47:45,293 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-09-28 23:48:05 +08)" executed successfully
+2026-09-28 23:47:45,296 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:48:05 +08)" executed successfully
+2026-09-28 23:48:05,455 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:49:05 +08)" (scheduled at 2026-09-28 23:48:05.446458+08:00)
+2026-09-28 23:48:05,455 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-09-28 23:49:05 +08)" (scheduled at 2026-09-28 23:48:05.447456+08:00)
+2026-09-28 23:48:05,455 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:49:05 +08)" (scheduled at 2026-09-28 23:48:05.447456+08:00)
+2026-09-28 23:48:05,456 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:49:05 +08)" executed successfully
+2026-09-28 23:48:05,463 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-09-28 23:49:05 +08)" executed successfully
+2026-09-28 23:48:05,465 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:49:05 +08)" executed successfully
+2026-09-28 23:49:05,458 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:50:05 +08)" (scheduled at 2026-09-28 23:49:05.446458+08:00)
+2026-09-28 23:49:05,458 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-09-28 23:50:05 +08)" (scheduled at 2026-09-28 23:49:05.447456+08:00)
+2026-09-28 23:49:05,459 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:50:05 +08)" (scheduled at 2026-09-28 23:49:05.447456+08:00)
+2026-09-28 23:49:05,460 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:50:05 +08)" executed successfully
+2026-09-28 23:49:05,462 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-09-28 23:50:05 +08)" executed successfully
+2026-09-28 23:49:05,463 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:50:05 +08)" executed successfully
+2026-09-28 23:50:03,546 [INFO] core.scheduler: [Common Area DCTech] Starting speed test cycle...
+2026-09-28 23:50:03,546 [INFO] core.scheduler: [Common Area DCTech] Switching WiFi to 'DCTech_E20_OP_CA'...
+2026-09-28 23:50:04,636 [INFO] core.wifi_switcher: Connecting to SSID: DCTech_E20_OP_CA
+2026-09-28 23:50:04,873 [INFO] core.wifi_switcher: Waiting for internet connectivity (timeout=30s)...
+2026-09-28 23:50:05,448 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:51:05 +08)" (scheduled at 2026-09-28 23:50:05.446458+08:00)
+2026-09-28 23:50:05,448 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-09-28 23:51:05 +08)" (scheduled at 2026-09-28 23:50:05.447456+08:00)
+2026-09-28 23:50:05,448 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:51:05 +08)" (scheduled at 2026-09-28 23:50:05.447456+08:00)
+2026-09-28 23:50:06,901 [INFO] core.wifi_switcher: Internet connectivity confirmed.
+2026-09-28 23:50:06,902 [INFO] core.scheduler: [Common Area DCTech] WiFi connected successfully.
+2026-09-28 23:50:06,903 [INFO] core.scheduler: [Common Area DCTech] Waiting for network to stabilise...
+2026-09-28 23:50:16,908 [INFO] core.scheduler: [Common Area DCTech] Running speed test on fast.com...
+2026-09-28 23:50:17,547 [INFO] core.speed_tester: Navigating to https://fast.com for ISP: Common Area DCTech
+2026-09-28 23:50:17,795 [INFO] core.speed_tester: Waiting for download phase to complete...
+2026-09-28 23:50:25,709 [INFO] core.speed_tester: Waiting for upload phase to complete...
+2026-09-28 23:50:31,746 [INFO] core.speed_tester: Upload phase complete: 3.9
+2026-09-28 23:50:32,802 [INFO] core.speed_tester: Clicked 'Show more info' — waiting for latency values...
+2026-09-28 23:50:33,836 [INFO] core.speed_tester: Latency — Unloaded: 3 ms, Loaded: 211 ms
+2026-09-28 23:50:33,887 [INFO] core.speed_tester: Screenshot saved: G:\dev\apps\speedtest-automation\screenshots\Common_Area_DCTech_20260928_235016.png
+2026-09-28 23:50:33,974 [INFO] core.scheduler: [Common Area DCTech] Speed result: 140 Mbps
+2026-09-28 23:50:33,975 [INFO] core.scheduler: [Common Area DCTech] Latency — Unloaded: 3 ms, Loaded: 211 ms
+2026-09-28 23:50:33,978 [INFO] core.scheduler: [Common Area DCTech] Scanning connected devices on network...
+2026-09-28 23:50:33,982 [INFO] core.network_scanner: Scanning subnet 10.0.254.0/24...
+2026-09-28 23:50:33,983 [INFO] core.network_scanner: Ping sweep in progress...
+2026-09-28 23:50:36,414 [INFO] core.network_scanner: ARP table: 10 device(s) found.
+2026-09-28 23:50:38,303 [INFO] core.network_scanner: Scan complete: 10 device(s) — 0 Phone(s), 3 Laptop/PC(s), 7 Other
+2026-09-28 23:50:38,303 [INFO] core.scheduler: [Common Area DCTech] Devices found: 10 total — 0 Phone(s), 3 Laptop/PC(s), 7 Other
+2026-09-28 23:50:38,304 [INFO] core.scheduler: [Common Area DCTech] Uploading screenshot to Google Drive...
+2026-09-28 23:50:38,311 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-09-28 23:50:42,055 [INFO] core.drive_uploader: Uploaded screenshot to Drive (id=1LbUlPAYL2csOb8gB3jQ6PkWQCYm-BBlp)
+2026-09-28 23:50:42,621 [INFO] core.scheduler: [Common Area DCTech] Screenshot uploaded successfully.
+2026-09-28 23:50:42,621 [INFO] core.scheduler: [Common Area DCTech] Logging to Google Sheets: 'Common Area DCTech'...
+2026-09-28 23:50:42,627 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-09-28 23:50:42,632 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-09-28 23:50:47,915 [INFO] core.sheets_logger: Logged to 'Common Area DCTech' → 'Sep 28 2026': 11:50 PM | 140 Mbps
+2026-09-28 23:50:47,916 [INFO] core.scheduler: [Common Area DCTech] ✅ Result logged successfully.
+2026-09-28 23:50:47,929 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:51:05 +08)" executed successfully
+2026-09-28 23:50:47,935 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-09-28 23:51:05 +08)" executed successfully
+2026-09-28 23:50:47,940 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:51:05 +08)" executed successfully
+2026-09-28 23:51:05,449 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:52:05 +08)" (scheduled at 2026-09-28 23:51:05.446458+08:00)
+2026-09-28 23:51:05,449 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-09-28 23:52:05 +08)" (scheduled at 2026-09-28 23:51:05.447456+08:00)
+2026-09-28 23:51:05,449 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:52:05 +08)" (scheduled at 2026-09-28 23:51:05.447456+08:00)
+2026-09-28 23:51:05,539 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:52:05 +08)" executed successfully
+2026-09-28 23:51:05,544 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-09-28 23:52:05 +08)" executed successfully
+2026-09-28 23:51:05,550 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:52:05 +08)" executed successfully
+2026-09-28 23:52:05,449 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:53:05 +08)" (scheduled at 2026-09-28 23:52:05.446458+08:00)
+2026-09-28 23:52:05,449 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-09-28 23:53:05 +08)" (scheduled at 2026-09-28 23:52:05.447456+08:00)
+2026-09-28 23:52:05,450 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:53:05 +08)" (scheduled at 2026-09-28 23:52:05.447456+08:00)
+2026-09-28 23:52:05,450 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:53:05 +08)" executed successfully
+2026-09-28 23:52:05,454 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-09-28 23:53:05 +08)" executed successfully
+2026-09-28 23:52:05,465 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:53:05 +08)" executed successfully
+2026-09-28 23:53:05,462 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:54:05 +08)" (scheduled at 2026-09-28 23:53:05.446458+08:00)
+2026-09-28 23:53:05,462 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-09-28 23:54:05 +08)" (scheduled at 2026-09-28 23:53:05.447456+08:00)
+2026-09-28 23:53:05,462 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:54:05 +08)" (scheduled at 2026-09-28 23:53:05.447456+08:00)
+2026-09-28 23:53:05,463 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:54:05 +08)" executed successfully
+2026-09-28 23:53:05,467 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-09-28 23:54:05 +08)" executed successfully
+2026-09-28 23:53:05,478 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:54:05 +08)" executed successfully
+2026-09-28 23:54:05,457 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:55:05 +08)" (scheduled at 2026-09-28 23:54:05.446458+08:00)
+2026-09-28 23:54:05,458 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-09-28 23:55:05 +08)" (scheduled at 2026-09-28 23:54:05.447456+08:00)
+2026-09-28 23:54:05,458 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:55:05 +08)" (scheduled at 2026-09-28 23:54:05.447456+08:00)
+2026-09-28 23:54:05,459 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:55:05 +08)" executed successfully
+2026-09-28 23:54:05,463 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:55:05 +08)" executed successfully
+2026-09-28 23:54:05,468 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-09-28 23:55:05 +08)" executed successfully
+2026-09-28 23:55:05,458 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:56:05 +08)" (scheduled at 2026-09-28 23:55:05.446458+08:00)
+2026-09-28 23:55:05,459 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-09-28 23:56:05 +08)" (scheduled at 2026-09-28 23:55:05.447456+08:00)
+2026-09-28 23:55:05,459 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:56:05 +08)" (scheduled at 2026-09-28 23:55:05.447456+08:00)
+2026-09-28 23:55:05,460 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:56:05 +08)" executed successfully
+2026-09-28 23:55:05,464 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-09-28 23:56:05 +08)" executed successfully
+2026-09-28 23:55:05,468 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:56:05 +08)" executed successfully
+2026-09-28 23:56:05,448 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:57:05 +08)" (scheduled at 2026-09-28 23:56:05.446458+08:00)
+2026-09-28 23:56:05,448 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-09-28 23:57:05 +08)" (scheduled at 2026-09-28 23:56:05.447456+08:00)
+2026-09-28 23:56:05,448 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:57:05 +08)" (scheduled at 2026-09-28 23:56:05.447456+08:00)
+2026-09-28 23:56:05,449 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:57:05 +08)" executed successfully
+2026-09-28 23:56:05,459 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-09-28 23:57:05 +08)" executed successfully
+2026-09-28 23:56:05,470 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:57:05 +08)" executed successfully
+2026-09-28 23:57:05,462 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:58:05 +08)" (scheduled at 2026-09-28 23:57:05.446458+08:00)
+2026-09-28 23:57:05,462 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-09-28 23:58:05 +08)" (scheduled at 2026-09-28 23:57:05.447456+08:00)
+2026-09-28 23:57:05,462 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:58:05 +08)" (scheduled at 2026-09-28 23:57:05.447456+08:00)
+2026-09-28 23:57:05,462 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:58:05 +08)" executed successfully
+2026-09-28 23:57:05,466 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-09-28 23:58:05 +08)" executed successfully
+2026-09-28 23:57:05,476 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:58:05 +08)" executed successfully
+2026-09-28 23:58:05,450 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:59:05 +08)" (scheduled at 2026-09-28 23:58:05.446458+08:00)
+2026-09-28 23:58:05,450 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-09-28 23:59:05 +08)" (scheduled at 2026-09-28 23:58:05.447456+08:00)
+2026-09-28 23:58:05,450 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:59:05 +08)" (scheduled at 2026-09-28 23:58:05.447456+08:00)
+2026-09-28 23:58:05,451 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:59:05 +08)" executed successfully
+2026-09-28 23:58:05,462 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-09-28 23:59:05 +08)" executed successfully
+2026-09-28 23:58:05,465 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-09-28 23:59:05 +08)" executed successfully
+2026-09-28 23:59:05,456 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-09-29 00:00:05 +08)" (scheduled at 2026-09-28 23:59:05.446458+08:00)
+2026-09-28 23:59:05,456 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-09-29 00:00:05 +08)" (scheduled at 2026-09-28 23:59:05.447456+08:00)
+2026-09-28 23:59:05,456 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-09-29 00:00:05 +08)" (scheduled at 2026-09-28 23:59:05.447456+08:00)
+2026-09-28 23:59:05,457 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-09-29 00:00:05 +08)" executed successfully
+2026-09-28 23:59:05,467 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-09-29 00:00:05 +08)" executed successfully
+2026-09-28 23:59:05,477 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-09-29 00:00:05 +08)" executed successfully
+2026-09-29 00:00:05,447 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-09-29 00:01:05 +08)" (scheduled at 2026-09-29 00:00:05.446458+08:00)
+2026-09-29 00:00:05,447 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-09-29 00:01:05 +08)" (scheduled at 2026-09-29 00:00:05.447456+08:00)
+2026-09-29 00:00:05,447 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-09-29 00:01:05 +08)" (scheduled at 2026-09-29 00:00:05.447456+08:00)
+2026-09-29 00:00:05,448 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-09-29 00:01:05 +08)" executed successfully
+2026-09-29 00:00:05,459 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-09-29 00:01:05 +08)" executed successfully
+2026-09-29 00:00:05,471 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-09-29 00:01:05 +08)" executed successfully
+2026-09-29 00:01:05,450 [INFO] apscheduler.executors.default: Running job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-09-29 00:02:05 +08)" (scheduled at 2026-09-29 00:01:05.446458+08:00)
+2026-09-29 00:01:05,451 [INFO] apscheduler.executors.default: Running job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-09-29 00:02:05 +08)" (scheduled at 2026-09-29 00:01:05.447456+08:00)
+2026-09-29 00:01:05,451 [INFO] apscheduler.executors.default: Running job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-09-29 00:02:05 +08)" (scheduled at 2026-09-29 00:01:05.447456+08:00)
+2026-09-29 00:01:05,452 [INFO] apscheduler.executors.default: Job "Admin Globe (trigger: interval[0:01:00], next run at: 2026-09-29 00:02:05 +08)" executed successfully
+2026-09-29 00:01:05,455 [INFO] apscheduler.executors.default: Job "Common Area Globe (trigger: interval[0:01:00], next run at: 2026-09-29 00:02:05 +08)" executed successfully
+2026-09-29 00:01:05,460 [INFO] apscheduler.executors.default: Job "Common Area DCTech (trigger: interval[0:01:00], next run at: 2026-09-29 00:02:05 +08)" executed successfully
