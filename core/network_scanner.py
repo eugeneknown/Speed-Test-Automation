@@ -3,11 +3,12 @@ network_scanner.py
 Discovers devices on the local network using a ping sweep + ARP table read,
 then categorises each by MAC vendor into: Phone, Laptop/PC, or Other.
 
-No admin rights required on Windows — uses built-in ping and arp commands.
+Works on Windows, Ubuntu, and Raspberry Pi OS without admin rights.
 Vendor lookup uses the 'manuf' library (IEEE OUI database).
 """
 
 import re
+import sys
 import socket
 import logging
 import subprocess
@@ -15,6 +16,11 @@ import ipaddress
 from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass, field
 from typing import Dict, List, Optional
+
+IS_WINDOWS = sys.platform == "win32"
+
+# Suppress CMD window pop-ups on Windows --windowed builds
+_NO_WINDOW = subprocess.CREATE_NO_WINDOW if hasattr(subprocess, "CREATE_NO_WINDOW") else 0
 
 logger = logging.getLogger(__name__)
 
@@ -206,19 +212,18 @@ def _get_local_subnet() -> Optional[str]:
         return None
 
 
-# Windows flag: prevents subprocess commands from opening a visible CMD window
-# when the app is built as a --windowed exe.
-_NO_WINDOW = subprocess.CREATE_NO_WINDOW if hasattr(subprocess, "CREATE_NO_WINDOW") else 0
-
 
 def _ping(ip: str):
-    """Send a single ICMP ping (populates the ARP cache) — silently."""
-    subprocess.run(
-        ["ping", "-n", "1", "-w", "300", ip],
-        stdout=subprocess.DEVNULL,
-        stderr=subprocess.DEVNULL,
-        creationflags=_NO_WINDOW,
-    )
+    """Send a single ICMP ping silently (populates the ARP / neighbour cache)."""
+    if IS_WINDOWS:
+        cmd = ["ping", "-n", "1", "-w", "300", ip]
+        kwargs = dict(stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+                      creationflags=_NO_WINDOW)
+    else:
+        # -c 1 = one packet, -W 1 = 1 second timeout
+        cmd = ["ping", "-c", "1", "-W", "1", ip]
+        kwargs = dict(stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    subprocess.run(cmd, **kwargs)
 
 
 def _ping_sweep(subnet: str, max_workers: int = 100):
@@ -230,38 +235,62 @@ def _ping_sweep(subnet: str, max_workers: int = 100):
 
 def _read_arp_table() -> List[Dict[str, str]]:
     """
-    Run `arp -a` and return a list of {ip, mac} dicts for dynamic entries.
-    Filters out broadcast/multicast addresses.
+    Read the ARP / neighbour table and return {ip, mac} dicts for active entries.
+    Handles both Windows ('arp -a' with 'dynamic') and
+    Linux ('ip neigh' with REACHABLE / STALE / DELAY / PROBE states).
     """
-    result = subprocess.run(
-        ["arp", "-a"],
-        capture_output=True,
-        text=True,
-        creationflags=_NO_WINDOW,
-    )
     entries = []
+    seen_ips: set = set()
 
-    # Windows: "  192.168.1.1          aa-bb-cc-dd-ee-ff     dynamic"
-    mac_re = re.compile(
-        r"(\d{1,3}(?:\.\d{1,3}){3})\s+"
-        r"([0-9a-f]{2}[-:][0-9a-f]{2}[-:][0-9a-f]{2}"
-        r"[-:][0-9a-f]{2}[-:][0-9a-f]{2}[-:][0-9a-f]{2})\s+"
-        r"dynamic",
-        re.IGNORECASE,
-    )
+    # Regex that matches a standard MAC in either aa:bb:cc or aa-bb-cc notation
+    MAC_RE = r"[0-9a-f]{2}(?:[:\-][0-9a-f]{2}){5}"
 
-    seen_ips = set()
-    for line in result.stdout.splitlines():
-        m = mac_re.search(line)
-        if not m:
-            continue
-        ip, mac = m.group(1), m.group(2).upper().replace("-", ":")
-        # Skip broadcast and invalid MACs
-        if ip.endswith(".255") or mac == "FF:FF:FF:FF:FF:FF":
-            continue
-        if ip not in seen_ips:
-            seen_ips.add(ip)
-            entries.append({"ip": ip, "mac": mac})
+    if IS_WINDOWS:
+        # Windows: "  192.168.1.1    aa-bb-cc-dd-ee-ff    dynamic"
+        result = subprocess.run(
+            ["arp", "-a"], capture_output=True, text=True,
+            creationflags=_NO_WINDOW
+        )
+        pattern = re.compile(
+            r"(\d{1,3}(?:\.\d{1,3}){3})\s+(" + MAC_RE + r")\s+dynamic",
+            re.IGNORECASE
+        )
+        for line in result.stdout.splitlines():
+            m = pattern.search(line)
+            if not m:
+                continue
+            ip = m.group(1)
+            mac = m.group(2).upper().replace("-", ":")
+            if ip.endswith(".255") or mac == "FF:FF:FF:FF:FF:FF":
+                continue
+            if ip not in seen_ips:
+                seen_ips.add(ip)
+                entries.append({"ip": ip, "mac": mac})
+    else:
+        # Linux: "192.168.1.5 dev wlan0 lladdr aa:bb:cc:dd:ee:ff REACHABLE"
+        result = subprocess.run(
+            ["ip", "neigh"], capture_output=True, text=True
+        )
+        # Valid states: REACHABLE, STALE, DELAY, PROBE (exclude FAILED/INCOMPLETE)
+        active_states = {"REACHABLE", "STALE", "DELAY", "PROBE"}
+        pattern = re.compile(
+            r"(\d{1,3}(?:\.\d{1,3}){3}).*?(" + MAC_RE + r")\s+(\S+)\s*$",
+            re.IGNORECASE
+        )
+        for line in result.stdout.splitlines():
+            m = pattern.search(line)
+            if not m:
+                continue
+            ip = m.group(1)
+            mac = m.group(2).upper()
+            state = m.group(3).upper()
+            if state not in active_states:
+                continue
+            if ip.endswith(".255") or mac == "FF:FF:FF:FF:FF:FF":
+                continue
+            if ip not in seen_ips:
+                seen_ips.add(ip)
+                entries.append({"ip": ip, "mac": mac})
 
     return entries
 
